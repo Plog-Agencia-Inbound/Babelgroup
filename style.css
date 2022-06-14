@@ -25,9 +25,9 @@
   color: #003150;
   display: block;
 }
-.p_a{
+.p_a {
   text-align: justify;
-  font-size: 14px ;
+  font-size: 14px;
   font-weight: 400;
 }
 
@@ -35,8 +35,29 @@
   El sitio web esta desarrollado principalmente en version movil por lo tanto 
   el responsive es para la version de escritorio.
 */
+@media (min-width: 1000px) {
+  .dsk_form {
+    width: 80% !important;
+  }
+  .dsk_form_s_group button[type="submit"] {
+    width: 70% !important;
+    background: #1ea0d4;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 50px;
+    border: 1.5px solid #ffffff;
+    text-align: center;
+    padding: 0.8rem 1.2rem;
+    margin-left: 35% !important;
+    margin-right: -1rem;
+  }
+  .third_section {
+    padding: 4rem 4rem 6rem 4rem !important;
+  }
+}
 @media (min-width: 768px) {
-  .dsk_screen{
+  .dsk_screen {
     display: block !important;
   }
   .first_section {
@@ -114,66 +135,117 @@
     margin-right: -1rem;
   }
 
-  .five_section p{
+  .five_section p {
     width: 60% !important;
     display: block;
     margin: auto;
     margin-bottom: 1rem;
   }
-  .content_category_section{
+  .content_category_section {
     width: 80% !important;
     display: block;
     margin: auto;
     box-sizing: border-box;
   }
-  .content_category_post{
+  .content_category_post {
     width: 30%;
     display: inline-block;
     height: 500px;
     margin: 0 10px;
     border-radius: 6px;
   }
-  .content_category_post > h1{
+  .content_category_post > h1 {
     padding-top: 5rem;
     text-align: center !important;
   }
-  .banner_section{
+  .banner_section {
+    display: block;
+    margin: auto;
+    margin-top: 5rem !important;
     width: 100% !important;
     box-sizing: border-box;
     padding: 0 4rem !important;
   }
-  .banner_content{
-    width: 35% !important;
+  .banner_content {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30% !important;
     box-sizing: border-box;
-    padding: 4rem 1rem;
+    padding: 4rem 2rem;
   }
-  .banner_content h1{
-    font-size: 42px !important;
+  .banner_content h1 {
+    font-size: 30px !important;
     font-weight: 600 !important;
     color: #ffffff;
     display: block;
     margin: auto;
   }
   .banner_content .tag_banner {
+    display: inline-block;
     background: #1ea0d4;
     color: #ffffff;
-    margin: 0 !;
-    font-weight: 600;
+    margin-top: 1rem;
+    font-weight: 600 !important;
     font-size: 22px !important;
     border-radius: 25px;
-    padding: .5rem 1rem;
+    padding: 0.6rem 1rem !important;
   }
-  .banner_section img{
+  .banner_section img {
+    display: block;
+    margin-left: 200px !important;
+    width: 500px !important;
     margin-top: -100px !important;
   }
 
+  .footer_movil {
+    display: none !important;
+  }
+  .footer_dsk {
+    display: block !important;
+    width: 100%;
+    margin: auto;
+    padding: 4rem 2rem;
+  }
+
+  .footer_image_dsk {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+  }
+  .footer_image_dsk img {
+    width: 170px;
+    display: block;
+    margin: auto;
+  }
+  .footer_group_dsk {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+  }
+  .footer_item_dsk {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 3rem;
+    font-weight: 500;
+  }
+  .footer_text_dsk {
+    display: block;
+    color: #73c1b1;
+    font-size: 12px;
+  }
+  .footer_item_dsk:hover {
+    color: #73c1b1;
+    text-decoration: none;
+    transition: 0.3s;
+  }
 }
 
 /* Fin del responsive */
 
-
 /* Desktop Switch */
-.dsk_screen{
+.dsk_screen {
   display: none;
 }
 
@@ -654,7 +726,7 @@ input[type="password"] {
 }
 
 .banner_section {
-  padding: 2rem 0rem 0rem 2rem;
+  padding: 2rem;
   background: #f5d23c;
   margin: 2rem 0;
 }
@@ -664,17 +736,21 @@ input[type="password"] {
 }
 .banner_content .h1_a {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
 }
 .banner_content .tag_banner {
+  display: inline-block;
   background: #1ea0d4;
   color: #ffffff;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   border-radius: 25px;
-  padding: .18rem .8rem;
+  margin-top: 0.2rem;
+  padding: 0.2rem 0.8rem;
 }
 .banner_section img {
+  width: 100%;
+  margin: 0;
   display: inline-block;
   width: 53%;
 }
@@ -683,6 +759,12 @@ footer {
   padding: 4rem 2rem;
   background: #003150 !important;
   color: #ffffff;
+}
+.footer_movil {
+  display: block;
+}
+.footer_dsk {
+  display: none;
 }
 .footer_image {
   margin-bottom: 1rem;
