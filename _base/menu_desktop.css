@@ -1,0 +1,140 @@
+/* Variables */
+:root {
+    --widthexpanded: 30%;
+    --widthcollapsed: 0px;
+    --padding: 2rem;
+    --bgcolor: #F5F5F5;
+}
+
+body{
+    margin-right: var(--widthcollapsed);
+}
+
+/* Menu */
+#navigation_menu{
+    display: inline-block;
+    width: var(--widthexpanded);
+    background-color: var(--bgcolor);
+    padding: var(--padding);
+    position: fixed;
+    height: 100%;
+    right: 0;
+    top: 0;
+    overflow-x: hidden;
+    overflow-y: auto !important;
+    z-index: 1;
+    -webkit-box-shadow: 5px 5px 50px -1px rgba(0, 0, 0, 0.08);
+    box-shadow: 5px 5px 50px -1px rgba(0, 0, 0, 0.05);
+    border-radius: 10px 0 0 10px;
+}
+#menu_navigation{
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+
+.menu_header{
+    box-sizing: border-box;
+}
+
+.menu_header img{
+    width: 35px;
+    height: 35px;
+    display: block;
+    margin-left: auto;
+    padding: .6rem;
+}
+.menu_header img:hover{
+    cursor: pointer;
+    background: #ffffff;
+    border-radius: 50px;
+    transition: .3s;
+}
+.menu_logo{
+    box-sizing: border-box;
+    margin-bottom: var(--padding);
+}
+.menu_logo img{
+    width: 250px;
+    padding: 4rem 0 0 4rem;
+}
+
+
+
+.menu_items{
+    box-sizing: border-box;
+}
+.menu_items .items{
+    padding: .5rem 1rem .51rem 4rem;
+}
+.menu_items .items a{
+    color: #003150;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+.menu_items .items:hover{
+    background: #ffffff;
+    color: #1EA0D4;
+    transition: .3s;
+    border-radius: 10px;
+}
+.menu_items .items .title:hover{
+    background: #ffffff;
+    color: #1EA0D4;
+    transition: .3s;
+    border-radius: 10px;
+}
+.closeSesion{
+    color: #979797 !important;
+    font-size: 25px;
+    font-weight: 500;
+}
+.closeSesion:hover{
+    color: #F22727 !important;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.items-terms{
+    padding: .5rem 1rem .51rem 4rem;
+}
+.menu_items .items p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
+.tems-link{
+    color: #003150 !important;
+    font-weight: 500 !important;
+}
+.tems-link:hover{
+    color: #1EA0D4 !important;
+    font-weight: 500 !important;
+    text-decoration: none;
+    transition: .3s;
+}
+
+
+
+
+/* Funciones */
+.menu-expanded{
+    width: var(--width);
+    transition: .3s;
+    --padding: 2rem;
+}
+.menu-collapsed{
+    width: var(--widthcollapsed) !important;
+    --padding:0rem !important;
+}
+
+.submit-btn{
+    background: #1EA0D4;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 50px;
+    padding: .5rem 1rem;
+}
+

@@ -1,0 +1,833 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Header-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babelgroup</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="menu_desktop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+
+
+<!-- Body -->
+<body>
+
+    <!-- Menu de navegacion -->
+    <div id="navigation_menu" class="menu-collapsed">
+        <div id="menu_navigation">
+            <div class="menu_header">
+                <img id="menu_close" src="assets/closeMenu.svg" alt="" srcset="">
+            </div>
+            <div id="menu_content">
+                <div class="menu_logo">
+                    <img src="assets/logo.svg" alt="" srcset="">
+                </div>
+
+                <div class="menu_items">
+                    <div class="items">
+                        <a href="">
+                            <div class="title">
+                                Inicio
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="items">
+                        <a href="">
+                            <div class="title">
+                                Nosotros
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="items">
+                        <a href="">
+                            <div class="title">
+                                Desarrollos
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="items">
+                        <a href="">
+                            <div class="title">
+                                Vivir en Mérida
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="items">
+                        <a href="">
+                            <div class="title">
+                                Contacto
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="items">
+                        <a class="closeSesion" href="#"> Cerrar Sesión</a>
+                    </div>
+                    <div class="items-terms">
+                        <p>
+                            Consulta nuestros <a class="tems-link" href="">
+                                términos y condiciones de uso y las políticas de privacidad.
+                            </a>
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <form id="menu_search" action="" class="off_select">
+            <div class="group-form">
+                <input type="text" name="" class="buscador" placeholder="Buscar">
+            </div>
+
+            <div class="group-form">
+                <div class="switch">
+                    <input id="switch" type="hidden" name="" value="">
+                    <span id="compra" class="check">Compra</span>
+                    <span id="renta" class="no-check">Renta</span>
+                </div>
+            </div>
+            <div class="group-form">
+                <select class="select_search" name="" id="">
+                    <option value="" disabled selected>Tipo de propiedad</option>
+                    <option value="">opciones</option>
+                </select>
+            </div>
+
+            <div class="group-form">
+                <select class="select_search" name="" id="">
+                    <option value="" disabled selected>Ubicacion</option>
+                    <option value="">opciones</option>
+                </select>
+            </div>
+
+            <div class="group-form">
+                <label for="rangoPrecio">Rango de precio</label>
+                <div class="precio">
+                    <input class="rango" type="number" placeholder="Min">
+                    <input class="rango" type="number" placeholder="Max">
+                </div>
+            </div>
+
+            <div class="group-form">
+                <label for="cuartos">Cuartos</label>
+                <select class="select_search" name="cuartos" id="">
+                    <option value="" disabled selected>1 cuarto</option>
+                    <option value="">2 cuartos</option>
+                    <option value="">3 cuartos</option>
+                    <option value="">4 cuartos</option>
+                    <option value="">5 cuartos</option>
+                    <option value="">+6 cuartos</option>
+                </select>
+            </div>
+
+
+            <div class="group-form">
+                <label for="baños">Baños</label>
+                <select class="select_search" name="Baños" id="">
+                    <option value="" disabled selected>1 Baño</option>
+                    <option value="">2 Baños</option>
+                    <option value="">3 Baños</option>
+                    <option value="">4 Baños</option>
+                    <option value="">5 Baños</option>
+                    <option value="">+6 Baños</option>
+                </select>
+            </div>
+
+            <div class="group-form">
+                <label for="rango-superficie">Superficie</label>
+                <br>
+                <input id="rango-superficie" type="range" class="rango-search" name="rango-superficie" min="0"
+                    max="100">
+                <p class="superficie">
+                    <span id="superficie"> 0</span> Mts2
+                </p>
+            </div>
+
+            <div class="group-form">
+                <label for="amenidades">Amenidades</label>
+                <br>
+                <div class="group-low">
+                    <label for="jardin"> Jardin</label>
+                    <input type="checkbox" value="" name="jardin">
+                </div>
+                <div class="group-low">
+                    <label for="parque"> Parque</label>
+                    <input type="checkbox" value="" name="Parque">
+                </div>
+                <div class="group-low">
+                    <label for="supermercado"> Supermercado</label>
+                    <input type="checkbox" value="" name="supermercado">
+                </div>
+            </div>
+            <button class="submit-btn" type="submit"> Buscar proṕiedades</button>
+        </form>
+
+    </div>
+
+    <!-- Menu Flotante -->
+    <div class="menu_father" onclick="openMenu()">
+        <span class="menu_button_secondary"> Menu</span>
+    </div>
+
+
+    <!-- Contenido-->
+    <div id="main_content">
+
+    <!-- Primera Seccion-->
+        <div class="banner-first">
+            <div class="container">
+
+                <!-- navigation -->
+                <div class="row navigation">
+                    <div class="col-sm-6 col-md-6">
+                        <img src="assets/logo_2.svg" alt="" srcset="">
+                    </div>
+                    <div class="col-sm-6 col-md-">
+                        <img id="menu_open" src="assets/openMenu.svg" alt="" srcset="">
+                    </div>
+                </div>
+                <h1 class="h1_banner">
+                    Te ayudamos a encontrar el mejor hogar para tu familia.
+                </h1>
+                <div class="row mt-3 mb-3">
+                    <div class="col-md-12">
+                        <button class="btn_banner"> Comprar</button>
+                        <button class="btn_banner_second"> Rentar</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <form class="menu_banner_form">
+
+                            <div class="menu-group">
+                                <label for="tipo_de_propiedad">Tipo de propiedad</label>
+                                <select name="tipo_de_propiedad" id="">
+                                    <option value="">Desarrollos</option>
+                                </select>
+                            </div>
+
+                            <div class="menu-group">
+                                <label for="Ubicacion">Ubicacion</label>
+                                <select name="Ubicacion" id="">
+                                    <option value="">Norte</option>
+                                </select>
+                            </div>
+
+                            <div class="menu-group">
+                                <label for="rango_precios">Rango de precios</label>
+                                <select name="rango_precios" id="">
+                                    <option value="">$1,000,000 - $2,000,000</option>
+                                </select>
+                            </div>
+
+                            <div class="menu-group">
+                                <button class="btn_banner_menu" type="submit"> Buscar</button>
+
+                            </div>
+
+                        </form>
+                        <button id="search_filter"> Busqueda avanzada</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="banner-second">
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <h2 class="h2_banner">
+                            Propiedades Destacadas
+                        </h2>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <button class="ver_mas">Ver más</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card_propiedad mt-3">
+
+                            <div class="background_propiedad">
+                                <div class="ticket_preventa">
+                                    Preventa
+                                </div>
+                                <div class="ticket_desarrollo">
+                                    Desarrollo
+                                </div>
+                            </div>
+
+                            <div class="header_propiedad">
+                                <div class="icon_propiedad">
+                                    <img class="icon_destacada" src="assets/icon_propiedad.svg" alt="">
+                                </div>
+                                <div class="title_propiedad">
+                                    Villas del sol
+                                </div>
+                                <div class="btn_compartir">
+                                    <img class="icon_selection" src="assets/compartir.svg" alt="">
+                                </div>
+                                <div class="btn_favoritos">
+                                    <img class="icon_selection" src="assets/favoritos.svg" alt="" srcset="">
+                                </div>
+                            </div>
+
+                            <div class="content_propiedad">
+                                <p>
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem ut pers piciatis.
+                                </p>
+                            </div>
+
+                            <div class="attributes_propiedad">
+                                <span class="precio_att_propiedad">
+                                    $4,456,000 MXN
+                                </span>
+                            </div>
+
+                            <div class="aminidades_propiedades">
+                                <span class="amenidades_items">
+                                    <img class="icon_amenidades" src="assets/cuartos.svg" alt="" srcset="">
+                                    <span class="text_amenidades">2</span>
+                                </span>
+                                <span class="amenidades_items">
+                                    <img class="icon_amenidades" src="assets/baños.svg" alt="" srcset="">
+                                    <span class="text_amenidades">2</span>
+                                </span>
+                                <span class="amenidades_items">
+                                    <img class="icon_amenidades" src="assets/superficie.svg" alt="" srcset="">
+                                    <span class="text_amenidades">154</span>
+                                </span>
+                            </div>
+                            <div class="link_propiedad">
+                                <a href="" class=ver_propiedad>Ver propiedad</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card_propiedad mt-3">
+
+                            <div class="background_propiedad">
+                                <div class="ticket_preventa">
+                                    Preventa
+                                </div>
+                                <div class="ticket_privada">
+                                    Privada
+                                </div>
+                            </div>
+
+                            <div class="header_propiedad">
+                                <div class="icon_propiedad">
+                                    <img class="icon_destacada" src="assets/icon_propiedad.svg" alt="">
+                                </div>
+                                <div class="title_propiedad">
+                                    Villas del sol
+                                </div>
+                                <div class="btn_compartir">
+                                    <img class="icon_selection" src="assets/compartir.svg" alt="">
+                                </div>
+                                <div class="btn_favoritos">
+                                    <img class="icon_selection" src="assets/favoritos.svg" alt="" srcset="">
+                                </div>
+                            </div>
+
+                            <div class="content_propiedad">
+                                <p>
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem ut pers piciatis.
+                                </p>
+                            </div>
+
+                            <div class="attributes_propiedad">
+                                <span class="precio_att_propiedad">
+                                    $4,456,000 MXN
+                                </span>
+                            </div>
+
+                            <div class="aminidades_propiedades">
+                                <span class="amenidades_items">
+                                    <img class="icon_amenidades" src="assets/cuartos.svg" alt="" srcset="">
+                                    <span class="text_amenidades">2</span>
+                                </span>
+                                <span class="amenidades_items">
+                                    <img class="icon_amenidades" src="assets/baños.svg" alt="" srcset="">
+                                    <span class="text_amenidades">2</span>
+                                </span>
+                                <span class="amenidades_items">
+                                    <img class="icon_amenidades" src="assets/superficie.svg" alt="" srcset="">
+                                    <span class="text_amenidades">154</span>
+                                </span>
+                            </div>
+                            <div class="link_propiedad">
+                                <a href="" class=ver_propiedad>Ver propiedad</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card_propiedad mt-3">
+
+                            <div class="background_propiedad">
+                                <div class="ticket_preventa">
+                                    Preventa
+                                </div>
+                                <div class="ticket_desarrollo">
+                                    Desarrollo
+                                </div>
+                            </div>
+
+                            <div class="header_propiedad">
+                                <div class="icon_propiedad">
+                                    <img class="icon_destacada" src="assets/icon_propiedad.svg" alt="">
+                                </div>
+                                <div class="title_propiedad">
+                                    Villas del sol
+                                </div>
+                                <div class="btn_compartir">
+                                    <img class="icon_selection" src="assets/compartir.svg" alt="">
+                                </div>
+                                <div class="btn_favoritos">
+                                    <img class="icon_selection" src="assets/favoritos.svg" alt="" srcset="">
+                                </div>
+                            </div>
+
+                            <div class="content_propiedad">
+                                <p>
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem ut pers piciatis.
+                                </p>
+                            </div>
+
+                            <div class="attributes_propiedad">
+                                <span class="precio_att_propiedad">
+                                    $4,456,000 MXN
+                                </span>
+                            </div>
+
+                            <div class="aminidades_propiedades">
+                                <span class="amenidades_items">
+                                    <img class="icon_amenidades" src="assets/cuartos.svg" alt="" srcset="">
+                                    <span class="text_amenidades">2</span>
+                                </span>
+                                <span class="amenidades_items">
+                                    <img class="icon_amenidades" src="assets/baños.svg" alt="" srcset="">
+                                    <span class="text_amenidades">2</span>
+                                </span>
+                                <span class="amenidades_items">
+                                    <img class="icon_amenidades" src="assets/superficie.svg" alt="" srcset="">
+                                    <span class="text_amenidades">154</span>
+                                </span>
+                            </div>
+                            <div class="link_propiedad">
+                                <a href="" class=ver_propiedad>Ver propiedad</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner-three">
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <h2 class="h2_banner">
+                            Añadidas recientemente
+                        </h2>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <button class="ver_mas">Ver más</button>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <div class="propiedades_new">
+                            <div class="image_p_new">
+                                <div class="ticket_preventa">
+                                    Preventa
+                                </div>
+                            </div>
+                            <div class="content_p_new">
+
+                                <div class="header_p_new">
+                                    <div class="title_propiedad_new">
+                                        Santa Catarina
+                                    </div>
+                                    <div class="btn_favoritos">
+                                        <img class="icon_selection" src="assets/favoritos.svg" alt="" srcset="">
+                                    </div>
+                                </div>
+                                <span class="content_card_new">
+                                    <span class="card_text_new">3 Cuarto</span>
+                                    <span class="card_text_new">2 Baño</span>
+                                    <span class="card_text_new">120 Mt2</span>
+                                </span>
+                                <div class="footer_p_new">
+                                    <span class="precio_p_new">
+                                        $4,456,000 MXN
+                                    </span>
+                                    <a href="" class="ver_mas_new">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="propiedades_new">
+                            <div class="image_p_new">
+                                <div class="ticket_preventa">
+                                    Preventa
+                                </div>
+                            </div>
+                            <div class="content_p_new">
+
+                                <div class="header_p_new">
+                                    <div class="title_propiedad_new">
+                                        Santa Catarina
+                                    </div>
+                                    <div class="btn_favoritos">
+                                        <img class="icon_selection" src="assets/favoritos.svg" alt="" srcset="">
+                                    </div>
+                                </div>
+                                <span class="content_card_new">
+                                    <span class="card_text_new">3 Cuarto</span>
+                                    <span class="card_text_new">2 Baño</span>
+                                    <span class="card_text_new">120 Mt2</span>
+                                </span>
+                                <div class="footer_p_new">
+                                    <span class="precio_p_new">
+                                        $4,456,000 MXN
+                                    </span>
+                                    <a href="" class="ver_mas_new">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <div class="propiedades_new">
+                            <div class="image_p_new">
+                                <div class="ticket_preventa">
+                                    Preventa
+                                </div>
+                            </div>
+                            <div class="content_p_new">
+
+                                <div class="header_p_new">
+                                    <div class="title_propiedad_new">
+                                        Santa Catarina
+                                    </div>
+                                    <div class="btn_favoritos">
+                                        <img class="icon_selection" src="assets/favoritos.svg" alt="" srcset="">
+                                    </div>
+                                </div>
+                                <span class="content_card_new">
+                                    <span class="card_text_new">3 Cuarto</span>
+                                    <span class="card_text_new">2 Baño</span>
+                                    <span class="card_text_new">120 Mt2</span>
+                                </span>
+                                <div class="footer_p_new">
+                                    <span class="precio_p_new">
+                                        $4,456,000 MXN
+                                    </span>
+                                    <a href="" class="ver_mas_new">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="propiedades_new">
+                            <div class="image_p_new">
+                                <div class="ticket_preventa">
+                                    Preventa
+                                </div>
+                            </div>
+                            <div class="content_p_new">
+
+                                <div class="header_p_new">
+                                    <div class="title_propiedad_new">
+                                        Santa Catarina
+                                    </div>
+                                    <div class="btn_favoritos">
+                                        <img class="icon_selection" src="assets/favoritos.svg" alt="" srcset="">
+                                    </div>
+                                </div>
+                                <span class="content_card_new">
+                                    <span class="card_text_new">3 Cuarto</span>
+                                    <span class="card_text_new">2 Baño</span>
+                                    <span class="card_text_new">120 Mt2</span>
+                                </span>
+                                <div class="footer_p_new">
+                                    <span class="precio_p_new">
+                                        $4,456,000 MXN
+                                    </span>
+                                    <a href="" class="ver_mas_new">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <div class="propiedades_new">
+                            <div class="image_p_new">
+                                <div class="ticket_preventa">
+                                    Preventa
+                                </div>
+                            </div>
+                            <div class="content_p_new">
+
+                                <div class="header_p_new">
+                                    <div class="title_propiedad_new">
+                                        Santa Catarina
+                                    </div>
+                                    <div class="btn_favoritos">
+                                        <img class="icon_selection" src="assets/favoritos.svg" alt="" srcset="">
+                                    </div>
+                                </div>
+                                <span class="content_card_new">
+                                    <span class="card_text_new">3 Cuarto</span>
+                                    <span class="card_text_new">2 Baño</span>
+                                    <span class="card_text_new">120 Mt2</span>
+                                </span>
+                                <div class="footer_p_new">
+                                    <span class="precio_p_new">
+                                        $4,456,000 MXN
+                                    </span>
+                                    <a href="" class="ver_mas_new">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="propiedades_new">
+                            <div class="image_p_new">
+                                <div class="ticket_preventa">
+                                    Preventa
+                                </div>
+                            </div>
+                            <div class="content_p_new">
+
+                                <div class="header_p_new">
+                                    <div class="title_propiedad_new">
+                                        Santa Catarina
+                                    </div>
+                                    <div class="btn_favoritos">
+                                        <img class="icon_selection" src="assets/favoritos.svg" alt="" srcset="">
+                                    </div>
+                                </div>
+                                <span class="content_card_new">
+                                    <span class="card_text_new">3 Cuarto</span>
+                                    <span class="card_text_new">2 Baño</span>
+                                    <span class="card_text_new">120 Mt2</span>
+                                </span>
+                                <div class="footer_p_new">
+                                    <span class="precio_p_new">
+                                        $4,456,000 MXN
+                                    </span>
+                                    <a href="" class="ver_mas_new">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner-four">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 p-1">
+                        <h1 class="h1_title_bold mt-5">
+                            Encuentra una amplia variedad de propiedades en Mérida.
+                        </h1>
+                        <p class="p_body_text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima excepturi, amet voluptatibus
+                            sed quibusdam alias.
+                        </p>
+                    </div>
+                    <div class="col-md-8">
+
+                        <div class="propiedad_category">
+                            <span class="number_propiedad_category">
+                                <span>1</span>
+                            </span>
+                            <div class="title_propiedad_category">
+                                Casas en Mérida.
+                            </div>
+                        </div>
+                        <div class="propiedad_category">
+                            <span class="number_propiedad_category">
+                                <span>1</span>
+                            </span>
+                            <div class="title_propiedad_category">
+                                Depas en Mérida
+                            </div>
+                        </div>
+                        <div class="propiedad_category">
+                            <span class="number_propiedad_category">
+                                <span>1</span>
+                            </span>
+                            <div class="title_propiedad_category">
+                                Terrenos en Mérida
+                            </div>
+                        </div>
+                        <div class="propiedad_category">
+                            <span class="number_propiedad_category">
+                                <span>1</span>
+                            </span>
+                            <div class="title_propiedad_category">
+                                Oficinas en Mérida
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner-five">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center mt-5">
+                        <div class="h2_banner ">
+                            Vivir en Mérida
+                        </div>
+                        <p class="p_body_text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem odio illo harum tempore
+                            iste, a dolorem sint, doloribus aspernatur, beatae possimus iusto provident ex reiciendis.
+                            Ratione, reiciendis iusto cupiditate aspernatur.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card_image_post image_cPost_one">
+                            <h1 class="title_image_post">Turismo</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card_image_post image_cPost_two">
+                            <h1 class="title_image_post">Cultura</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card_image_post image_cPost_three">
+                            <h1 class="title_image_post">Gastronomia</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner_promotional">
+            <div class="container">
+                <div class="row content_text_promotional">
+                    <div class="col-md-4">
+                        <h1 class="title_promotional">
+                            Descarga nuestro Ebook
+                        </h1>
+                        <a href="" class="link_promotional">Click Aqui</a>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="content_image_promotional">
+                            <img src="assets/image/bannerPromotional.png" alt="" class="image_promotional">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner_newsletter">
+            <div class="container">
+
+                <div class="content_newsletter">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1 class="title_newsletter">
+                                Suscribete a nuestro Newsletter.
+                            </h1>
+                            <p class="text_newsletter">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Eligendi quas optio id
+                                laboriosam alias fuga non cum omnis itaque praesentium!</p>
+                        </div>
+                        <div class="col-md-6">
+                            <form action="">
+                                <div class="newsletter_content">
+                                    <input type="email" class="newsletter_input" placeholder="Escribe tu Email">
+                                    <button class="newsletter_button"> Suscribete</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="footer_content">
+                    <div class="footer_item">
+                        <img src="assets/logo_2.svg" alt="" srcset="">
+                    </div>
+                    <div class="footer_item">
+
+                        <a href="">Inicio</a>
+                        <a href="">Nosotros</a>
+                        <a href="">Propiedades</a>
+                    </div>
+                    <div class="footer_item">
+
+                        <a href="">Desarrollos</a>
+                        <a href="">Vivir en Mérida</a>
+                        <a href="">Contacto</a>
+                    </div>
+                    <div class="footer_item">
+                        <a href="">Ubicacion</a>
+                        <p class="footer-text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis iste maiores ex voluptatum
+                            delectus architecto?
+                        </p>
+                    </div>
+                    <div class="footer_foot">
+
+                    </div>
+                </div>
+        </footer>
+    </div>
+
+
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
