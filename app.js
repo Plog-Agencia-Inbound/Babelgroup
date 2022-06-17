@@ -83,8 +83,8 @@ btnRenta.addEventListener('click', e => {
 });
 
 /* Rango de superficie */
-var superficie = document.querySelector("#rango-superficie");
-var pointer = document.querySelector("#superficie");
-superficie.oninput = function() {
-    pointer.innerHTML = this.value;
+var superficie = document.querySelector("#in_superficie");
+var pointer = document.querySelector("#out_superfice");
+pointer.oninput = function() {
+    superficie.innerHTML = this.value;
 }

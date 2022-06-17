@@ -110,7 +110,39 @@
       </div>
     </div>
 
-    <div class="content">
+    <div id="sidemenu" class="menu_collapsed">
+      <div class="side_control">
+        <img src="assets/closeMenu.svg" alt="" srcset="">
+      </div>
+      <div class="header_sidemenu">
+        <img src="assets/logo.svg" alt="" srcset="">
+      </div>
+      <div class="content_sidemenu">
+        <div class="side_item">
+          <a href="#">Home</a>
+        </div>
+        <div class="side_item">
+          <a href="#">Nosotros</a>
+        </div>
+        <div class="side_item">
+          <a href="#">Desarrollos</a>
+        </div>
+        <div class="side_item">
+          <a href="#">Vivir en Mérida</a>
+        </div>
+        <div class="side_item">
+          <a href="#">Contacto</a>
+        </div>
+        <div class="side_item_logout">
+          <a href="#">Cerrar Sesión</a>
+        </div>
+
+        <p class="side_text">
+          Consulta nuestros términos y condiciones de uso y las <a href="#">políticas de privacidad.</a>
+        </p>
+      </div>
+    </div>
+    <div class="content" id="main_content">
       <div class="first_section">
         <div class="container">
           <div class="row navigation">
@@ -203,6 +235,20 @@
           <span class="busqueda_avanzada btn_busquedaAvanzada"
             >Busqueda Avanzada</span
           >
+
+          <div class="group_second_section">
+            <label for="rango_precio">
+              Rango de precio
+              <input
+                name="rango_precio"
+                id="in_superficie"
+                type="range"
+                min="0"
+                max="1250000"
+              />
+              <span id="out_superfice"> 45</span>
+            </label>
+          </div>
         </form>
       </div>
 
@@ -611,12 +657,15 @@
           </div>
           <div class="footer_group_dsk">
             <a href="" class="footer_item_dsk">Ubicacion</a>
-            <p class="footer_text_dsk">Calle 31 No. 123 entre 12 y 13 Colonia desconocida</p>
+            <p class="footer_text_dsk">
+              Calle 31 No. 123 entre 12 y 13 Colonia desconocida
+            </p>
           </div>
         </div>
       </footer>
     </div>
 
+    <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 
     <script>
