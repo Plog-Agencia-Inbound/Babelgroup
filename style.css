@@ -667,6 +667,9 @@ input[type="password"] {
   font-weight: 500;
   margin-bottom: 2rem;
 }
+#bAContent{
+  margin-top: 1rem;
+}
 
 /* Busqueda Avanzada Switch*/
 .bA_on{
