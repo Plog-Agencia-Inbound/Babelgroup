@@ -665,10 +665,22 @@ input[type="password"] {
   display: block;
   text-align: center !important;
   font-weight: 500;
+  margin-bottom: 2rem;
 }
+
+/* Busqueda Avanzada Switch*/
+.bA_on{
+  display: block;
+  transition: .3s;
+}
+.bA_off{
+  display: none;
+  transition: .3s;
+}
+
 .group_second_section {
   width: 100%;
-  padding: 1rem;
+  padding: .5rem 1rem;
   display: block;
 }
 .group_second_section label {
@@ -680,7 +692,8 @@ input[type="password"] {
 .group_second_section input[type="range"] {
   width: 100%;
   display: block;
-  margin-top: 1rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
   -webkit-appearance: none;
   height: 5px;
   border-radius: 5px;
@@ -700,6 +713,16 @@ input[type="password"] {
   background: #fff;
   cursor: pointer;
 }
+.group_second_section #output{
+  color: #004D82;
+}
+
+.group_second_section select{
+  margin-top: 0;
+}
+
+
+
 
 .third_section {
   background: #e7fef9;

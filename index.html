@@ -24,7 +24,6 @@
     <link rel="stylesheet" href="css/glide.theme.min.css" />
   </head>
   <body>
-
     <div class="firstPage">
       <div class="session_section">
         <img
@@ -113,10 +112,10 @@
 
     <div id="sidemenu" class="menu-collapsed">
       <div class="side_control">
-        <img class="closeMenu" src="assets/closeMenu.svg" alt="" srcset="">
+        <img class="closeMenu" src="assets/closeMenu.svg" alt="" srcset="" />
       </div>
       <div class="header_sidemenu">
-        <img src="assets/logo.svg" alt="" srcset="">
+        <img src="assets/logo.svg" alt="" srcset="" />
       </div>
       <div class="content_sidemenu">
         <div class="side_item">
@@ -139,11 +138,11 @@
         </div>
 
         <p class="side_text">
-          Consulta nuestros términos y condiciones de uso y las <a href="#">políticas de privacidad.</a>
+          Consulta nuestros términos y condiciones de uso y las
+          <a href="#">políticas de privacidad.</a>
         </p>
       </div>
     </div>
-
 
     <div class="content" id="main_content">
       <div class="first_section">
@@ -234,23 +233,62 @@
             <option value="#">Option Two</option>
             <option value="#">Option Three</option>
           </select>
-          <button type="submit" class="btn_submit_general">Siguente</button>
-          <span class="busqueda_avanzada btn_busquedaAvanzada"
-            >Busqueda Avanzada</span
-          >
+          <div id="bAswitch" class="bA_on">
+            <button type="submit" class="btn_submit_general">Siguente</button>
+            <span id="btn_bA" class="busqueda_avanzada btn_busquedaAvanzada">
+              Busqueda Avanzada
+            </span>  
+          </div>
+          
+          <div id="bAContent" class="bA_off">
+            <div class="group_second_section">
+              <label for="rango_precio">
+                Rango de precio
+                <input
+                  name="rango_precio"
+                  id="range_slider"
+                  type="range"
+                  min="0"
+                  max="2500000"
+                  value="1250000"
+                />
+                <span id="output"></span>
+              </label>
+            </div>
 
-          <div class="group_second_section">
-            <label for="rango_precio">
-              Rango de precio
-              <input
-                name="rango_precio"
-                id="in_superficie"
-                type="range"
-                min="0"
-                max="1250000"
-              />
-              <span id="out_superfice"> 45</span>
-            </label>
+            <div class="group_second_section">
+              <label for="">Cuartos</label>
+              <select class="select_fw" name="" id="">
+                <option value="#">1 Cuarto</option>
+                <option value="#">2 Cuartos</option>
+                <option value="#">3 Cuartos</option>
+              </select>
+            </div>
+
+            <div class="group_second_section">
+              <label for=""> Baños</label>
+              <select class="select_fw" name="" id="">
+                <option value="#">1 Baño</option>
+                <option value="#">2 Baños</option>
+                <option value="#">3 Baños</option>
+              </select>
+            </div>
+
+            <div class="group_second_section">
+              <label for="rango_area">
+                Área
+                <input
+                  name="rango_area"
+                  id="area_slider"
+                  type="range"
+                  min="50"
+                  max="500"
+                  value="50"
+                />
+                <span id="area_output"></span>
+              </label>
+            </div>
+            <button type="submit" class="btn_submit_general">Buscar</button>
           </div>
         </form>
       </div>
@@ -668,10 +706,8 @@
       </footer>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-    
-    
     <!-- Slider Glide-->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script>
       var glidePropiedades = new Glide(".propiedadesSlider", {
         type: "carousel",
@@ -704,7 +740,10 @@
       glideCategody.mount();
     </script>
 
-    <!-- Codigo JS -->  
+    <!-- Formato Numerico -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+
+    <!-- Codigo JS -->
     <script src="app.js"></script>
 
     <!-- Bootstrap 4.6 Script -->
