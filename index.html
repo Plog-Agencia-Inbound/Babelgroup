@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="css/glide.theme.min.css" />
   </head>
   <body>
+
     <div class="firstPage">
       <div class="session_section">
         <img
@@ -110,9 +111,9 @@
       </div>
     </div>
 
-    <div id="sidemenu" class="menu_collapsed">
+    <div id="sidemenu" class="menu-collapsed">
       <div class="side_control">
-        <img src="assets/closeMenu.svg" alt="" srcset="">
+        <img class="closeMenu" src="assets/closeMenu.svg" alt="" srcset="">
       </div>
       <div class="header_sidemenu">
         <img src="assets/logo.svg" alt="" srcset="">
@@ -142,6 +143,8 @@
         </p>
       </div>
     </div>
+
+
     <div class="content" id="main_content">
       <div class="first_section">
         <div class="container">
@@ -665,9 +668,10 @@
       </footer>
     </div>
 
-    <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-
+    
+    
+    <!-- Slider Glide-->
     <script>
       var glidePropiedades = new Glide(".propiedadesSlider", {
         type: "carousel",
@@ -699,6 +703,9 @@
       });
       glideCategody.mount();
     </script>
+
+    <!-- Codigo JS -->  
+    <script src="app.js"></script>
 
     <!-- Bootstrap 4.6 Script -->
     <script
