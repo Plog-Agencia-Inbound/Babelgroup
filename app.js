@@ -1,10 +1,12 @@
 // Funciones de Menu
+var openMenuP = document.querySelector(".openMenuDsk");
 
 var openmenu = document.querySelector(".openMenu");
 var closemenu = document.querySelector(".closeMenu");
 
 var sidemenu = document.querySelector("#sidemenu");
 
+openMenuP.addEventListener('click', openMenu);
 openmenu.addEventListener('click', openMenu);
 closemenu.addEventListener('click', closeMenu);
 

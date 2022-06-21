@@ -1,0 +1,270 @@
+/* Responsive Design */
+@media (min-width: 768px) {
+  .header_section_dsk {
+    display: block !important;
+    height: 40vh;
+    background: url("assets/image/banner_rbpropiedades.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .header_section {
+    display: none !important;
+  }
+  .header_content_dsk {
+    padding: 4rem 2rem;
+    background: #ffffff;
+  }
+  .header_content_dsk h1 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .header_content_dsk p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #979797;
+  }
+  .header_group {
+    display: flex;
+    align-items: center;
+  }
+  .header_group select {
+    margin-right: 1rem;
+    padding: 0.35rem 0.5rem;
+    font-size: 14px;
+    border-radius: 25px;
+    font-weight: 500;
+    border: 2px solid #979797;
+    color: #979797;
+    -webkit-appearance: none;
+    text-align: center;
+  }
+  .content_section{
+    display: none;
+  }
+  .content_section_dsk {
+    display: block !important;
+    width: 100%;
+    padding: 1rem;
+  }
+  .category_section {
+    width: 90% !important; 
+  }
+}
+
+.content_section_dsk {
+  display: none;
+}
+
+/* Primera Seccion */
+.header_section {
+  background-color: #ffffff;
+  height: 50vh;
+  display: block;
+}
+
+/* Reglas */
+.header_section_dsk {
+  display: none;
+}
+.header_content {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+.column_header {
+  width: 50%;
+  padding: 0 1rem;
+}
+.header_content select {
+  padding: 0.2rem 1rem;
+  font-size: 14px;
+  width: 100%;
+  border-radius: 25px;
+  border: 1px solid #979797;
+  color: #979797;
+  -webkit-appearance: none;
+  text-align: center;
+}
+.heavder_content select:active {
+  color: #73c1b1;
+  border: 1px solid #73c1b1;
+  transition: 0.5s;
+}
+.header_content_text {
+  padding: 2rem;
+}
+.header_content_text h1 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.header_content_text p {
+  font-size: 14px;
+  color: #979797;
+}
+/* Contenido Propiedades / Desarrollos */
+.content_section {
+  background: #e7fef9;
+  padding: 2rem;
+}
+.header_content_section {
+  padding: 1rem 2rem;
+}
+.header_content_section h1 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.card_r_propiedad {
+  display: flex;
+  vertical-align: middle;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 0.8rem;
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+.image_r_propiedad {
+  display: inline-block;
+  width: 40%;
+  box-sizing: border-box;
+}
+.image_r_propiedad img {
+  width: 100%;
+  border-radius: 15px;
+}
+.content_r_propiedad {
+  display: inline-block;
+  width: 60%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+.content_r_propiedad h1 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.content_r_propiedad p {
+  font-size: 12px;
+  color: #979797;
+}
+.precio_r_propiedad {
+  padding: 0.2rem 0.5rem;
+  color: #ffffff;
+  background: #003150;
+  font-size: 12px;
+  border-radius: 15px;
+}
+
+/* Propiedades Golden */
+.golden_section {
+  background: #ffffff;
+  padding: 2rem;
+}
+.header_golden_section {
+  padding: 1rem 1rem;
+}
+.header_golden_section h1 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+
+/* Categoria*/
+.category_section {
+  width: 100%;
+  display: block;
+  margin: auto;
+  padding: 1rem 2rem;
+  background: #ffffff;
+}
+.category_section h1 {
+  margin: 1rem 1rem 0.5rem 1rem;
+  font-size: 25px !important;
+}
+.category_section .categorias_propiedades {
+  width: 90%;
+  height: 150px;
+  margin: 0.5rem 1rem 2rem 1rem;
+  padding: 2rem 1rem;
+  background: #1ea0d4;
+  border-radius: 20px;
+}
+.category_section .categorias_propiedades h1 {
+  margin-top: 1rem;
+  font-size: 25px !important;
+  font-weight: 500;
+}
+
+/* Formulario de contacto */
+.form_seccion {
+  padding: 2rem;
+}
+.form_propiedades_section h1 {
+  font-size: 25px;
+  font-weight: 600;
+}
+.form_propiedades_section p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #979797;
+}
+.inputs_form_section {
+  padding: 0.5rem 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 50px;
+  border: 2px solid #ebeef0;
+  background: #ebeef0;
+  color: #003150;
+  font-weight: 500;
+}
+.areas_form_section {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 20px;
+  border: 2px solid #ebeef0;
+  background: #ebeef0;
+  color: #003150;
+  font-weight: 500;
+}
+.btn_form_section {
+  padding: 0.5rem 1rem;
+  width: 100%;
+  border-radius: 50px;
+  background: #1ea0d4;
+  border: none;
+  color: #ffffff;
+  font-weight: 400;
+}
+.whats_form_section {
+  display: block;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  border-radius: 50px;
+  background: #46df6b;
+  border: none;
+  color: #ffffff;
+  font-weight: 400;
+  margin-top: 1rem;
+  text-align: center;
+}
+.whats_form_section:hover,
+.btn_form_section:hover {
+  background: #003150;
+  transition: 0.3s;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.form_propiedades_section p {
+  margin-top: 1rem;
+  font-size: 12px;
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
+}
+.accent_p {
+  font-weight: 600;
+  color: #003150;
+}

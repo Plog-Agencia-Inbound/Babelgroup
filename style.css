@@ -590,6 +590,19 @@ input[type="password"] {
   transition: .2s;
 }
 
+.openMenuDsk {
+  display: block;
+  margin: 0 0 0 auto;
+  background: #ffffff;
+  padding: 0.8rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.06);
+}
+.openMenuDsk:active{
+  transform: scale(.9);
+  transition: .2s;
+}
+
 .content_first_section > div {
   padding: 1rem 2rem;
 }
@@ -784,6 +797,7 @@ input[type="password"] {
 .card_propiedades_two {
   margin: 1rem 0;
   width: 100%;
+  border-radius: 25px;
 }
 .card_propiedades_one .image,
 .card_propiedades_two .image {
@@ -902,6 +916,8 @@ input[type="password"] {
   font-size: 25px !important;
   font-weight: 500;
 }
+
+
 
 .five_section {
   width: 100%;
