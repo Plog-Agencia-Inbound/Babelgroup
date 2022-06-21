@@ -47,14 +47,35 @@
     width: 100%;
     padding: 1rem;
   }
+  .content_section_dsk_two {
+    display: block !important;
+    width: 100%;
+    padding: 4rem 2rem;
+    background: #E7FEF9;
+  }
   .category_section {
     width: 90% !important; 
   }
+  .form_seccion_dsk{
+    display: block !important;
+  }
+  .form_seccion{
+    display: none !important;
+  }
 }
+
+
+
+
+
 
 .content_section_dsk {
   display: none;
 }
+
+
+
+
 
 /* Primera Seccion */
 .header_section {
@@ -62,6 +83,11 @@
   height: 50vh;
   display: block;
 }
+
+
+
+
+
 
 /* Reglas */
 .header_section_dsk {
@@ -93,6 +119,10 @@
 .header_content_text {
   padding: 2rem;
 }
+.header_content_text_pr{
+  padding: 2rem; 
+  margin-top: 4rem;
+}
 .header_content_text h1 {
   font-size: 22px;
   font-weight: 600;
@@ -101,6 +131,10 @@
   font-size: 14px;
   color: #979797;
 }
+
+
+
+
 /* Contenido Propiedades / Desarrollos */
 .content_section {
   background: #e7fef9;
@@ -110,9 +144,13 @@
   padding: 1rem 2rem;
 }
 .header_content_section h1 {
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 600;
 }
+
+
+
+
 
 .card_r_propiedad {
   display: flex;
@@ -155,6 +193,9 @@
   border-radius: 15px;
 }
 
+
+
+
 /* Propiedades Golden */
 .golden_section {
   background: #ffffff;
@@ -167,6 +208,9 @@
   font-size: 25px;
   font-weight: 600;
 }
+
+
+
 
 
 /* Categoria*/
@@ -195,18 +239,43 @@
   font-weight: 500;
 }
 
+
+
+
 /* Formulario de contacto */
 .form_seccion {
+
+  display: block;
   padding: 2rem;
 }
+
+.form_seccion_dsk{
+  display: none;
+  padding: 4rem 2rem;
+  background: url('assets/image/banner_form.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
 .form_propiedades_section h1 {
   font-size: 25px;
   font-weight: 600;
+}
+.form_propiedades_section_dsk h1{
+  font-weight: 700;
+  font-size: 40px;
 }
 .form_propiedades_section p {
   font-size: 18px;
   font-weight: 600;
   color: #979797;
+}
+.form_propiedades_section_dsk p{
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
 }
 .inputs_form_section {
   padding: 0.5rem 1rem;
@@ -218,6 +287,27 @@
   color: #003150;
   font-weight: 500;
 }
+.inputs_form_section_dsk {
+  padding: 1rem 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 20px;
+  border: 2px solid #ebeef0;
+  background: #fff;
+  color: #003150;
+  font-weight: 500;
+}
+.areas_form_section_dsk {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 20px;
+  border: 2px solid #ebeef0;
+  background: #ffffff;
+  color: #003150;
+  font-weight: 500;
+}
+
 .areas_form_section {
   width: 100%;
   padding: 0.5rem 1rem;
@@ -235,7 +325,7 @@
   background: #1ea0d4;
   border: none;
   color: #ffffff;
-  font-weight: 400;
+  font-weight: 500;
 }
 .whats_form_section {
   display: block;
@@ -245,7 +335,7 @@
   background: #46df6b;
   border: none;
   color: #ffffff;
-  font-weight: 400;
+  font-weight: 500;
   margin-top: 1rem;
   text-align: center;
 }
@@ -267,4 +357,14 @@
 .accent_p {
   font-weight: 600;
   color: #003150;
+}
+.form_text_terms_dsk{
+  margin-top: 1rem;
+  font-size: 16px !important;
+  font-weight: 500;
+}
+.accent_p_dsk{
+  font-size: 16px;
+  font-weight: 600;
+  color: #1ea0d4;
 }
