@@ -129,7 +129,14 @@
   text-align: center;
 }
 
+.testimonios_slider{
+  margin-top: 2rem;
+}
+
 .card_testimonios {
+  width: 300px;
+  display: block;
+  margin: auto;
   padding: 2rem;
   border-radius: 20px;
   border: 2px solid #eeeeee;
@@ -166,7 +173,10 @@
 }
 
 .card_construccion {
-  margin: 1rem;
+  width: 80%;
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
   padding: 2rem 2rem;
   background: #e7fef9;
   color: #1ea0d4;

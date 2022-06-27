@@ -121,19 +121,19 @@
       </div>
       <div id="contenido_sidemenu" class="sidemenu_on">
         <div class="side_item">
-          <a href="#">Home</a>
+          <a href="index.html">Home</a>
         </div>
         <div class="side_item">
-          <a href="#">Nosotros</a>
+          <a href="nosotros.html">Nosotros</a>
         </div>
         <div class="side_item">
-          <a href="#">Desarrollos</a>
+          <a href="catalogoPropiedades.html">Desarrollos</a>
         </div>
         <div class="side_item">
           <a href="#">Vivir en Mérida</a>
         </div>
         <div class="side_item">
-          <a href="#">Contacto</a>
+          <a href="nosotros.html/#contacto">Contacto</a>
         </div>
         <div class="side_item_logout">
           <a href="#">Cerrar Sesión</a>
@@ -146,33 +146,37 @@
       </div>
 
       <div id="busquedaAvanzada_sidemenu" class="sidemenu_off">
-        <form class="bAvanzada_sidemenu_form" action="">
+        <form class="bAvanzada_sidemenu_form" action="resultadosBusqueda.html">
           <input type="text" placeholder="Buscar propiedad" />
 
           <div class="bAvanzada_selector">
-            <span id="bAswitch_comprar" class="item_bA_selector_active">Comprar</span>
-            <span id="bAswitch_rentar" class="item_bA_selector_off">Rentar</span>
-            <input id="bAswitch" type="hidden" value="Comprar">
+            <span id="bAswitch_comprar" class="item_bA_selector_active"
+              >Comprar</span
+            >
+            <span id="bAswitch_rentar" class="item_bA_selector_off"
+              >Rentar</span
+            >
+            <input id="bAswitch" type="hidden" value="Comprar" />
           </div>
 
           <label for="tipo_propiedad">Tipo de propiedad</label>
-          <select name="tipo_propiedad"  >
+          <select name="tipo_propiedad">
             <option value="">Desarrollo</option>
             <option value="">Privada</option>
           </select>
 
           <label for="ubicacion">Ubicacion</label>
-          <select name="ubicacion"  >
+          <select name="ubicacion">
             <option value="">Mérida</option>
             <option value="">Temozón</option>
           </select>
 
           <label for="rango_precios">Rango de precios</label>
-          <input type="number" name="rango_precios"   placeholder="min" />
-          <input type="number" name="rango_precios"   placeholder="max" />
+          <input type="number" name="rango_precios" placeholder="min" />
+          <input type="number" name="rango_precios" placeholder="max" />
 
           <label for="cuartos">Cuartos</label>
-          <select name="cuartos"  >
+          <select name="cuartos">
             <option value="">1 Cuarto</option>
             <option value="">2 Cuartos</option>
             <option value="">3 Cuartos</option>
@@ -180,7 +184,7 @@
           </select>
 
           <label for="banios">Baños</label>
-          <select name="banios"  >
+          <select name="banios">
             <option value="">1 Baño</option>
             <option value="">2 Baños</option>
             <option value="">3 Baños</option>
@@ -188,18 +192,22 @@
           </select>
 
           <label for="rango_area_bAvanzada">Tamaño</label>
-          <input name="rango_area_bAvanzada" id="area_slider_bAvanzada" type="range" min="50" max="500" value="50"/>
+          <input
+            name="rango_area_bAvanzada"
+            id="area_slider_bAvanzada"
+            type="range"
+            min="50"
+            max="500"
+            value="50"
+          />
           <span id="area_output_bAvanzada"></span>
 
           <button type="submit">Buscar propiedades</button>
         </form>
       </div>
-
-
     </div>
 
     <div class="content" id="main_content">
-
       <!-- Inicio -->
       <div class="first_section">
         <div class="container">
@@ -223,15 +231,24 @@
           </div>
           <div class="search_section_desktop">
             <div class="row">
-              <span id="dsk_comprar_s_section" class="dsk_switch_search_active">Comprar</span>
-              <span id="dsk_rentar_s_section" class="dsk_switch_search_off">Rentar</span>
+              <span id="dsk_comprar_s_section" class="dsk_switch_search_active"
+                >Comprar</span
+              >
+              <span id="dsk_rentar_s_section" class="dsk_switch_search_off"
+                >Rentar</span
+              >
 
-              <form class="dsk_form" action="#" method="post">
-                <input id="dsk_input_s_section" type="hidden" name="operacion" value="comprar">
+              <form class="dsk_form" action="resultadosBusqueda.html">
+                <input
+                  id="dsk_input_s_section"
+                  type="hidden"
+                  name="operacion"
+                  value="comprar"
+                />
                 <div class="dsk_form_s_group">
                   <label for="tpropiedad">
                     Tipo de propiedad
-                    <select name="tpropiedad"  >
+                    <select name="tpropiedad">
                       <option value="#">Desarrollo</option>
                       <option value="#">Privada</option>
                     </select>
@@ -241,7 +258,7 @@
                 <div class="dsk_form_s_group">
                   <label for="ubicacion">
                     Ubicacion
-                    <select name="ubicacion"  >
+                    <select name="ubicacion">
                       <option value="#">Norte</option>
                       <option value="#">Sur</option>
                     </select>
@@ -251,7 +268,7 @@
                 <div class="dsk_form_s_group">
                   <label for="precio">
                     Precio
-                    <select name="precio"  >
+                    <select name="precio">
                       <option value="#">$1,500,000 - $2,500,000</option>
                       <option value="#">$1,500,000 - $2,500,000</option>
                     </select>
@@ -271,24 +288,26 @@
 
       <!-- Buscador -->
       <div class="second_section">
-        <form class="search_second_section">
+        <form class="search_second_section" action="resultadosBusqueda.html">
           <h1 class="h1_b">Busqueda</h1>
           <div class="select_search_second_section">
-            <span id="ss_comprar" class="active_search_second_section">Comprar</span>
+            <span id="ss_comprar" class="active_search_second_section"
+              >Comprar</span
+            >
             <span id="ss_rentar" class="off_search_second_section">Rentar</span>
-            <input id="ss_input" type="hidden" name="" value="Comprar">
+            <input id="ss_input" type="hidden" name="" value="Comprar" />
           </div>
-          <select name=""  >
+          <select name="">
             <option value="#">Tipo</option>
             <option value="#">Option Two</option>
             <option value="#">Option Three</option>
           </select>
-          <select name=""  >
+          <select name="">
             <option value="#">Zona</option>
             <option value="#">Option Two</option>
             <option value="#">Option Three</option>
           </select>
-          <select class="select_fw" name=""  >
+          <select class="select_fw" name="">
             <option value="#">Precio</option>
             <option value="#">Option Two</option>
             <option value="#">Option Three</option>
@@ -321,7 +340,7 @@
 
             <div class="group_second_section">
               <label for="">Cuartos</label>
-              <select class="select_fw" name=""  >
+              <select class="select_fw" name="">
                 <option value="#">1 Cuarto</option>
                 <option value="#">2 Cuartos</option>
                 <option value="#">3 Cuartos</option>
@@ -330,7 +349,7 @@
 
             <div class="group_second_section">
               <label for=""> Baños</label>
-              <select class="select_fw" name=""  >
+              <select class="select_fw" name="">
                 <option value="#">1 Baño</option>
                 <option value="#">2 Baños</option>
                 <option value="#">3 Baños</option>
@@ -535,7 +554,7 @@
                 <div class="content_card_aniadida">
                   <h1 class="h1_b">Villa Marin</h1>
                   <span class="compartir_card_aniadida">
-                    <img src="assets/favoritos.svg" alt="" srcset="">
+                    <img src="assets/favoritos.svg" alt="" srcset="" />
                   </span>
 
                   <span class="attributos_c_aniadida">1 Baño</span>
@@ -556,51 +575,7 @@
                 <div class="content_card_aniadida">
                   <h1 class="h1_b">Villa Marin</h1>
                   <span class="compartir_card_aniadida">
-                    <img src="assets/favoritos.svg" alt="" srcset="">
-                  </span>
-
-                  <span class="attributos_c_aniadida">1 Baño</span>
-                  <span class="attributos_c_aniadida">2 Cuartos</span>
-                  <span class="precio_c_aniadida"> $1,500,000</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="card_aniadida">
-                <div class="image_card_aniadida">
-                  <img
-                    src="assets/image/propiedad_horizontal.png"
-                    alt=""
-                    srcset=""
-                  />
-                </div>
-                <div class="content_card_aniadida">
-                  <h1 class="h1_b">Villa Marin</h1>
-                  <span class="compartir_card_aniadida">
-                    <img src="assets/favoritos.svg" alt="" srcset="">
-                  </span>
-
-                  <span class="attributos_c_aniadida">1 Baño</span>
-                  <span class="attributos_c_aniadida">2 Cuartos</span>
-                  <span class="precio_c_aniadida"> $1,500,000</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="card_aniadida">
-                <div class="image_card_aniadida">
-                  <img
-                    src="assets/image/propiedad_horizontal.png"
-                    alt=""
-                    srcset=""
-                  />
-                </div>
-                <div class="content_card_aniadida">
-                  <h1 class="h1_b">Villa Marin</h1>
-                  <span class="compartir_card_aniadida">
-                    <img src="assets/favoritos.svg" alt="" srcset="">
+                    <img src="assets/favoritos.svg" alt="" srcset="" />
                   </span>
 
                   <span class="attributos_c_aniadida">1 Baño</span>
@@ -623,7 +598,7 @@
                 <div class="content_card_aniadida">
                   <h1 class="h1_b">Villa Marin</h1>
                   <span class="compartir_card_aniadida">
-                    <img src="assets/favoritos.svg" alt="" srcset="">
+                    <img src="assets/favoritos.svg" alt="" srcset="" />
                   </span>
 
                   <span class="attributos_c_aniadida">1 Baño</span>
@@ -644,7 +619,51 @@
                 <div class="content_card_aniadida">
                   <h1 class="h1_b">Villa Marin</h1>
                   <span class="compartir_card_aniadida">
-                    <img src="assets/favoritos.svg" alt="" srcset="">
+                    <img src="assets/favoritos.svg" alt="" srcset="" />
+                  </span>
+
+                  <span class="attributos_c_aniadida">1 Baño</span>
+                  <span class="attributos_c_aniadida">2 Cuartos</span>
+                  <span class="precio_c_aniadida"> $1,500,000</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card_aniadida">
+                <div class="image_card_aniadida">
+                  <img
+                    src="assets/image/propiedad_horizontal.png"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+                <div class="content_card_aniadida">
+                  <h1 class="h1_b">Villa Marin</h1>
+                  <span class="compartir_card_aniadida">
+                    <img src="assets/favoritos.svg" alt="" srcset="" />
+                  </span>
+
+                  <span class="attributos_c_aniadida">1 Baño</span>
+                  <span class="attributos_c_aniadida">2 Cuartos</span>
+                  <span class="precio_c_aniadida"> $1,500,000</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card_aniadida">
+                <div class="image_card_aniadida">
+                  <img
+                    src="assets/image/propiedad_horizontal.png"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+                <div class="content_card_aniadida">
+                  <h1 class="h1_b">Villa Marin</h1>
+                  <span class="compartir_card_aniadida">
+                    <img src="assets/favoritos.svg" alt="" srcset="" />
                   </span>
 
                   <span class="attributos_c_aniadida">1 Baño</span>
@@ -728,7 +747,7 @@
             <a href="" class="item">Contacto</a>
           </div>
           <form action="#" method="post">
-            <input type="text" name=""   placeholder="Escribe tu email" />
+            <input type="text" name="" placeholder="Escribe tu email" />
             <button type="submit">Suscribirme</button>
           </form>
           <div class="footer_icons">
@@ -778,6 +797,22 @@
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <!-- Sliders Code -->
     <script src="js/glide/glide_sliders.js"></script>
+    <script>
+      var glideCategody = new Glide(".categorySlider", {
+        type: "carousel",
+        perView: 3,
+        focusAt: "center",
+        breakpoints: {
+          840: {
+            perView: 2,
+          },
+          600: {
+            perView: 1,
+          },
+        },
+      });
+      glideCategody.mount();
+    </script>
 
     <!-- Formato Numerico -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
