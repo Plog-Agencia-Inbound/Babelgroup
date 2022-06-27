@@ -1,0 +1,337 @@
+@media (min-width: 768px) {
+  .main_content {
+    display: inline-block !important;
+  }
+  .main_propiedad {
+    display: inline-block !important;
+    width: 48% !important;
+    padding: 1rem 1rem 1rem 4rem !important;
+  }
+  .form_propiedad_content {
+    display: inline-block !important;
+    vertical-align: top;
+    padding: 2rem 4rem !important;
+    width: 50% !important;
+  }
+  .form_propiedad_content form {
+    display: block;
+    margin-left: auto;
+    width: 400px !important;
+    background: #f7f7f7;
+    border-radius: 20px;
+    padding: 2rem;
+  }
+  .form_propiedad_content .terms {
+    color: #000000 !important;
+  }
+  .encabezado_propiedad h1 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .direction_propiedad {
+    font-size: 16px;
+    margin: 0rem 0 1rem 0;
+  }
+  .etiquetas_propiedad {
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+  }
+  .tag_desarrollo {
+    display: inline-block;
+    padding: 0.5rem 1rem !important;
+    margin: 0 0.5rem;
+    background: #b4f3e6;
+    border-radius: 25px;
+    color: #000000;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .attributes_propiedad_item {
+    margin-right: 2rem !important;
+  }
+  .amenidades_propiedad h1,
+  .modelos_propiedad h1,
+  .ubicacion_propiedad h1,
+  .videos_propiedad h1 {
+    font-size: 16px !important;
+    margin-top: 2rem !important;
+  }
+
+  .v_escritorio {
+    display: block !important;
+  }
+
+  .v_movil {
+    display: none !important;
+  }
+}
+
+.v_escritorio {
+  display: none;
+}
+
+.v_movil {
+  display: block;
+}
+.images_propiedad {
+  width: 100% !important;
+  padding: 0 4rem;
+}
+.content_image_one {
+  display: inline-block;
+  width: 49%;
+  padding: 0.5rem;
+}
+
+.content_image_two {
+  width: 49%;
+  padding: 0.5rem;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+.one_image {
+  display: block;
+  width: 100%;
+  height: 565px;
+  margin: auto;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.two_image {
+  display: block;
+  width: 100%;
+  height: 270px;
+  margin-bottom: 1.5rem;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.three_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 20px;
+  background: url("assets/image/propiedad_image_2.png") rgba(0, 0, 0, 0.719);
+  background-size:cover;
+  background-blend-mode: multiply;
+
+  
+}
+.three_image button{
+color: #ffffff;
+font-weight: 700;
+font-size: 30px;
+background: none;
+border: 2px solid #f7f7f7;
+border-radius: 20px;
+padding: 1rem;
+
+}
+
+.section_header_propiedad {
+  display: block;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 120px;
+  background: #ffffff;
+}
+.main_propiedad {
+  padding: 1rem;
+}
+.compartir_propiedad {
+  width: 40px;
+  padding: 0.3rem;
+  display: inline-block;
+  margin-left: auto;
+  border-radius: 50px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+.compartir_propiedad img {
+  display: block;
+  margin: auto;
+}
+.compartir_propiedad:active {
+  transform: scale(0.95);
+}
+.titulo_propiedad {
+  font-size: 25px;
+  font-weight: 700;
+}
+.tag_desarrollo {
+  display: inline-block;
+  padding: 0.2rem 1rem;
+  background: #b4f3e6;
+  border-radius: 25px;
+  color: #000000;
+  font-weight: 500;
+  font-size: 14px;
+}
+.direction_propiedad {
+  font-size: 14px;
+  padding: 0 1rem;
+  color: #343434;
+}
+.attributes_propiedad {
+  margin-top: 1rem;
+}
+.attributes_propiedad h1 {
+  font-size: 18px;
+}
+.attributes_propiedad_item {
+  display: inline-block;
+  margin-right: 1rem;
+}
+.attributes_propiedad_item img {
+  width: 20px;
+}
+.attributes_propiedad_item span {
+  color: #1ea0d4;
+}
+.description_propiedad {
+  margin-top: 1.5rem;
+}
+.description_propiedad h1 {
+  font-size: 18px;
+}
+.description_propiedad p {
+  font-size: 14px;
+  text-align: justify;
+  color: #343434;
+}
+.amenidades_propiedad h1 {
+  font-size: 18px;
+}
+.amenidades_content {
+  font-size: 14px;
+  color: #343434;
+}
+.modelos_propiedad h1 {
+  font-size: 18px;
+  margin-top: 1rem;
+}
+
+.card_modelo {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  border: 1px solid #c4c4c4;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+}
+.card_modelo h1 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+.card_modelo .disponibilidad_modelo {
+  color: #73c1b1;
+  font-size: 14px;
+  margin: 0;
+}
+.attributos_modelo {
+  display: inline-block;
+}
+.attributos_modelo span {
+  color: #9a999e;
+  font-size: 14px;
+}
+.precio_modelo {
+  display: block;
+  background: #003150;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 15px;
+  text-align: center;
+  width: 120px;
+  margin-top: 1rem;
+}
+
+.ubicacion_propiedad h1 {
+  font-size: 18px;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+.ubicacion_propiedad p {
+  font-size: 14px;
+  color: #2b395f;
+}
+.ubicacion_propiedad iframe {
+  border-radius: 15px;
+  width: 100% !important;
+  height: 200px;
+}
+.videos_propiedad {
+  margin-bottom: 2rem;
+}
+.videos_propiedad h1 {
+  font-size: 18px;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+.videos_propiedad iframe {
+  border-radius: 15px;
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 200px;
+}
+.form_propiedad_content {
+  display: inline-block;
+  padding: 4rem 2rem;
+  width: 100%;
+}
+.form_propiedad_content form h1 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.form_propiedad_content form p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #979797;
+}
+.whatsapp {
+  padding: 0.5rem 1rem;
+  background: #46df6b;
+  color: #ffffff;
+  border-radius: 10px;
+  border: none;
+  display: block;
+  margin: 1rem 0;
+  width: 100%;
+  text-align: center;
+}
+.whatsapp:hover {
+  text-decoration: none;
+}
+.form_propiedad_content form button[type="submit"] {
+  padding: 0.5rem 1rem;
+  background: #1ea0d4;
+  color: #ffffff;
+  border-radius: 10px;
+  border: none;
+  display: block;
+  margin: 1rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+.form_propiedad_content form .whatsapp:active,
+button[type="submit"]:active {
+  text-decoration: none;
+  transform: scale(0.95);
+  transition: 0.5s;
+}
+
+.images_propiedad_movil{
+    padding: 1rem;
+    margin-top: -1rem;
+}
+.carousel-item img{
+    border-radius: 20px;
+
+}

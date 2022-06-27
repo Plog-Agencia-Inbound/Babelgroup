@@ -1,0 +1,301 @@
+@media (min-width: 768px) {
+  .content_contacto_section > div > h1 {
+    display: block;
+    margin-top: 8rem;
+    text-align: left !important;
+  }
+  .info_section {
+    padding: 4rem !important;
+  }
+  .card_info {
+    width: 80% !important;
+    display: block;
+    margin: auto;
+    background: #003150;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-top: 0 !important;
+  }
+  .reconocimientos h1 {
+    font-size: 35px !important;
+    font-weight: 600;
+    text-align: center;
+  }
+  .reconocimientos_image img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px !important;
+    margin: 0 2rem !important;
+  }
+  .card_construccion {
+    width: 60% !important;
+    padding: 4rem !important;
+    display: block !important;
+    margin: auto !important;
+    margin-top: 2rem !important;
+    margin-bottom: 4rem !important;
+  }
+  .banner_nosotros h1{
+    font-size: 35px !important;
+    margin-top: 2rem !important;
+  }
+}
+
+.nosotros_section {
+  display: block;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 70vh;
+  background: url("assets/image/banner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.first_section {
+  display: block;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 70vh;
+  background: url("assets/image/banner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content_contacto_section > div > h1 {
+  display: block;
+  margin-top: 8rem;
+  text-align: center;
+}
+
+.info_section {
+  padding: 2rem;
+}
+.card_info {
+  background: #003150;
+  border-radius: 15px;
+  padding: 2rem;
+  margin-top: -10rem;
+}
+.card_info h1 {
+  font-size: 16px;
+  text-align: center;
+}
+.card_info p {
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+}
+.reconocimientos {
+  padding: 4rem 2rem;
+}
+.reconocimientos h1 {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+}
+.reconocimientos_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.reconocimientos_image img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  margin: 1rem;
+}
+.testimonios {
+  padding: 4rem 2rem;
+}
+.testimonios_subtitulo {
+  font-size: 18px;
+  color: #73c1b1;
+  font-weight: 600;
+  text-align: center;
+}
+.testimonios h1 {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.card_testimonios {
+  padding: 2rem;
+  border-radius: 20px;
+  border: 2px solid #eeeeee;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+.text_testimonios {
+  text-align: center;
+  font-size: 14px;
+}
+.empresa_testimonios {
+  font-size: 18px;
+  color: #73c1b1;
+  font-weight: 500;
+  text-align: center;
+}
+.testimonios img {
+  display: block;
+  margin: auto;
+}
+.card_testimonios h1 {
+  font-size: 20px;
+}
+
+.construccion h1 {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+}
+.construccion_subtitulo {
+  font-size: 18px;
+  color: #73c1b1;
+  font-weight: 600;
+  text-align: center;
+}
+
+.card_construccion {
+  margin: 1rem;
+  padding: 2rem 2rem;
+  background: #e7fef9;
+  color: #1ea0d4;
+  border-radius: 20px;
+}
+.card_construccion h1 {
+  font-size: 18px;
+  text-align: center;
+}
+.card_construccion p {
+  font-size: 16px;
+  text-align: center;
+}
+.section_construccion {
+  padding: 2rem 1rem;
+}
+.section_construccion img {
+  display: block;
+  margin: auto;
+}
+.section_construccion h1 {
+  font-size: 20px;
+  margin-top: 0.5rem;
+}
+.section_construccion p {
+  font-size: 16px;
+  color: #1ea0d4;
+}
+
+.propiedades_construidas {
+  margin-top: 4rem;
+  background: #003150;
+  padding: 4rem 2rem 4rem 2rem;
+}
+.propiedades_construidas h1 {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.card_propiedades_construidas {
+  padding: 0;
+  margin: 2rem 1rem;
+}
+.c_p_content {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 0 0 15px 15px;
+}
+.card_propiedades_construidas img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+.card_propiedades_construidas h1 {
+  font-size: 20px;
+  text-align: left;
+}
+.card_propiedades_construidas p {
+  font-size: 14px;
+}
+.text_pc {
+  font-size: 14px;
+}
+
+.c_p_button{
+  padding: .5rem 1rem;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  background: #1ea0d4;
+  border-radius: 15px;
+
+}
+
+.banner_nosotros {
+  padding: 4rem 0;
+  background: #fff;
+}
+.banner_nosotros h1 {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 600;
+}
+.banner_nosotros p {
+  color: #979797;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+.banner_nosotros img {
+  width: 100%;
+}
+
+.equipo_section {
+  padding: 4rem 2rem;
+}
+.equipo_section {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 600;
+}
+.equipo_subtitulo {
+  font-size: 18px;
+  color: #73c1b1;
+  font-weight: 600;
+  text-align: center;
+}
+
+.card_equipo {
+  width: 300px;
+  padding: 1rem;
+  border-radius: 15px;
+  border: 2px solid #eeeeee;
+  display: block;
+  margin: auto;
+  margin-top: 5rem;
+}
+.card_equipo img{
+  width: 150px;
+  margin-bottom: 1rem;
+  margin-top: -4rem;
+}
+.card_equipo h1 {
+  font-size: 22px;
+  text-align: center;
+}
+.card_equipo p {
+  font-size: 18px;
+  color: #979797;
+  text-align: center;
+  font-weight: 500;
+}

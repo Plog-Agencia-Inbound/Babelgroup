@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Babelgroup</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="nosotros.css" />
+    <link rel="stylesheet" href="resultadosBusqueda.css" />
+    <!-- Bootstrap 4.6 Script -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/glide.core.min.css" />
+    <link rel="stylesheet" href="css/glide.theme.min.css" />
+  </head>
+  <body>
+    <!-- Menu-->
+    <div id="sidemenu" class="menu-collapsed">
+      <div class="side_control">
+        <img class="closeMenu" src="assets/closeMenu.svg" alt="" srcset="" />
+      </div>
+      <div id="header_sidemenu" class="sidemenu_on">
+        <img src="assets/logo.svg" alt="" srcset="" />
+      </div>
+      <div id="contenido_sidemenu" class="sidemenu_on">
+        <div class="side_item">
+          <a href="#">Home</a>
+        </div>
+        <div class="side_item">
+          <a href="#">Nosotros</a>
+        </div>
+        <div class="side_item">
+          <a href="#">Desarrollos</a>
+        </div>
+        <div class="side_item">
+          <a href="#">Vivir en Mérida</a>
+        </div>
+        <div class="side_item">
+          <a href="#">Contacto</a>
+        </div>
+        <div class="side_item_logout">
+          <a href="#">Cerrar Sesión</a>
+        </div>
+
+        <p class="side_text">
+          Consulta nuestros términos y condiciones de uso y las
+          <a href="#">políticas de privacidad.</a>
+        </p>
+      </div>
+
+      <div id="busquedaAvanzada_sidemenu" class="sidemenu_off">
+        <form class="bAvanzada_sidemenu_form" action="">
+          <input type="text" placeholder="Buscar propiedad" />
+
+          <div class="bAvanzada_selector">
+            <span id="bAswitch_comprar" class="item_bA_selector_active"
+              >Comprar</span
+            >
+            <span id="bAswitch_rentar" class="item_bA_selector_off"
+              >Rentar</span
+            >
+            <input id="bAswitch" type="hidden" value="Comprar" />
+          </div>
+
+          <label for="tipo_propiedad">Tipo de propiedad</label>
+          <select name="tipo_propiedad">
+            <option value="">Desarrollo</option>
+            <option value="">Privada</option>
+          </select>
+
+          <label for="ubicacion">Ubicacion</label>
+          <select name="ubicacion">
+            <option value="">Mérida</option>
+            <option value="">Temozón</option>
+          </select>
+
+          <label for="rango_precios">Rango de precios</label>
+          <input type="number" name="rango_precios" placeholder="min" />
+          <input type="number" name="rango_precios" placeholder="max" />
+
+          <label for="cuartos">Cuartos</label>
+          <select name="cuartos">
+            <option value="">1 Cuarto</option>
+            <option value="">2 Cuartos</option>
+            <option value="">3 Cuartos</option>
+            <option value="">4 Cuartos</option>
+          </select>
+
+          <label for="banios">Baños</label>
+          <select name="banios">
+            <option value="">1 Baño</option>
+            <option value="">2 Baños</option>
+            <option value="">3 Baños</option>
+            <option value="">4 Baños</option>
+          </select>
+
+          <label for="rango_area_bAvanzada">Tamaño</label>
+          <input
+            name="rango_area_bAvanzada"
+            id="area_slider_bAvanzada"
+            type="range"
+            min="50"
+            max="500"
+            value="50"
+          />
+          <span id="area_output_bAvanzada"></span>
+
+          <button type="submit">Buscar propiedades</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="content" id="main_content">
+      <!-- Inicio -->
+      <div class="nosotros_section">
+        <div class="container">
+          <div class="row navigation">
+            <div class="col-6">
+              <img class="logoMenu" src="assets/logo_2.svg" alt="" srcset="" />
+            </div>
+            <div class="col-6">
+              <img
+                src="assets/openMenu.svg"
+                class="openMenu"
+                alt=""
+                srcset=""
+              />
+            </div>
+          </div>
+          <div class="row content_contacto_section">
+            <div class="col-12 col-md-6">
+              <h1 class="h1_a">Te ayudamos con la casa de tus sueños</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="info_section">
+        <div class="card_info">
+          <h1 class="h1_a">Nuestro mensaje es claro:</h1>
+          <p>
+            Queremos acompañarte y guiarte en el proceso de encontrar ese lugar
+            que llamarás hogar. Sabemos que tu tiempo vale oro, y por eso te
+            llevamos a conocer las mejores propiedades.
+          </p>
+        </div>
+      </div>
+
+      <div class="reconocimientos">
+        <h1 class="h1_b">
+          Nuestros
+          <br />
+          reconocimientos
+        </h1>
+        <span class="reconocimientos_image">
+          <img src="assets/image/reconocimientos (1).png" alt="" srcset="" />
+          <img src="assets/image/reconocimientos (2).png" alt="" srcset="" />
+          <img src="assets/image/reconocimientos (3).png" alt="" srcset="" />
+          <img src="assets/image/reconocimientos (4).png" alt="" srcset="" />
+          <img src="assets/image/reconocimientos (5).png" alt="" srcset="" />
+        </span>
+      </div>
+
+      <div class="testimonios">
+        <p class="testimonios_subtitulo">Testimonios</p>
+        <h1 class="h1_b">Escucha las experiencias de nuestros clientes</h1>
+
+        <div class="testimonios_slider">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <div class="glide__slide">
+                <div class="card_testimonios">
+                  <p class="text_testimonios">
+                    "Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Corporis quas modi voluptatum natus illum quasi aliquid.
+                    Nulla dolorum earum vel"
+                  </p>
+                  <p class="empresa_testimonios">Google</p>
+                  <img
+                    src="assets/image/profile_testimonios.png"
+                    alt=""
+                    srcset=""
+                  />
+                  <h1 class="h1_b">Ramon Franco</h1>
+                </div>
+              </div>
+              <div class="glide__slide">
+                <div class="card_testimonios">
+                  <p class="text_testimonios">
+                    "Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Corporis quas modi voluptatum natus illum quasi aliquid.
+                    Nulla dolorum earum vel"
+                  </p>
+                  <p class="empresa_testimonios">Google</p>
+                  <img
+                    src="assets/image/profile_testimonios.png"
+                    alt=""
+                    srcset=""
+                  />
+                  <h1 class="h1_b">Ramon Franco</h1>
+                </div>
+              </div>
+              <div class="glide__slide">
+                <div class="card_testimonios">
+                  <p class="text_testimonios">
+                    "Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Corporis quas modi voluptatum natus illum quasi aliquid.
+                    Nulla dolorum earum vel"
+                  </p>
+                  <p class="empresa_testimonios">Google</p>
+                  <img
+                    src="assets/image/profile_testimonios.png"
+                    alt=""
+                    srcset=""
+                  />
+                  <h1 class="h1_b">Ramon Franco</h1>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="construccion">
+        <p class="construccion_subtitulo">Construccion Finaciada</p>
+        <h1 class="h1_b">¿Qué es la construcción financiada?</h1>
+        <div class="card_construccion">
+          <h1>
+            Si las casas que has visto aún no cumplen con lo que estás buscando.
+          </h1>
+          <p>
+            En Babel Group te ayudamos a gestionar lo necesario para gestionar
+            tu crédito para construir tu casa, como siempre la soñaste y con
+            todas las características que desees y necesites.
+          </p>
+          <div class="row">
+            <div class="col-md-6 section_construccion">
+              <img src="assets/image/icons_nosotros (1).png" alt="" srcset="" />
+              <h1 class="h1_b">Equipo especializado</h1>
+              <p>Con más de 100 casas construidas a lo largo de los años.</p>
+            </div>
+            <div class="col-md-6 section_construccion">
+              <img src="assets/image/icons_nosotros (2).png" alt="" srcset="" />
+              <h1 class="h1_b">Disfruta tu tiempo</h1>
+              <p>
+                Nos encargamos de todo el proceso de construcción, tu solo de
+                aprobar.
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 section_construccion">
+              <img src="assets/image/icons_nosotros (3).png" alt="" srcset="" />
+              <h1 class="h1_b">Alta calidad</h1>
+              <p>
+                Te ofrecemos altos estándares de calidad a un precio
+                competitivo.
+              </p>
+            </div>
+            <div class="col-md-6 section_construccion">
+              <img src="assets/image/icons_nosotros (4).png" alt="" srcset="" />
+              <h1 class="h1_b">Te ayudamos con el terreno</h1>
+              <p>Si aun no cuentas con uno, te ayudamos a encontrarlo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="propiedades_construidas">
+        <h1 class="h1_a">Propiedades construidas</h1>
+
+        <div class="card_propiedades_slider">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <div class="glide__slide">
+                <div class="card_propiedades_construidas">
+                  <div class="c_p_image">
+                    <img
+                      src="assets/image/propiedad_construida.png"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                  <div class="c_p_content">
+                    <h1 class="h1_b">Arborea Conkal</h1>
+                    <p>Mérida, Yucatán</p>
+                    <p class="text_pc">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Itaque omnis earum animi illum aperiam eligendi!
+                    </p>
+                    <a class="c_p_button" href="#">Ver propiedad</a>
+                  </div>
+                </div>
+              </div>
+              <div class="glide__slide">
+                <div class="card_propiedades_construidas">
+                  <div class="c_p_image">
+                    <img
+                      src="assets/image/propiedad_construida.png"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                  <div class="c_p_content">
+                    <h1 class="h1_b">Arborea Conkal</h1>
+                    <p>Mérida, Yucatán</p>
+                    <p class="text_pc">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Itaque omnis earum animi illum aperiam eligendi!
+                    </p>
+                    <a class="c_p_button" href="#">Ver propiedad</a>
+                  </div>
+                </div>
+              </div>
+              <div class="glide__slide">
+                <div class="card_propiedades_construidas">
+                  <div class="c_p_image">
+                    <img
+                      src="assets/image/propiedad_construida.png"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                  <div class="c_p_content">
+                    <h1 class="h1_b">Arborea Conkal</h1>
+                    <p>Mérida, Yucatán</p>
+                    <p class="text_pc">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Itaque omnis earum animi illum aperiam eligendi!
+                    </p>
+                    <a class="c_p_button" href="#">Ver propiedad</a>  
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulario de contacto propiedades -->
+      <div class="form_section">
+        <div class="container">
+          <h1 class="h1_b">¿Necesitas Ayuda?</h1>
+          <p>Contactanos</p>
+          <div class="row">
+            <div class="col-md-6">
+              <form class="form_contacto" action="">
+                <input type="text" placeholder="Escribe tu correo" />
+                <input
+                  class="form_col"
+                  type="text"
+                  placeholder="Escribe tu nombre"
+                />
+                <input
+                  class="form_col"
+                  type="text"
+                  placeholder="Escribe tu teléfono"
+                />
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="5"
+                  placeholder="Escribe tu Mensaje"
+                ></textarea>
+                <button type="submit">Contactar</button>
+                <a href="#" class="whatsapp">Contactar por whatsapp</a>
+                <div class="terms">
+                  Al enviar este mensaje aceptas los
+                  <span class="terms_accent">
+                    términos y condiciones de uso y las políticas de privacidada
+                  </span>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="banner_nosotros">
+        <h1 class="h1_b">¿Te gusta Mérida?</h1>
+        <p>Descubre todo lo que tiene para ti</p>
+        <img src="assets/image/banner_escritorio.png" alt="" srcset="" />
+      </div>
+
+      <div class="equipo_section">
+        <div class="equipo_subtitulo">Nuestro equipo</div>
+        <h1 class="h1_b">Conoce a nuestros especialistas</h1>
+
+        <div class="equipo_slider">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <div class="glide__slide">
+                <div class="card_equipo">
+                  <img
+                    src="assets/image/profile_nosotros.png"
+                    alt=""
+                    srcset=""
+                  />
+                  <h1 class="h1_b">Ramon Franco</h1>
+                  <p>Especialistas Inmobiliario</p>
+                </div>
+              </div>
+              <div class="glide__slide">
+                <div class="card_equipo">
+                  <img
+                    src="assets/image/profile_nosotros.png"
+                    alt=""
+                    srcset=""
+                  />
+                  <h1 class="h1_b">Ramon Franco</h1>
+                  <p>Especialistas Inmobiliario</p>
+                </div>
+              </div>
+              <div class="glide__slide">
+                <div class="card_equipo">
+                  <img
+                    src="assets/image/profile_nosotros.png"
+                    alt=""
+                    srcset=""
+                  />
+                  <h1 class="h1_b">Ramon Franco</h1>
+                  <p>Especialistas Inmobiliario</p>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer_movil">
+          <div class="footer_image">
+            <img src="assets/logo_2.svg" alt="" srcset="" />
+          </div>
+          <div class="footer_group">
+            <a href="" class="item">Home</a>
+            <a href="" class="item">Nosotros</a>
+            <a href="" class="item">Propiedades</a>
+          </div>
+          <div class="footer_group">
+            <a href="" class="item">Desarrollos</a>
+            <a href="" class="item">Vivir en Mérida</a>
+            <a href="" class="item">Contacto</a>
+          </div>
+          <form action="#" method="post">
+            <input type="text" name="" placeholder="Escribe tu email" />
+            <button type="submit">Suscribirme</button>
+          </form>
+          <div class="footer_icons">
+            <a href="" target="_blank">
+              <img src="assets/facebook.svg" alt="" srcset="" />
+            </a>
+            <a href="" target="_blank">
+              <img src="assets/instagram.svg" alt="" srcset="" />
+            </a>
+            <a href="" target="_blank">
+              <img src="assets/youtube.svg" alt="" srcset="" />
+            </a>
+            <a href="" target="_blank">
+              <img src="assets/linkedin.svg" alt="" srcset="" />
+            </a>
+          </div>
+          <div class="footer_terms">
+            <a class="terms" href="#">Terminos y condiciones</a>
+            <a class="terms" href="#">Aviso de privacidad</a>
+          </div>
+        </div>
+        <div class="footer_dsk">
+          <div class="footer_image_dsk">
+            <img src="assets/logo_2.svg" alt="" srcset="" />
+          </div>
+          <div class="footer_group_dsk">
+            <a href="" class="footer_item_dsk">Home</a>
+            <a href="" class="footer_item_dsk">Nosotros</a>
+            <a href="" class="footer_item_dsk">Propiedades</a>
+          </div>
+          <div class="footer_group_dsk">
+            <a href="" class="footer_item_dsk">Desarrollos</a>
+            <a href="" class="footer_item_dsk">Vivir en Mérida</a>
+            <a href="" class="footer_item_dsk">Contacto</a>
+          </div>
+          <div class="footer_group_dsk">
+            <a href="" class="footer_item_dsk">Ubicacion</a>
+            <p class="footer_text_dsk">
+              Calle 31 No. 123 entre 12 y 13 Colonia desconocida
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Slider Glide-->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <!-- Sliders Code -->
+    <script src="js/glide/glide_sliders.js"></script>
+    <script>
+      var testimonios = new Glide(".testimonios_slider", {
+        type: "carousel",
+        perView: 3,
+        focusAt: "center",
+        breakpoints: {
+          840: {
+            perView: 2,
+          },
+          600: {
+            perView: 1,
+          },
+        },
+      });
+      testimonios.mount();
+
+      var propiedades_construidas = new Glide(".card_propiedades_slider", {
+        type: "carousel",
+        perView: 3,
+        focusAt: "center",
+        breakpoints: {
+          840: {
+            perView: 2,
+          },
+          600: {
+            perView: 1,
+          },
+        },
+      });
+      propiedades_construidas.mount();
+
+
+      var equipo_slider = new Glide(".equipo_slider", {
+        type: "carousel",
+        perView: 3,
+        focusAt: "center",
+        breakpoints: {
+          840: {
+            perView: 2,
+          },
+          600: {
+            perView: 1,
+          },
+        },
+      });
+      equipo_slider.mount();
+    </script>
+
+    <!-- Formato Numerico -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+
+    <!-- Codigo JS -->
+    <script src="app.js"></script>
+
+    <!-- Bootstrap 4.6 Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

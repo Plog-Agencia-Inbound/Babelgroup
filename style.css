@@ -46,6 +46,7 @@ body {
   display: block;
   width: 100%;
   padding: 0 2rem;
+  cursor: pointer;
 }
 .side_control img {
   width: 25px;
@@ -188,6 +189,7 @@ body {
   border-radius: 15px;
   width: 49%;
   text-align: center;
+  cursor: pointer;
 }
 
 .bAvanzada_sidemenu_form select {
@@ -685,6 +687,7 @@ input[type="password"] {
   padding: 0.8rem;
   border-radius: 10px;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
 }
 .openMenu:active {
   transform: scale(0.9);
