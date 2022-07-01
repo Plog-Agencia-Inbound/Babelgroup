@@ -41,7 +41,7 @@
           <a href="nosotros.html">Nosotros</a>
         </div>
         <div class="side_item">
-          <a href="catalogoPropiedades.html">Desarrollos</a>
+          <a href="catalogoPropiedades.html">Propiedades</a>
         </div>
         <div class="side_item">
           <a href="#">Vivir en Mérida</a>
@@ -60,7 +60,7 @@
       </div>
 
       <div id="busquedaAvanzada_sidemenu" class="sidemenu_off">
-        <form class="bAvanzada_sidemenu_form" action="">
+        <form class="bAvanzada_sidemenu_form" action="resultadosBusqueda.html">
           <input type="text" placeholder="Buscar propiedad" />
 
           <div class="bAvanzada_selector">
@@ -85,7 +85,12 @@
             <option value="">Temozón</option>
           </select>
 
-          <label for="rango_precios">Rango de precios</label>
+          <label for="rango_precios">Precios</label>
+          <input type="number" name="rango_precios" placeholder="min" />
+          <input type="number" name="rango_precios" placeholder="max" />
+
+          
+          <label for="rango_precios">Area</label>
           <input type="number" name="rango_precios" placeholder="min" />
           <input type="number" name="rango_precios" placeholder="max" />
 
@@ -105,16 +110,28 @@
             <option value="">4 Baños</option>
           </select>
 
-          <label for="rango_area_bAvanzada">Tamaño</label>
-          <input
-            name="rango_area_bAvanzada"
-            id="area_slider_bAvanzada"
-            type="range"
-            min="50"
-            max="500"
-            value="50"
-          />
+          <label for=""> Plantas</label>
+              <select class="select_fw" name="">
+                <option value="#">1 planta</option>
+                <option value="#">2 plantas</option>
+                <option value="#">3 plantas</option>
+              </select>
+
+          <label for="">Tipo de credito</label>
+              <select class="select_fw" name="">
+                <option value="#">Infonavit</option>
+                <option value="#">Bancario</option>
+                <option value="#">Pemex</option>
+              </select>
+
           <span id="area_output_bAvanzada"></span>
+          
+          <label for=""> Amenidades</label>
+          <span class="amenidades_select" for="piscina">Piscina <input type="checkbox" name="Piscina" ></span>
+          <span class="amenidades_select" for="jardin">jardin <input type="checkbox" name="jardin" ></span>
+          <span class="amenidades_select" for="Calle">Calle <input type="checkbox" name="Calle" ></span>
+          <span class="amenidades_select" for="Alumbrado">Alumbrado <input type="checkbox" name="Alumbrado" ></span>
+          <span class="amenidades_select" for="piscina">Parque <input type="checkbox" name="Parque" ></span>
 
           <button type="submit">Buscar propiedades</button>
         </form>
@@ -223,168 +240,302 @@
           </div>
 
           <div class="propiedades_list_dsk">
-            <div class="propiedadesSlider">
-              <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides">
-                  <div class="glide__slide">
-                    <div class="card_propiedades_two">
-                      <div
-                        class="image"
-                        style="
-                          background: url('assets/image/propiedad_image.png');
-                        "
-                      >
-                        <span class="tag_preventa"> Preventa </span>
-                        <span class="tag_destacada"> Destacada </span>
-                      </div>
-                      <div class="card_content">
-                        <h1>Villa del sol</h1>
-                        <div class="card_compartir">
-                          <img src="assets/favoritos.svg" alt="" srcset="" />
-                        </div>
-                        <span>Mérida, Yucatán.</span>
-                        <p>
-                          Lorem, ipsum dolor sit amet consectetur adipisicing
-                          elit. Omnis sapiente laborum necessitatibus ex,
-                          suscipit nesciunt voluptatem sequi deserunt explicabo!
-                          Laborum.
-                        </p>
-                        <div class="card_precio">
-                          Desde <span>$1,850,000.00</span>
-                        </div>
-                        <div class="card_atributos">
-                          <img
-                            class="icon_card_atributos"
-                            src="assets/baños.svg"
-                            alt=""
-                            srcset=""
-                          />
-                          <span class="value_card_atributos">4</span>
-                          <img
-                            class="icon_card_atributos"
-                            src="assets/cuartos.svg"
-                            alt=""
-                            srcset=""
-                          />
-                          <span class="value_card_atributos">4</span>
-                          <img
-                            class="icon_card_atributos"
-                            src="assets/superficie.svg"
-                            alt=""
-                            srcset=""
-                          />
-                          <span class="value_card_atributos">4</span>
-                        </div>
-                      </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card_propiedades_two">
+                  <div
+                    class="image"
+                    style="background: url('assets/image/propiedad_image.png')"
+                  >
+                    <span class="tag_preventa"> Preventa </span>
+                    <span class="tag_destacada"> Destacada </span>
+                  </div>
+                  <div class="card_content">
+                    <h1>Villa del sol</h1>
+                    <div class="card_compartir">
+                      <img src="assets/favoritos.svg" alt="" srcset="" />
+                    </div>
+                    <span>Mérida, Yucatán.</span>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Omnis sapiente laborum necessitatibus ex, suscipit
+                      nesciunt voluptatem sequi deserunt explicabo! Laborum.
+                    </p>
+                    <div class="card_precio">
+                      Desde <span>$1,850,000.00</span>
+                    </div>
+                    <div class="card_atributos">
+                      <img
+                        class="icon_card_atributos"
+                        src="assets/baños.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <span class="value_card_atributos">4</span>
+                      <img
+                        class="icon_card_atributos"
+                        src="assets/cuartos.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <span class="value_card_atributos">4</span>
+                      <img
+                        class="icon_card_atributos"
+                        src="assets/superficie.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <span class="value_card_atributos">4</span>
                     </div>
                   </div>
-
-                  <div class="glide__slide">
-                    <div class="card_propiedades_two">
-                      <div
-                        class="image"
-                        style="
-                          background: url('assets/image/propiedad_image.png');
-                        "
-                      >
-                        <span class="tag_preventa"> Preventa </span>
-                        <span class="tag_destacada"> Destacada </span>
-                      </div>
-                      <div class="card_content">
-                        <h1>Villa Mar</h1>
-                        <div class="card_compartir">
-                          <img src="assets/favoritos.svg" alt="" srcset="" />
-                        </div>
-                        <span>Mérida, Yucatán.</span>
-                        <p>
-                          Lorem, ipsum dolor sit amet consectetur adipisicing
-                          elit. Omnis sapiente laborum necessitatibus ex,
-                          suscipit nesciunt voluptatem sequi deserunt explicabo!
-                          Laborum.
-                        </p>
-                        <div class="card_precio">
-                          Desde <span>$1,850,000.00</span>
-                        </div>
-                        <div class="card_atributos">
-                          <img
-                            class="icon_card_atributos"
-                            src="assets/baños.svg"
-                            alt=""
-                            srcset=""
-                          />
-                          <span class="value_card_atributos">4</span>
-                          <img
-                            class="icon_card_atributos"
-                            src="assets/cuartos.svg"
-                            alt=""
-                            srcset=""
-                          />
-                          <span class="value_card_atributos">4</span>
-                          <img
-                            class="icon_card_atributos"
-                            src="assets/superficie.svg"
-                            alt=""
-                            srcset=""
-                          />
-                          <span class="value_card_atributos">4</span>
-                        </div>
-                      </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card_propiedades_two">
+                  <div
+                    class="image"
+                    style="background: url('assets/image/propiedad_image.png')"
+                  >
+                    <span class="tag_preventa"> Preventa </span>
+                    <span class="tag_destacada"> Destacada </span>
+                  </div>
+                  <div class="card_content">
+                    <h1>Villa del sol</h1>
+                    <div class="card_compartir">
+                      <img src="assets/favoritos.svg" alt="" srcset="" />
+                    </div>
+                    <span>Mérida, Yucatán.</span>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Omnis sapiente laborum necessitatibus ex, suscipit
+                      nesciunt voluptatem sequi deserunt explicabo! Laborum.
+                    </p>
+                    <div class="card_precio">
+                      Desde <span>$1,850,000.00</span>
+                    </div>
+                    <div class="card_atributos">
+                      <img
+                        class="icon_card_atributos"
+                        src="assets/baños.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <span class="value_card_atributos">4</span>
+                      <img
+                        class="icon_card_atributos"
+                        src="assets/cuartos.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <span class="value_card_atributos">4</span>
+                      <img
+                        class="icon_card_atributos"
+                        src="assets/superficie.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <span class="value_card_atributos">4</span>
                     </div>
                   </div>
-
-                  <div class="glide__slide">
-                    <div class="card_propiedades_two">
-                      <div
-                        class="image"
-                        style="
-                          background: url('assets/image/propiedad_image.png');
-                        "
-                      >
-                        <span class="tag_preventa"> Preventa </span>
-                        <span class="tag_destacada"> Destacada </span>
-                      </div>
-                      <div class="card_content">
-                        <h1>Villa Jardin</h1>
-                        <div class="card_compartir">
-                          <img src="assets/favoritos.svg" alt="" srcset="" />
-                        </div>
-                        <span>Mérida, Yucatán.</span>
-                        <p>
-                          Lorem, ipsum dolor sit amet consectetur adipisicing
-                          elit. Omnis sapiente laborum necessitatibus ex,
-                          suscipit nesciunt voluptatem sequi deserunt explicabo!
-                          Laborum.
-                        </p>
-                        <div class="card_precio">
-                          Desde <span>$1,850,000.00</span>
-                        </div>
-                        <div class="card_atributos">
-                          <img
-                            class="icon_card_atributos"
-                            src="assets/baños.svg"
-                            alt=""
-                            srcset=""
-                          />
-                          <span class="value_card_atributos">4</span>
-                          <img
-                            class="icon_card_atributos"
-                            src="assets/cuartos.svg"
-                            alt=""
-                            srcset=""
-                          />
-                          <span class="value_card_atributos">4</span>
-                          <img
-                            class="icon_card_atributos"
-                            src="assets/superficie.svg"
-                            alt=""
-                            srcset=""
-                          />
-                          <span class="value_card_atributos">4</span>
-                        </div>
-                      </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card_propiedades_two">
+                  <div
+                    class="image"
+                    style="background: url('assets/image/propiedad_image.png')"
+                  >
+                    <span class="tag_preventa"> Preventa </span>
+                    <span class="tag_destacada"> Destacada </span>
+                  </div>
+                  <div class="card_content">
+                    <h1>Villa del sol</h1>
+                    <div class="card_compartir">
+                      <img src="assets/favoritos.svg" alt="" srcset="" />
+                    </div>
+                    <span>Mérida, Yucatán.</span>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Omnis sapiente laborum necessitatibus ex, suscipit
+                      nesciunt voluptatem sequi deserunt explicabo! Laborum.
+                    </p>
+                    <div class="card_precio">
+                      Desde <span>$1,850,000.00</span>
+                    </div>
+                    <div class="card_atributos">
+                      <img
+                        class="icon_card_atributos"
+                        src="assets/baños.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <span class="value_card_atributos">4</span>
+                      <img
+                        class="icon_card_atributos"
+                        src="assets/cuartos.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <span class="value_card_atributos">4</span>
+                      <img
+                        class="icon_card_atributos"
+                        src="assets/superficie.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <span class="value_card_atributos">4</span>
                     </div>
                   </div>
-                </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card_propiedades_two">
+                  <div
+                    class="image"
+                    style="background: url('assets/image/propiedad_image.png')"
+                  >
+                    <span class="tag_preventa"> Preventa </span>
+                    <span class="tag_destacada"> Destacada </span>
+                  </div>
+                  <div class="card_content">
+                    <h1>Villa del sol</h1>
+                    <div class="card_compartir">
+                      <img src="assets/favoritos.svg" alt="" srcset="" />
+                    </div>
+                    <span>Mérida, Yucatán.</span>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Omnis sapiente laborum necessitatibus ex, suscipit
+                      nesciunt voluptatem sequi deserunt explicabo! Laborum.
+                    </p>
+                    <div class="card_precio">
+                      Desde <span>$1,850,000.00</span>
+                    </div>
+                    <div class="card_atributos">
+                      <img
+                        class="icon_card_atributos"
+                        src="assets/baños.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <span class="value_card_atributos">4</span>
+                      <img
+                        class="icon_card_atributos"
+                        src="assets/cuartos.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <span class="value_card_atributos">4</span>
+                      <img
+                        class="icon_card_atributos"
+                        src="assets/superficie.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <span class="value_card_atributos">4</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card_propiedades_two">
+                  <div
+                    class="image"
+                    style="background: url('assets/image/propiedad_image.png')"
+                  >
+                    <span class="tag_preventa"> Preventa </span>
+                    <span class="tag_destacada"> Destacada </span>
+                  </div>
+                  <div class="card_content">
+                    <h1>Villa del sol</h1>
+                    <div class="card_compartir">
+                      <img src="assets/favoritos.svg" alt="" srcset="" />
+                    </div>
+                    <span>Mérida, Yucatán.</span>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Omnis sapiente laborum necessitatibus ex, suscipit
+                      nesciunt voluptatem sequi deserunt explicabo! Laborum.
+                    </p>
+                    <div class="card_precio">
+                      Desde <span>$1,850,000.00</span>
+                    </div>
+                    <div class="card_atributos">
+                      <img
+                        class="icon_card_atributos"
+                        src="assets/baños.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <span class="value_card_atributos">4</span>
+                      <img
+                        class="icon_card_atributos"
+                        src="assets/cuartos.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <span class="value_card_atributos">4</span>
+                      <img
+                        class="icon_card_atributos"
+                        src="assets/superficie.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <span class="value_card_atributos">4</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card_propiedades_two">
+                  <div
+                    class="image"
+                    style="background: url('assets/image/propiedad_image.png')"
+                  >
+                    <span class="tag_preventa"> Preventa </span>
+                    <span class="tag_destacada"> Destacada </span>
+                  </div>
+                  <div class="card_content">
+                    <h1>Villa del sol</h1>
+                    <div class="card_compartir">
+                      <img src="assets/favoritos.svg" alt="" srcset="" />
+                    </div>
+                    <span>Mérida, Yucatán.</span>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Omnis sapiente laborum necessitatibus ex, suscipit
+                      nesciunt voluptatem sequi deserunt explicabo! Laborum.
+                    </p>
+                    <div class="card_precio">
+                      Desde <span>$1,850,000.00</span>
+                    </div>
+                    <div class="card_atributos">
+                      <img
+                        class="icon_card_atributos"
+                        src="assets/baños.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <span class="value_card_atributos">4</span>
+                      <img
+                        class="icon_card_atributos"
+                        src="assets/cuartos.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <span class="value_card_atributos">4</span>
+                      <img
+                        class="icon_card_atributos"
+                        src="assets/superficie.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <span class="value_card_atributos">4</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -395,165 +546,302 @@
       <div class="propiedades_golden">
         <div class="propiedades_content container">
           <h1 class="h1_b">Propiedades Golden</h1>
-          <div class="propiedadesSliderGolden">
-            <div class="glide__track" data-glide-el="track">
-              <ul class="glide__slides">
-                <div class="glide__slide">
-                  <div class="card_propiedades_two">
-                    <div
-                      class="image"
-                      style="
-                        background: url('assets/image/propiedad_image.png');
-                      "
-                    >
-                      <span class="tag_preventa"> Preventa </span>
-                      <span class="tag_destacada"> Destacada </span>
-                    </div>
-                    <div class="card_content">
-                      <h1>Villa del sol</h1>
-                      <div class="card_compartir">
-                        <img src="assets/favoritos.svg" alt="" srcset="" />
-                      </div>
-                      <span>Mérida, Yucatán.</span>
-                      <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Omnis sapiente laborum necessitatibus ex, suscipit
-                        nesciunt voluptatem sequi deserunt explicabo! Laborum.
-                      </p>
-                      <div class="card_precio">
-                        Desde <span>$1,850,000.00</span>
-                      </div>
-                      <div class="card_atributos">
-                        <img
-                          class="icon_card_atributos"
-                          src="assets/baños.svg"
-                          alt=""
-                          srcset=""
-                        />
-                        <span class="value_card_atributos">4</span>
-                        <img
-                          class="icon_card_atributos"
-                          src="assets/cuartos.svg"
-                          alt=""
-                          srcset=""
-                        />
-                        <span class="value_card_atributos">4</span>
-                        <img
-                          class="icon_card_atributos"
-                          src="assets/superficie.svg"
-                          alt=""
-                          srcset=""
-                        />
-                        <span class="value_card_atributos">4</span>
-                      </div>
-                    </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card_propiedades_two">
+                <div
+                  class="image"
+                  style="background: url('assets/image/propiedad_image.png')"
+                >
+                  <span class="tag_preventa"> Preventa </span>
+                  <span class="tag_destacada"> Destacada </span>
+                </div>
+                <div class="card_content">
+                  <h1>Villa del sol</h1>
+                  <div class="card_compartir">
+                    <img src="assets/favoritos.svg" alt="" srcset="" />
+                  </div>
+                  <span>Mérida, Yucatán.</span>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis sapiente laborum necessitatibus ex, suscipit
+                    nesciunt voluptatem sequi deserunt explicabo! Laborum.
+                  </p>
+                  <div class="card_precio">
+                    Desde <span>$1,850,000.00</span>
+                  </div>
+                  <div class="card_atributos">
+                    <img
+                      class="icon_card_atributos"
+                      src="assets/baños.svg"
+                      alt=""
+                      srcset=""
+                    />
+                    <span class="value_card_atributos">4</span>
+                    <img
+                      class="icon_card_atributos"
+                      src="assets/cuartos.svg"
+                      alt=""
+                      srcset=""
+                    />
+                    <span class="value_card_atributos">4</span>
+                    <img
+                      class="icon_card_atributos"
+                      src="assets/superficie.svg"
+                      alt=""
+                      srcset=""
+                    />
+                    <span class="value_card_atributos">4</span>
                   </div>
                 </div>
-
-                <div class="glide__slide">
-                  <div class="card_propiedades_two">
-                    <div
-                      class="image"
-                      style="
-                        background: url('assets/image/propiedad_image.png');
-                      "
-                    >
-                      <span class="tag_preventa"> Preventa </span>
-                      <span class="tag_destacada"> Destacada </span>
-                    </div>
-                    <div class="card_content">
-                      <h1>Villa Mar</h1>
-                      <div class="card_compartir">
-                        <img src="assets/favoritos.svg" alt="" srcset="" />
-                      </div>
-                      <span>Mérida, Yucatán.</span>
-                      <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Omnis sapiente laborum necessitatibus ex, suscipit
-                        nesciunt voluptatem sequi deserunt explicabo! Laborum.
-                      </p>
-                      <div class="card_precio">
-                        Desde <span>$1,850,000.00</span>
-                      </div>
-                      <div class="card_atributos">
-                        <img
-                          class="icon_card_atributos"
-                          src="assets/baños.svg"
-                          alt=""
-                          srcset=""
-                        />
-                        <span class="value_card_atributos">4</span>
-                        <img
-                          class="icon_card_atributos"
-                          src="assets/cuartos.svg"
-                          alt=""
-                          srcset=""
-                        />
-                        <span class="value_card_atributos">4</span>
-                        <img
-                          class="icon_card_atributos"
-                          src="assets/superficie.svg"
-                          alt=""
-                          srcset=""
-                        />
-                        <span class="value_card_atributos">4</span>
-                      </div>
-                    </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card_propiedades_two">
+                <div
+                  class="image"
+                  style="background: url('assets/image/propiedad_image.png')"
+                >
+                  <span class="tag_preventa"> Preventa </span>
+                  <span class="tag_destacada"> Destacada </span>
+                </div>
+                <div class="card_content">
+                  <h1>Villa del sol</h1>
+                  <div class="card_compartir">
+                    <img src="assets/favoritos.svg" alt="" srcset="" />
+                  </div>
+                  <span>Mérida, Yucatán.</span>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis sapiente laborum necessitatibus ex, suscipit
+                    nesciunt voluptatem sequi deserunt explicabo! Laborum.
+                  </p>
+                  <div class="card_precio">
+                    Desde <span>$1,850,000.00</span>
+                  </div>
+                  <div class="card_atributos">
+                    <img
+                      class="icon_card_atributos"
+                      src="assets/baños.svg"
+                      alt=""
+                      srcset=""
+                    />
+                    <span class="value_card_atributos">4</span>
+                    <img
+                      class="icon_card_atributos"
+                      src="assets/cuartos.svg"
+                      alt=""
+                      srcset=""
+                    />
+                    <span class="value_card_atributos">4</span>
+                    <img
+                      class="icon_card_atributos"
+                      src="assets/superficie.svg"
+                      alt=""
+                      srcset=""
+                    />
+                    <span class="value_card_atributos">4</span>
                   </div>
                 </div>
-
-                <div class="glide__slide">
-                  <div class="card_propiedades_two">
-                    <div
-                      class="image"
-                      style="
-                        background: url('assets/image/propiedad_image.png');
-                      "
-                    >
-                      <span class="tag_preventa"> Preventa </span>
-                      <span class="tag_destacada"> Destacada </span>
-                    </div>
-                    <div class="card_content">
-                      <h1>Villa Jardin</h1>
-                      <div class="card_compartir">
-                        <img src="assets/favoritos.svg" alt="" srcset="" />
-                      </div>
-                      <span>Mérida, Yucatán.</span>
-                      <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Omnis sapiente laborum necessitatibus ex, suscipit
-                        nesciunt voluptatem sequi deserunt explicabo! Laborum.
-                      </p>
-                      <div class="card_precio">
-                        Desde <span>$1,850,000.00</span>
-                      </div>
-                      <div class="card_atributos">
-                        <img
-                          class="icon_card_atributos"
-                          src="assets/baños.svg"
-                          alt=""
-                          srcset=""
-                        />
-                        <span class="value_card_atributos">4</span>
-                        <img
-                          class="icon_card_atributos"
-                          src="assets/cuartos.svg"
-                          alt=""
-                          srcset=""
-                        />
-                        <span class="value_card_atributos">4</span>
-                        <img
-                          class="icon_card_atributos"
-                          src="assets/superficie.svg"
-                          alt=""
-                          srcset=""
-                        />
-                        <span class="value_card_atributos">4</span>
-                      </div>
-                    </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card_propiedades_two">
+                <div
+                  class="image"
+                  style="background: url('assets/image/propiedad_image.png')"
+                >
+                  <span class="tag_preventa"> Preventa </span>
+                  <span class="tag_destacada"> Destacada </span>
+                </div>
+                <div class="card_content">
+                  <h1>Villa del sol</h1>
+                  <div class="card_compartir">
+                    <img src="assets/favoritos.svg" alt="" srcset="" />
+                  </div>
+                  <span>Mérida, Yucatán.</span>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis sapiente laborum necessitatibus ex, suscipit
+                    nesciunt voluptatem sequi deserunt explicabo! Laborum.
+                  </p>
+                  <div class="card_precio">
+                    Desde <span>$1,850,000.00</span>
+                  </div>
+                  <div class="card_atributos">
+                    <img
+                      class="icon_card_atributos"
+                      src="assets/baños.svg"
+                      alt=""
+                      srcset=""
+                    />
+                    <span class="value_card_atributos">4</span>
+                    <img
+                      class="icon_card_atributos"
+                      src="assets/cuartos.svg"
+                      alt=""
+                      srcset=""
+                    />
+                    <span class="value_card_atributos">4</span>
+                    <img
+                      class="icon_card_atributos"
+                      src="assets/superficie.svg"
+                      alt=""
+                      srcset=""
+                    />
+                    <span class="value_card_atributos">4</span>
                   </div>
                 </div>
-              </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card_propiedades_two">
+                <div
+                  class="image"
+                  style="background: url('assets/image/propiedad_image.png')"
+                >
+                  <span class="tag_preventa"> Preventa </span>
+                  <span class="tag_destacada"> Destacada </span>
+                </div>
+                <div class="card_content">
+                  <h1>Villa del sol</h1>
+                  <div class="card_compartir">
+                    <img src="assets/favoritos.svg" alt="" srcset="" />
+                  </div>
+                  <span>Mérida, Yucatán.</span>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis sapiente laborum necessitatibus ex, suscipit
+                    nesciunt voluptatem sequi deserunt explicabo! Laborum.
+                  </p>
+                  <div class="card_precio">
+                    Desde <span>$1,850,000.00</span>
+                  </div>
+                  <div class="card_atributos">
+                    <img
+                      class="icon_card_atributos"
+                      src="assets/baños.svg"
+                      alt=""
+                      srcset=""
+                    />
+                    <span class="value_card_atributos">4</span>
+                    <img
+                      class="icon_card_atributos"
+                      src="assets/cuartos.svg"
+                      alt=""
+                      srcset=""
+                    />
+                    <span class="value_card_atributos">4</span>
+                    <img
+                      class="icon_card_atributos"
+                      src="assets/superficie.svg"
+                      alt=""
+                      srcset=""
+                    />
+                    <span class="value_card_atributos">4</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card_propiedades_two">
+                <div
+                  class="image"
+                  style="background: url('assets/image/propiedad_image.png')"
+                >
+                  <span class="tag_preventa"> Preventa </span>
+                  <span class="tag_destacada"> Destacada </span>
+                </div>
+                <div class="card_content">
+                  <h1>Villa del sol</h1>
+                  <div class="card_compartir">
+                    <img src="assets/favoritos.svg" alt="" srcset="" />
+                  </div>
+                  <span>Mérida, Yucatán.</span>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis sapiente laborum necessitatibus ex, suscipit
+                    nesciunt voluptatem sequi deserunt explicabo! Laborum.
+                  </p>
+                  <div class="card_precio">
+                    Desde <span>$1,850,000.00</span>
+                  </div>
+                  <div class="card_atributos">
+                    <img
+                      class="icon_card_atributos"
+                      src="assets/baños.svg"
+                      alt=""
+                      srcset=""
+                    />
+                    <span class="value_card_atributos">4</span>
+                    <img
+                      class="icon_card_atributos"
+                      src="assets/cuartos.svg"
+                      alt=""
+                      srcset=""
+                    />
+                    <span class="value_card_atributos">4</span>
+                    <img
+                      class="icon_card_atributos"
+                      src="assets/superficie.svg"
+                      alt=""
+                      srcset=""
+                    />
+                    <span class="value_card_atributos">4</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card_propiedades_two">
+                <div
+                  class="image"
+                  style="background: url('assets/image/propiedad_image.png')"
+                >
+                  <span class="tag_preventa"> Preventa </span>
+                  <span class="tag_destacada"> Destacada </span>
+                </div>
+                <div class="card_content">
+                  <h1>Villa del sol</h1>
+                  <div class="card_compartir">
+                    <img src="assets/favoritos.svg" alt="" srcset="" />
+                  </div>
+                  <span>Mérida, Yucatán.</span>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis sapiente laborum necessitatibus ex, suscipit
+                    nesciunt voluptatem sequi deserunt explicabo! Laborum.
+                  </p>
+                  <div class="card_precio">
+                    Desde <span>$1,850,000.00</span>
+                  </div>
+                  <div class="card_atributos">
+                    <img
+                      class="icon_card_atributos"
+                      src="assets/baños.svg"
+                      alt=""
+                      srcset=""
+                    />
+                    <span class="value_card_atributos">4</span>
+                    <img
+                      class="icon_card_atributos"
+                      src="assets/cuartos.svg"
+                      alt=""
+                      srcset=""
+                    />
+                    <span class="value_card_atributos">4</span>
+                    <img
+                      class="icon_card_atributos"
+                      src="assets/superficie.svg"
+                      alt=""
+                      srcset=""
+                    />
+                    <span class="value_card_atributos">4</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -627,168 +915,302 @@
           </div>
 
           <div class="propiedades_list_dsk">
-            <div class="propiedadesSliderTwo">
-              <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides">
-                  <div class="glide__slide">
-                    <div class="card_propiedades_two">
-                      <div
-                        class="image"
-                        style="
-                          background: url('assets/image/propiedad_image.png');
-                        "
-                      >
-                        <span class="tag_preventa"> Preventa </span>
-                        <span class="tag_destacada"> Destacada </span>
-                      </div>
-                      <div class="card_content">
-                        <h1>Villa del sol</h1>
-                        <div class="card_compartir">
-                          <img src="assets/favoritos.svg" alt="" srcset="" />
-                        </div>
-                        <span>Mérida, Yucatán.</span>
-                        <p>
-                          Lorem, ipsum dolor sit amet consectetur adipisicing
-                          elit. Omnis sapiente laborum necessitatibus ex,
-                          suscipit nesciunt voluptatem sequi deserunt explicabo!
-                          Laborum.
-                        </p>
-                        <div class="card_precio">
-                          Desde <span>$1,850,000.00</span>
-                        </div>
-                        <div class="card_atributos">
-                          <img
-                            class="icon_card_atributos"
-                            src="assets/baños.svg"
-                            alt=""
-                            srcset=""
-                          />
-                          <span class="value_card_atributos">4</span>
-                          <img
-                            class="icon_card_atributos"
-                            src="assets/cuartos.svg"
-                            alt=""
-                            srcset=""
-                          />
-                          <span class="value_card_atributos">4</span>
-                          <img
-                            class="icon_card_atributos"
-                            src="assets/superficie.svg"
-                            alt=""
-                            srcset=""
-                          />
-                          <span class="value_card_atributos">4</span>
-                        </div>
-                      </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card_propiedades_two">
+                  <div
+                    class="image"
+                    style="background: url('assets/image/propiedad_image.png')"
+                  >
+                    <span class="tag_preventa"> Preventa </span>
+                    <span class="tag_destacada"> Destacada </span>
+                  </div>
+                  <div class="card_content">
+                    <h1>Villa del sol</h1>
+                    <div class="card_compartir">
+                      <img src="assets/favoritos.svg" alt="" srcset="" />
+                    </div>
+                    <span>Mérida, Yucatán.</span>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Omnis sapiente laborum necessitatibus ex, suscipit
+                      nesciunt voluptatem sequi deserunt explicabo! Laborum.
+                    </p>
+                    <div class="card_precio">
+                      Desde <span>$1,850,000.00</span>
+                    </div>
+                    <div class="card_atributos">
+                      <img
+                        class="icon_card_atributos"
+                        src="assets/baños.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <span class="value_card_atributos">4</span>
+                      <img
+                        class="icon_card_atributos"
+                        src="assets/cuartos.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <span class="value_card_atributos">4</span>
+                      <img
+                        class="icon_card_atributos"
+                        src="assets/superficie.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <span class="value_card_atributos">4</span>
                     </div>
                   </div>
-
-                  <div class="glide__slide">
-                    <div class="card_propiedades_two">
-                      <div
-                        class="image"
-                        style="
-                          background: url('assets/image/propiedad_image.png');
-                        "
-                      >
-                        <span class="tag_preventa"> Preventa </span>
-                        <span class="tag_destacada"> Destacada </span>
-                      </div>
-                      <div class="card_content">
-                        <h1>Villa Mar</h1>
-                        <div class="card_compartir">
-                          <img src="assets/favoritos.svg" alt="" srcset="" />
-                        </div>
-                        <span>Mérida, Yucatán.</span>
-                        <p>
-                          Lorem, ipsum dolor sit amet consectetur adipisicing
-                          elit. Omnis sapiente laborum necessitatibus ex,
-                          suscipit nesciunt voluptatem sequi deserunt explicabo!
-                          Laborum.
-                        </p>
-                        <div class="card_precio">
-                          Desde <span>$1,850,000.00</span>
-                        </div>
-                        <div class="card_atributos">
-                          <img
-                            class="icon_card_atributos"
-                            src="assets/baños.svg"
-                            alt=""
-                            srcset=""
-                          />
-                          <span class="value_card_atributos">4</span>
-                          <img
-                            class="icon_card_atributos"
-                            src="assets/cuartos.svg"
-                            alt=""
-                            srcset=""
-                          />
-                          <span class="value_card_atributos">4</span>
-                          <img
-                            class="icon_card_atributos"
-                            src="assets/superficie.svg"
-                            alt=""
-                            srcset=""
-                          />
-                          <span class="value_card_atributos">4</span>
-                        </div>
-                      </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card_propiedades_two">
+                  <div
+                    class="image"
+                    style="background: url('assets/image/propiedad_image.png')"
+                  >
+                    <span class="tag_preventa"> Preventa </span>
+                    <span class="tag_destacada"> Destacada </span>
+                  </div>
+                  <div class="card_content">
+                    <h1>Villa del sol</h1>
+                    <div class="card_compartir">
+                      <img src="assets/favoritos.svg" alt="" srcset="" />
+                    </div>
+                    <span>Mérida, Yucatán.</span>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Omnis sapiente laborum necessitatibus ex, suscipit
+                      nesciunt voluptatem sequi deserunt explicabo! Laborum.
+                    </p>
+                    <div class="card_precio">
+                      Desde <span>$1,850,000.00</span>
+                    </div>
+                    <div class="card_atributos">
+                      <img
+                        class="icon_card_atributos"
+                        src="assets/baños.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <span class="value_card_atributos">4</span>
+                      <img
+                        class="icon_card_atributos"
+                        src="assets/cuartos.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <span class="value_card_atributos">4</span>
+                      <img
+                        class="icon_card_atributos"
+                        src="assets/superficie.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <span class="value_card_atributos">4</span>
                     </div>
                   </div>
-
-                  <div class="glide__slide">
-                    <div class="card_propiedades_two">
-                      <div
-                        class="image"
-                        style="
-                          background: url('assets/image/propiedad_image.png');
-                        "
-                      >
-                        <span class="tag_preventa"> Preventa </span>
-                        <span class="tag_destacada"> Destacada </span>
-                      </div>
-                      <div class="card_content">
-                        <h1>Villa Jardin</h1>
-                        <div class="card_compartir">
-                          <img src="assets/favoritos.svg" alt="" srcset="" />
-                        </div>
-                        <span>Mérida, Yucatán.</span>
-                        <p>
-                          Lorem, ipsum dolor sit amet consectetur adipisicing
-                          elit. Omnis sapiente laborum necessitatibus ex,
-                          suscipit nesciunt voluptatem sequi deserunt explicabo!
-                          Laborum.
-                        </p>
-                        <div class="card_precio">
-                          Desde <span>$1,850,000.00</span>
-                        </div>
-                        <div class="card_atributos">
-                          <img
-                            class="icon_card_atributos"
-                            src="assets/baños.svg"
-                            alt=""
-                            srcset=""
-                          />
-                          <span class="value_card_atributos">4</span>
-                          <img
-                            class="icon_card_atributos"
-                            src="assets/cuartos.svg"
-                            alt=""
-                            srcset=""
-                          />
-                          <span class="value_card_atributos">4</span>
-                          <img
-                            class="icon_card_atributos"
-                            src="assets/superficie.svg"
-                            alt=""
-                            srcset=""
-                          />
-                          <span class="value_card_atributos">4</span>
-                        </div>
-                      </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card_propiedades_two">
+                  <div
+                    class="image"
+                    style="background: url('assets/image/propiedad_image.png')"
+                  >
+                    <span class="tag_preventa"> Preventa </span>
+                    <span class="tag_destacada"> Destacada </span>
+                  </div>
+                  <div class="card_content">
+                    <h1>Villa del sol</h1>
+                    <div class="card_compartir">
+                      <img src="assets/favoritos.svg" alt="" srcset="" />
+                    </div>
+                    <span>Mérida, Yucatán.</span>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Omnis sapiente laborum necessitatibus ex, suscipit
+                      nesciunt voluptatem sequi deserunt explicabo! Laborum.
+                    </p>
+                    <div class="card_precio">
+                      Desde <span>$1,850,000.00</span>
+                    </div>
+                    <div class="card_atributos">
+                      <img
+                        class="icon_card_atributos"
+                        src="assets/baños.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <span class="value_card_atributos">4</span>
+                      <img
+                        class="icon_card_atributos"
+                        src="assets/cuartos.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <span class="value_card_atributos">4</span>
+                      <img
+                        class="icon_card_atributos"
+                        src="assets/superficie.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <span class="value_card_atributos">4</span>
                     </div>
                   </div>
-                </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card_propiedades_two">
+                  <div
+                    class="image"
+                    style="background: url('assets/image/propiedad_image.png')"
+                  >
+                    <span class="tag_preventa"> Preventa </span>
+                    <span class="tag_destacada"> Destacada </span>
+                  </div>
+                  <div class="card_content">
+                    <h1>Villa del sol</h1>
+                    <div class="card_compartir">
+                      <img src="assets/favoritos.svg" alt="" srcset="" />
+                    </div>
+                    <span>Mérida, Yucatán.</span>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Omnis sapiente laborum necessitatibus ex, suscipit
+                      nesciunt voluptatem sequi deserunt explicabo! Laborum.
+                    </p>
+                    <div class="card_precio">
+                      Desde <span>$1,850,000.00</span>
+                    </div>
+                    <div class="card_atributos">
+                      <img
+                        class="icon_card_atributos"
+                        src="assets/baños.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <span class="value_card_atributos">4</span>
+                      <img
+                        class="icon_card_atributos"
+                        src="assets/cuartos.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <span class="value_card_atributos">4</span>
+                      <img
+                        class="icon_card_atributos"
+                        src="assets/superficie.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <span class="value_card_atributos">4</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card_propiedades_two">
+                  <div
+                    class="image"
+                    style="background: url('assets/image/propiedad_image.png')"
+                  >
+                    <span class="tag_preventa"> Preventa </span>
+                    <span class="tag_destacada"> Destacada </span>
+                  </div>
+                  <div class="card_content">
+                    <h1>Villa del sol</h1>
+                    <div class="card_compartir">
+                      <img src="assets/favoritos.svg" alt="" srcset="" />
+                    </div>
+                    <span>Mérida, Yucatán.</span>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Omnis sapiente laborum necessitatibus ex, suscipit
+                      nesciunt voluptatem sequi deserunt explicabo! Laborum.
+                    </p>
+                    <div class="card_precio">
+                      Desde <span>$1,850,000.00</span>
+                    </div>
+                    <div class="card_atributos">
+                      <img
+                        class="icon_card_atributos"
+                        src="assets/baños.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <span class="value_card_atributos">4</span>
+                      <img
+                        class="icon_card_atributos"
+                        src="assets/cuartos.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <span class="value_card_atributos">4</span>
+                      <img
+                        class="icon_card_atributos"
+                        src="assets/superficie.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <span class="value_card_atributos">4</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card_propiedades_two">
+                  <div
+                    class="image"
+                    style="background: url('assets/image/propiedad_image.png')"
+                  >
+                    <span class="tag_preventa"> Preventa </span>
+                    <span class="tag_destacada"> Destacada </span>
+                  </div>
+                  <div class="card_content">
+                    <h1>Villa del sol</h1>
+                    <div class="card_compartir">
+                      <img src="assets/favoritos.svg" alt="" srcset="" />
+                    </div>
+                    <span>Mérida, Yucatán.</span>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Omnis sapiente laborum necessitatibus ex, suscipit
+                      nesciunt voluptatem sequi deserunt explicabo! Laborum.
+                    </p>
+                    <div class="card_precio">
+                      Desde <span>$1,850,000.00</span>
+                    </div>
+                    <div class="card_atributos">
+                      <img
+                        class="icon_card_atributos"
+                        src="assets/baños.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <span class="value_card_atributos">4</span>
+                      <img
+                        class="icon_card_atributos"
+                        src="assets/cuartos.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <span class="value_card_atributos">4</span>
+                      <img
+                        class="icon_card_atributos"
+                        src="assets/superficie.svg"
+                        alt=""
+                        srcset=""
+                      />
+                      <span class="value_card_atributos">4</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

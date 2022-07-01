@@ -291,7 +291,7 @@ body {
   background: #73c1b1 !important;
 }
 .h1_a {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 600;
   color: #ffffff;
   display: block;
@@ -772,6 +772,7 @@ input[type="password"] {
   text-align: center !important;
   font-weight: 500;
   margin-bottom: 2rem;
+  cursor: pointer;
 }
 
 #busquedaAvanzadaDsk{
@@ -800,11 +801,31 @@ input[type="password"] {
   display: none;
   transition: 0.3s;
 }
-
+.amenidades_select{
+  display: inline-block;
+  font-size: 14px;
+  color: #003150; margin: 0 1rem;
+}
 .group_second_section {
   width: 100%;
   padding: 0.5rem 1rem;
   display: block;
+}
+.group_second_section .precios_campos{
+  padding: 0.5rem 1rem;
+  border: 1.2px solid #dddddd;
+  color: #003150;
+  border-radius: 25px;
+  width: 48%;
+
+}
+.buscardor_movil{
+  padding: 0.5rem 1rem;
+  border: 1.2px solid #dddddd;
+  color: #003150;
+  border-radius: 25px;
+  width: 100%;
+  
 }
 .group_second_section label {
   width: 100%;
@@ -881,6 +902,15 @@ input[type="password"] {
   display: inline-block;
   padding: 0.5rem 1rem;
   background: #1ea0d4;
+  border-radius: 25px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+}
+.tag_promocion {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #004d82;
   border-radius: 25px;
   color: #ffffff;
   font-weight: 500;

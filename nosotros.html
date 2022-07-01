@@ -42,7 +42,7 @@
           <a href="nosotros.html">Nosotros</a>
         </div>
         <div class="side_item">
-          <a href="catalogoPropiedades.html">Desarrollos</a>
+          <a href="catalogoPropiedades.html">Propiedades</a>
         </div>
         <div class="side_item">
           <a href="#">Vivir en Mérida</a>
@@ -61,7 +61,7 @@
       </div>
 
       <div id="busquedaAvanzada_sidemenu" class="sidemenu_off">
-        <form class="bAvanzada_sidemenu_form" action="">
+        <form class="bAvanzada_sidemenu_form" action="resultadosBusqueda.html">
           <input type="text" placeholder="Buscar propiedad" />
 
           <div class="bAvanzada_selector">
@@ -86,7 +86,12 @@
             <option value="">Temozón</option>
           </select>
 
-          <label for="rango_precios">Rango de precios</label>
+          <label for="rango_precios">Precios</label>
+          <input type="number" name="rango_precios" placeholder="min" />
+          <input type="number" name="rango_precios" placeholder="max" />
+
+          
+          <label for="rango_precios">Area</label>
           <input type="number" name="rango_precios" placeholder="min" />
           <input type="number" name="rango_precios" placeholder="max" />
 
@@ -106,16 +111,28 @@
             <option value="">4 Baños</option>
           </select>
 
-          <label for="rango_area_bAvanzada">Tamaño</label>
-          <input
-            name="rango_area_bAvanzada"
-            id="area_slider_bAvanzada"
-            type="range"
-            min="50"
-            max="500"
-            value="50"
-          />
+          <label for=""> Plantas</label>
+              <select class="select_fw" name="">
+                <option value="#">1 planta</option>
+                <option value="#">2 plantas</option>
+                <option value="#">3 plantas</option>
+              </select>
+
+          <label for="">Tipo de credito</label>
+              <select class="select_fw" name="">
+                <option value="#">Infonavit</option>
+                <option value="#">Bancario</option>
+                <option value="#">Pemex</option>
+              </select>
+
           <span id="area_output_bAvanzada"></span>
+          
+          <label for=""> Amenidades</label>
+          <span class="amenidades_select" for="piscina">Piscina <input type="checkbox" name="Piscina" ></span>
+          <span class="amenidades_select" for="jardin">jardin <input type="checkbox" name="jardin" ></span>
+          <span class="amenidades_select" for="Calle">Calle <input type="checkbox" name="Calle" ></span>
+          <span class="amenidades_select" for="Alumbrado">Alumbrado <input type="checkbox" name="Alumbrado" ></span>
+          <span class="amenidades_select" for="piscina">Parque <input type="checkbox" name="Parque" ></span>
 
           <button type="submit">Buscar propiedades</button>
         </form>

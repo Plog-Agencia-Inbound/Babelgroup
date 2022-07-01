@@ -109,7 +109,7 @@
 
 .filtros_propiedades {
   display: inline-block;
-  padding: 0 1rem;
+  margin-right: 1rem;
 }
 .filtros_propiedades select {
   padding: 0.25rem 0.5rem;

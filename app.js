@@ -58,30 +58,31 @@ function closeMenu() {
 }
 
 // Funciones de Busqueda (Rango)
-/* Rango de precio */
+/* Rango de precio 
 var output = document.getElementById("output");
 var range = document.getElementById("range_slider");
 output.innerHTML = numeral(range.value).format("$0,0.00");
 range.oninput = function () {
   output.innerHTML = numeral(range.value).format("$0,0.00");
 };
+*/
 
-/* Rango de area */
+/* Rango de area 
 var output_area = document.getElementById("area_output");
 var range_area = document.getElementById("area_slider");
 output_area.innerHTML = numeral(range_area.value).format("0,0") + " Mts2";
 range_area.oninput = function () {
   output_area.innerHTML = numeral(range_area.value).format("0,0") + " Mts2";
 };
-
-/* Rango de area Desktop */
+*/
+/* Rango de area Desktop 
 var output_area_dsk = document.getElementById("area_output_bAvanzada");
 var range_area_dsk = document.getElementById("area_slider_bAvanzada");
 output_area_dsk.innerHTML = numeral(range_area_dsk.value).format("0,0") + " Mts2";
 range_area_dsk.oninput = function () {
   output_area_dsk.innerHTML = numeral(range_area_dsk.value).format("0,0") + " Mts2";
 };
-
+*/
 // Funciones de Busqueda (Busqueda Avanzada) Movil
 const btn_bAvanzada = document.getElementById("btn_bAvanzada");
 const bAswitch = document.getElementById("bAvanzadaswitch");
