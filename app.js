@@ -4,6 +4,9 @@ var openmenu = document.querySelector(".openMenu");
 var closemenu = document.querySelector(".closeMenu");
 var sidemenu = document.querySelector("#sidemenu");
 
+var busquedaAvanzada_scroll = document.getElementById("busquedaAvanzada_scroll");
+busquedaAvanzada_scroll.addEventListener("click", openMenuAvanzado);
+
 var btn_bAvanzada_dsk = document.getElementById("busquedaAvanzadaDsk");
 var sidemenuHeader = document.getElementById("header_sidemenu");
 var sidemenuContent = document.getElementById("contenido_sidemenu");
