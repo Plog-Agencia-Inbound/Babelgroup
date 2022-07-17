@@ -526,6 +526,9 @@ body {
     border-radius: 15px;
     display: flex;
   }
+  .card_content_aniadida{
+    padding: 1rem !important;
+  }
   .card_content_aniadida > h1{
     font-size: 30px !important;
     font-weight: 600;
@@ -1020,7 +1023,7 @@ Propiedades Card
   width: 100%;
   border-radius: 20px;
   box-shadow: 10.1595px 24.3829px 75.1806px rgba(0, 0, 0, 0.04);
-  margin: 1rem 1rem;
+  margin: 1rem 0rem;
 }
 .card_propiedad >img{
   width: 100%;
@@ -1104,7 +1107,7 @@ Propiedades Card
 }
 .card_content_aniadida{
   width: 65%;
-  padding: 1rem 1rem;
+  padding: 1rem .5rem 1rem 1rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;

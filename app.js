@@ -22,7 +22,7 @@ window.addEventListener("scroll", (event) => {
 function shareFunction(url){
   navigator.share({
     title: 'Me encanto esta propiedad de Babelgroup.mx',
-    text: 'Haz click aqui '+url+' para poder verla',
+    text: 'Me encanto esta propiedad de Babelgroup.mx, Haz click aqui para poder verla',
     url: '/favicon.png'
   })
 }
