@@ -1,10 +1,42 @@
+// Funciones Scroll
+window.addEventListener("scroll", (event) => {
+  let scrollY = this.scrollY;
+  let scrollX = this.scrollX;
+  console.log(scrollY);
+  console.log(scrollX);
+  if(scrollY >= 600){
+    console.log("cambio de color");7
+    document.getElementById("busquedaAvanzada_scroll").style.opacity = ".2";
+    document.getElementById("busquedaAvanzada_scroll").style.transition = ".5s";
+  }
+
+  if(scrollY < 600){
+    console.log("cambio de color");7
+    document.getElementById("busquedaAvanzada_scroll").style.opacity = "1";
+    document.getElementById("busquedaAvanzada_scroll").style.transition = ".5s";
+  }
+});
+
+
+// Boton de compartir
+function shareFunction(url){
+  navigator.share({
+    title: 'Me encanto esta propiedad de Babelgroup.mx',
+    text: 'Haz click aqui '+url+' para poder verla',
+    url: '/favicon.png'
+  })
+}
+
+
 // Funciones de Menu
 
 var openmenu = document.querySelector(".openMenu");
 var closemenu = document.querySelector(".closeMenu");
 var sidemenu = document.querySelector("#sidemenu");
 
-var busquedaAvanzada_scroll = document.getElementById("busquedaAvanzada_scroll");
+var busquedaAvanzada_scroll = document.getElementById(
+  "busquedaAvanzada_scroll"
+);
 busquedaAvanzada_scroll.addEventListener("click", openMenuAvanzado);
 
 var btn_bAvanzada_dsk = document.getElementById("busquedaAvanzadaDsk");
@@ -60,32 +92,6 @@ function closeMenu() {
   sidemenu.classList.add("menu-collapsed");
 }
 
-// Funciones de Busqueda (Rango)
-/* Rango de precio 
-var output = document.getElementById("output");
-var range = document.getElementById("range_slider");
-output.innerHTML = numeral(range.value).format("$0,0.00");
-range.oninput = function () {
-  output.innerHTML = numeral(range.value).format("$0,0.00");
-};
-*/
-
-/* Rango de area 
-var output_area = document.getElementById("area_output");
-var range_area = document.getElementById("area_slider");
-output_area.innerHTML = numeral(range_area.value).format("0,0") + " Mts2";
-range_area.oninput = function () {
-  output_area.innerHTML = numeral(range_area.value).format("0,0") + " Mts2";
-};
-*/
-/* Rango de area Desktop 
-var output_area_dsk = document.getElementById("area_output_bAvanzada");
-var range_area_dsk = document.getElementById("area_slider_bAvanzada");
-output_area_dsk.innerHTML = numeral(range_area_dsk.value).format("0,0") + " Mts2";
-range_area_dsk.oninput = function () {
-  output_area_dsk.innerHTML = numeral(range_area_dsk.value).format("0,0") + " Mts2";
-};
-*/
 // Funciones de Busqueda (Busqueda Avanzada) Movil
 const btn_bAvanzada = document.getElementById("btn_bAvanzada");
 const bAswitch = document.getElementById("bAvanzadaswitch");

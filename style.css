@@ -17,7 +17,13 @@
   margin-top: 50vh;
   margin-left: -80px;
   cursor: pointer;
+  opacity: 1;
+  z-index: 3;
 }
+.buscardor_menu:hover{
+  opacity: 1;
+  transition: .2s;
+} 
 body {
   background-color: #ffffff;
   margin-right: var(--widthCollapsed);
@@ -344,6 +350,7 @@ body {
   .third_section {
     padding: 4rem 4rem 6rem 4rem !important;
   }
+  
 }
 @media (min-width: 768px) {
   /* Inicio de sesion */
@@ -431,7 +438,7 @@ body {
   .recien_aniadido {
     display: block !important;
     background: #ffffff;
-    padding: 4rem 1rem;
+    padding: 4rem 2rem;
   }
   .four_section {
     padding: 4rem 6rem !important;
@@ -512,6 +519,43 @@ body {
     text-decoration: none;
     transition: 0.3s;
   }
+  .card_aniadida >img{
+    width: 150px !important;
+    height: 200px !important;
+    object-fit: cover;
+    border-radius: 15px;
+    display: flex;
+  }
+  .card_content_aniadida > h1{
+    font-size: 30px !important;
+    font-weight: 600;
+    margin: 0;
+  }
+  .card_atributos_aniadida >span{
+    font-size: 16px !important;
+    font-weight: 500;
+    color: #1dacff;
+    margin-right: 1rem; 
+  }
+  .card_title_aniadida{
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-decoration: none;
+    font-size: 16px !important;
+    font-weight: 500;
+  }
+  .card_button_aniadida{
+    font-size: 14px !important;
+    color: #ffffff;
+    background: #1dacff;
+    padding: .2rem .5rem ;
+    border-radius: 15px;
+  }
+
+
+
 }
 /* Fin del responsive */
 
@@ -793,9 +837,13 @@ input[type="password"] {
   font-size: 20px;
   font-weight: 500;
   padding: 1rem;
+  background: #1ea0d4;
+  padding: .3rem .8rem;
+  margin-top: 1rem;
+  border-radius: 25px;
 }
 #busquedaAvanzadaDsk:hover{
-  color: #73c1b1;
+  background: #003150;
   transition: .3s;
   cursor: pointer;
 }
@@ -882,192 +930,226 @@ input[type="password"] {
   padding: 4rem 2rem 6rem 2rem;
 }
 .third_section .h1_b {
-  font-size: 25px;
   font-weight: 600;
   margin-bottom: 1rem;
 }
-
-.card_propiedades_two {
-  margin: 1rem 0;
-  width: 100%;
-  
+/*Tags*/
+.tags{
+  display:inline-block;
+  position:absolute;
+  left: 2.8rem;
+  top: 1.8rem;
 }
-.card_propiedades_one .image,
-.card_propiedades_two .image {
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 250px;
-  border-radius: 25px 25px 0 0;
-  padding: 1rem 1rem;
-}
-.tag_preventa {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background: #f5d23c;
-  border-radius: 25px;
-  color: #000000;
-  font-weight: 600;
-  font-size: 14px;
-}
-.tag_destacada {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background: #1ea0d4;
-  border-radius: 25px;
-  color: #ffffff;
-  font-weight: 500;
-  font-size: 14px;
-}
-.tag_promocion {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background: #004d82;
-  border-radius: 25px;
-  color: #ffffff;
-  font-weight: 500;
-  font-size: 14px;
-}
-.card_propiedades_one .card_content,
-.card_propiedades_two .card_content {
-  background: #ffffff;
-  padding: 1rem 1rem 2rem 1rem;
-  border-radius: 0 0 25px 25px;
-  
-}
-.card_content h1 {
-  display: inline-block;
-  width: 60%;
-  margin-top: 1rem;
-  font-size: 20px;
-  font-weight: 600;
-  color: #003150;
-}
-.card_content .card_compartir {
-  display: inline-block;
-  background: #ffffff;
-  position: absolute;
-  margin: -2.5rem 0 0 2.5rem;
-  padding: 0.5rem;
-  border-radius: 50px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-  z-index: 1;
-}
-.card_content span {
-  display: inline-block;
-  width: 100%;
-  color: #000000;
-  font-weight: 500;
-  font-size: 14px;
-}
-.card_content p {
-  display: inline-block;
-  width: 100%;
-  margin-top: 0.5rem;
-  font-size: 14px;
-  color: #77838f;
-}
-.card_precio {
-  display: inline-block;
-  width: 100%;
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-}
-.card_precio span {
-  display: inline-block;
-  width: 50%;
-  text-align: center;
-  padding: 0.4rem 0.8rem;
-  background: #003150;
-  color: #ffffff;
-  border-radius: 25px;
-  margin-left: 0.5rem;
-}
-.card_atributos {
-  display: flex;
-  width: 70%;
-}
-.icon_card_atributos {
-  width: 25px;
-}
-.value_card_atributos {
-  color: #1ea0d4 !important;
-  font-size: 16px !important;
-  font-weight: 500 !important;
-}
-
-.recien_aniadido {
-  display: none;
-  background: #ffffff;
-  padding: 4rem 1rem;
-}
-.recien_aniadido_content h1 {
-  font-size: 25px;
-  margin-bottom: 2rem;
-}
-.card_aniadida {
-  display: flex;
-  border: 1px solid #1dacff3d;
+.tag_preventa{
+  padding: .2rem .6rem;
+  background: #F5D23C;
   border-radius: 20px;
-  padding: 1rem;
-  box-shadow: 0px 17px 50px rgba(143, 144, 166, 0.32);
-  margin: 1rem 0.5rem;
+  display:inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #121212;
 }
-.card_aniadida:hover,
-.card_aniadida:active {
-  border: 1px solid #1dacff;
+.tag_desarrollo{
+  padding: .2rem .6rem;
+  background: #B4F3E6;
+  border-radius: 20px;
+  display:inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #121212;
 }
-.image_card_aniadida img {
-  width: 150px;
-  object-fit: cover;
-  border-radius: 15px;
+.tag_promociones{
+  padding: .2rem .6rem;
+  background: #3D9AEF;
+  border-radius: 20px;
+  display:inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #121212;
 }
-.content_card_aniadida {
-  padding: 1rem 2rem;
+.share{
+  display:flex;
+  flex-wrap: wrap;
+  position:absolute;
+  right: 2rem;
+  bottom: 2.5rem;
 }
-.content_card_aniadida h1 {
-  font-size: 30px;
-  display: inline-block;
-  width: 70%;
-  margin-bottom: 1rem;
+.share_horizontal{
+  display:flex;
+  flex-wrap: wrap;
+  position:absolute;
+  left: 1.9rem;
+  top: 2.6rem;
 }
 
-.compartir_card_aniadida{
-  display: inline-block;
-  vertical-align: middle;
-  padding: .5rem;
-  margin: auto;
-  border-radius: 50px;
-  font-weight: 700;
-  box-shadow: 0px 2.72222px 5.44444px rgba(0, 0, 0, 0.15);
-  margin-top: -1rem;
+.favoritos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 100%;
+  box-shadow: 2.1595px 2.3829px 5.1806px rgba(0, 0, 0, 0.048);
+  margin: 0 .5rem;
 }
-.compartir_card_aniadida img{
-  width: 26px;
-  display: inline-block;
-  vertical-align: middle;
-  margin: auto;
+.compartir{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  margin: 0 .5rem;
+  border-radius: 100%;
+  box-shadow: 2.1595px 2.3829px 5.1806px rgba(0, 0, 0, 0.048);
 }
-.attributos_c_aniadida {
-  display: inline-block;
-  width: 30%;
-  color: #73c1b1;
+.compartir:hover, .favoritos:hover{
+  transform: scale(.9);
+  cursor: pointer;
+}
+.compartir:active, .favoritos:active{
+  transform: scale(1);
+  cursor: pointer;
+}
+/*
+Propiedades Card
+*/
+.card_propiedad{
+  background: #fff;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 10.1595px 24.3829px 75.1806px rgba(0, 0, 0, 0.04);
+  margin: 1rem 1rem;
+}
+.card_propiedad >img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  
+}
+
+.card_propiedad_content{
+  padding: 1rem 1rem 2rem 1rem;
+}
+.card_propiedad_content h1{
+  font-size: 22px !important;
+}
+.card_propiedad_atributos{
+  width: 100%;
+  display: block;
+}
+.card_propiedad_atributos > span{
+  color: #1dacff;
   font-size: 16px;
   font-weight: 500;
+  margin-right: .5rem;
 }
-.precio_c_aniadida {
-  display: block;
-  width: 150px;
+.card_propiedad_atributos img{
+  width: 20px; 
+  height: auto;
+}
+.estado_card_propiedad{
+  font-size: 14px;
+  color: #000000;
+  font-weight: 500;
   margin-top: 1rem;
-  padding: 0.3rem 1rem;
-  background: #003150;
-  color: #ffffff;
+}
+.title_card_propiedad{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-decoration: none;
   font-size: 14px;
   font-weight: 500;
-  border-radius: 15px;
-  text-align: center;
 }
+.button_card_propiedad{
+  display: inline-block;
+  color: #ffffff;
+  background: #003150;
+  font-size: 14px;
+  text-decoration: none;
+  padding: .3rem .6rem;
+  border-radius: 15px;
+  margin-top: 1rem;
+}
+.button_card_propiedad:hover{
+  text-decoration: none;
+  color: #ffffff;
+  background: #004d82;
+  transition: 1s;
+}
+
+/* Aniadida Horizontal*/
+.recien_aniadido{
+  padding: 4rem 1rem 6rem 1rem;
+}
+.card_aniadida{
+  padding: 1rem;
+  border-radius: 15px;
+  background: #ffffff;
+  display: flex;
+  width: 100%;
+  box-shadow: 10.1595px 24.3829px 75.1806px rgba(0, 0, 0, 0.075);
+  margin: 1rem 0 ;
+}
+
+.card_aniadida >img{
+  width: 100px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 15px;
+  display: flex;
+}
+.card_content_aniadida{
+  width: 65%;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  
+}
+.card_content_aniadida > h1{
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+.card_atributos_aniadida{
+  display: flex;
+  margin: 0;
+}
+.card_atributos_aniadida >span{
+  font-size: 14px;
+  font-weight: 500;
+  color: #1dacff;
+  margin-right: 1rem; 
+}
+.card_title_aniadida{
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+.card_button_aniadida{
+  font-size: 12px;
+  color: #ffffff;
+  background: #1dacff;
+  padding: .2rem .5rem ;
+  border-radius: 15px;
+}
+.card_button_aniadida:hover{
+  text-decoration: none;
+  background: #003150;
+  transition: .5s;
+  color: #ffffff;
+}
+
+
 
 .four_section {
   width: 100%;

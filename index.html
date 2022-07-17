@@ -230,7 +230,7 @@
 
     <div class="content" id="main_content">
       <!-- Inicio -->
-      <div class="first_section">
+      <div class="first_section" id="seccionInicio" onscroll="scrollInicio()" > 
         <div class="container">
           <div class="row navigation">
             <div class="col-6">
@@ -301,7 +301,6 @@
                 </div>
               </form>
 
-              <span id="busquedaAvanzadaDsk">Busqueda Avanzada</span>
             </div>
           </div>
         </div>
@@ -408,306 +407,167 @@
 
       <!-- Propiedades Destacadas -->
       <div class="third_section">
-        <h1 class="h1_b">Propiedades Destacadas</h1>
+        <div class="container">
+          <h1 class="h1_b">Propiedades Destacadas</h1>
 
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card_propiedades_two">
-              <div
-                class="image"
-                style="background: url('assets/image/propiedad_image.png')"
-              >
-                <span class="tag_preventa"> Preventa </span>
-                <span class="tag_destacada"> Destacada </span>
-                <span class="tag_promocion"> Promociones</span>
+          <div class="row">
+            <div class="col-md-4">
+  
+              <div class="card_propiedad">
+                <img src="assets/image/propiedad_image.png" alt="" srcset="">
+  
+                <div class="tags">
+                  <div class="tag_preventa">Preventa</div>
+                  <div class="tag_desarrollo">Desarrollo</div>  
+                  <div class="tag_promociones">Promociones</div>  
+                </div>
+                <div class="share">
+                  <div class="favoritos">
+                    <img src="assets/favoritos.svg" alt="" srcset="">
+                  </div>
+                  <div class="compartir" onclick="shareFunction('https://Babelgroup.pllx.live')">
+                    <img src="assets/compartir.svg" alt="" srcset="">
+                  </div>
+                </div>
+                
+                <div class="card_propiedad_content">
+                  <h1 class=" h1_b">
+                    $4,000,000
+                  </h1>
+                  <div class="card_propiedad_atributos">
+                    <span>
+                    <img src="assets/cuartos.svg" alt="" srcset="">
+                    1</span>
+  
+                    <span>
+                      <img src="assets/baños.svg" alt="" srcset="">
+                      1
+                    </span>
+  
+                    <span>
+                      <img src="assets/superficie.svg" alt="" srcset="">
+                      150 Mts2
+                    </span>
+                  </div>
+                  <div class="estado_card_propiedad">
+                    Mérida, Yucatán.
+                  </div>
+                  <div class="title_card_propiedad" title="Casa en Mérida, Yucatán, con 2 Recamaras, 2 Baños y Piscina, Zona Norte de la ciudad.">
+                    Casa en Mérida, Yucatán, con 2 Recamaras, 2 Baños y Piscina, Zona Norte de la ciudad.
+                  </div>
+                  <a class="button_card_propiedad" href="#">
+                    Ver propiedad
+                  </a>
+                </div>
               </div>
-              <div class="card_content">
-                <h1>Villa del sol</h1>
-                <div class="card_compartir">
-                  <img src="assets/favoritos.svg" alt="" srcset="" />
+  
+            </div>
+
+            <div class="col-md-4">
+  
+              <div class="card_propiedad">
+                <img src="assets/image/propiedad_image.png" alt="" srcset="">
+  
+                <div class="tags">
+                  <div class="tag_preventa">Preventa</div>
+                  <div class="tag_desarrollo">Desarrollo</div>  
+                  <div class="tag_promociones">Promociones</div>  
                 </div>
-                <span>Mérida, Yucatán.</span>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Omnis sapiente laborum necessitatibus ex, suscipit
-                  nesciunt voluptatem sequi deserunt explicabo! Laborum.
-                </p>
-                <div class="card_precio">
-                  Desde <span>$1,850,000.00</span>
+                <div class="share">
+                  <div class="favoritos" >
+                    <img src="assets/favoritos.svg" alt="" srcset="">
+                  </div>
+                  <div class="compartir">
+                    <img src="assets/compartir.svg" alt="" srcset="">
+                  </div>
                 </div>
-                <div class="card_atributos">
-                  <img
-                    class="icon_card_atributos"
-                    src="assets/baños.svg"
-                    alt=""
-                    srcset=""
-                  />
-                  <span class="value_card_atributos">4</span>
-                  <img
-                    class="icon_card_atributos"
-                    src="assets/cuartos.svg"
-                    alt=""
-                    srcset=""
-                  />
-                  <span class="value_card_atributos">4</span>
-                  <img
-                    class="icon_card_atributos"
-                    src="assets/superficie.svg"
-                    alt=""
-                    srcset=""
-                  />
-                  <span class="value_card_atributos">4</span>
+                
+                <div class="card_propiedad_content">
+                  <h1 class=" h1_b">
+                    $4,000,000
+                  </h1>
+                  <div class="card_propiedad_atributos">
+                    <span>
+                    <img src="assets/cuartos.svg" alt="" srcset="">
+                    1</span>
+  
+                    <span>
+                      <img src="assets/baños.svg" alt="" srcset="">
+                      1
+                    </span>
+  
+                    <span>
+                      <img src="assets/superficie.svg" alt="" srcset="">
+                      150 Mts2
+                    </span>
+                  </div>
+                  <div class="estado_card_propiedad">
+                    Mérida, Yucatán.
+                  </div>
+                  <div class="title_card_propiedad" title="Casa en Mérida, Yucatán, con 2 Recamaras, 2 Baños y Piscina, Zona Norte de la ciudad.">
+                    Casa en Mérida, Yucatán, con 2 Recamaras, 2 Baños y Piscina, Zona Norte de la ciudad.
+                  </div>
+                  <a class="button_card_propiedad" href="#">
+                    Ver propiedad
+                  </a>
                 </div>
               </div>
+  
+            </div>
+
+            <div class="col-md-4">
+  
+              <div class="card_propiedad">
+                <img src="assets/image/propiedad_image.png" alt="" srcset="">
+  
+                <div class="tags">
+                  <div class="tag_preventa">Preventa</div>
+                  <div class="tag_desarrollo">Desarrollo</div>  
+                  <div class="tag_promociones">Promociones</div>  
+                </div>
+                <div class="share">
+                  <div class="favoritos" >
+                    <img src="assets/favoritos.svg" alt="" srcset="">
+                  </div>
+                  <div class="compartir">
+                    <img src="assets/compartir.svg" alt="" srcset="">
+                  </div>
+                </div>
+                
+                <div class="card_propiedad_content">
+                  <h1 class=" h1_b">
+                    $4,000,000
+                  </h1>
+                  <div class="card_propiedad_atributos">
+                    <span>
+                    <img src="assets/cuartos.svg" alt="" srcset="">
+                    1</span>
+  
+                    <span>
+                      <img src="assets/baños.svg" alt="" srcset="">
+                      1
+                    </span>
+  
+                    <span>
+                      <img src="assets/superficie.svg" alt="" srcset="">
+                      150 Mts2
+                    </span>
+                  </div>
+                  <div class="estado_card_propiedad">
+                    Mérida, Yucatán.
+                  </div>
+                  <div class="title_card_propiedad" title="Casa en Mérida, Yucatán, con 2 Recamaras, 2 Baños y Piscina, Zona Norte de la ciudad.">
+                    Casa en Mérida, Yucatán, con 2 Recamaras, 2 Baños y Piscina, Zona Norte de la ciudad.
+                  </div>
+                  <a class="button_card_propiedad" href="#">
+                    Ver propiedad
+                  </a>
+                </div>
+              </div>
+  
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card_propiedades_two">
-              <div
-                class="image"
-                style="background: url('assets/image/propiedad_image.png')"
-              >
-                <span class="tag_preventa"> Preventa </span>
-                <span class="tag_destacada"> Destacada </span>
-              </div>
-              <div class="card_content">
-                <h1>Villa del sol</h1>
-                <div class="card_compartir">
-                  <img src="assets/favoritos.svg" alt="" srcset="" />
-                </div>
-                <span>Mérida, Yucatán.</span>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Omnis sapiente laborum necessitatibus ex, suscipit
-                  nesciunt voluptatem sequi deserunt explicabo! Laborum.
-                </p>
-                <div class="card_precio">
-                  Desde <span>$1,850,000.00</span>
-                </div>
-                <div class="card_atributos">
-                  <img
-                    class="icon_card_atributos"
-                    src="assets/baños.svg"
-                    alt=""
-                    srcset=""
-                  />
-                  <span class="value_card_atributos">4</span>
-                  <img
-                    class="icon_card_atributos"
-                    src="assets/cuartos.svg"
-                    alt=""
-                    srcset=""
-                  />
-                  <span class="value_card_atributos">4</span>
-                  <img
-                    class="icon_card_atributos"
-                    src="assets/superficie.svg"
-                    alt=""
-                    srcset=""
-                  />
-                  <span class="value_card_atributos">4</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card_propiedades_two">
-              <div
-                class="image"
-                style="background: url('assets/image/propiedad_image.png')"
-              >
-                <span class="tag_preventa"> Preventa </span>
-                <span class="tag_destacada"> Destacada </span>
-              </div>
-              <div class="card_content">
-                <h1>Villa del sol</h1>
-                <div class="card_compartir">
-                  <img src="assets/favoritos.svg" alt="" srcset="" />
-                </div>
-                <span>Mérida, Yucatán.</span>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Omnis sapiente laborum necessitatibus ex, suscipit
-                  nesciunt voluptatem sequi deserunt explicabo! Laborum.
-                </p>
-                <div class="card_precio">
-                  Desde <span>$1,850,000.00</span>
-                </div>
-                <div class="card_atributos">
-                  <img
-                    class="icon_card_atributos"
-                    src="assets/baños.svg"
-                    alt=""
-                    srcset=""
-                  />
-                  <span class="value_card_atributos">4</span>
-                  <img
-                    class="icon_card_atributos"
-                    src="assets/cuartos.svg"
-                    alt=""
-                    srcset=""
-                  />
-                  <span class="value_card_atributos">4</span>
-                  <img
-                    class="icon_card_atributos"
-                    src="assets/superficie.svg"
-                    alt=""
-                    srcset=""
-                  />
-                  <span class="value_card_atributos">4</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card_propiedades_two">
-              <div
-                class="image"
-                style="background: url('assets/image/propiedad_image.png')"
-              >
-                <span class="tag_preventa"> Preventa </span>
-                <span class="tag_destacada"> Destacada </span>
-              </div>
-              <div class="card_content">
-                <h1>Villa del sol</h1>
-                <div class="card_compartir">
-                  <img src="assets/favoritos.svg" alt="" srcset="" />
-                </div>
-                <span>Mérida, Yucatán.</span>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Omnis sapiente laborum necessitatibus ex, suscipit
-                  nesciunt voluptatem sequi deserunt explicabo! Laborum.
-                </p>
-                <div class="card_precio">
-                  Desde <span>$1,850,000.00</span>
-                </div>
-                <div class="card_atributos">
-                  <img
-                    class="icon_card_atributos"
-                    src="assets/baños.svg"
-                    alt=""
-                    srcset=""
-                  />
-                  <span class="value_card_atributos">4</span>
-                  <img
-                    class="icon_card_atributos"
-                    src="assets/cuartos.svg"
-                    alt=""
-                    srcset=""
-                  />
-                  <span class="value_card_atributos">4</span>
-                  <img
-                    class="icon_card_atributos"
-                    src="assets/superficie.svg"
-                    alt=""
-                    srcset=""
-                  />
-                  <span class="value_card_atributos">4</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card_propiedades_two">
-              <div
-                class="image"
-                style="background: url('assets/image/propiedad_image.png')"
-              >
-                <span class="tag_preventa"> Preventa </span>
-                <span class="tag_destacada"> Destacada </span>
-              </div>
-              <div class="card_content">
-                <h1>Villa del sol</h1>
-                <div class="card_compartir">
-                  <img src="assets/favoritos.svg" alt="" srcset="" />
-                </div>
-                <span>Mérida, Yucatán.</span>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Omnis sapiente laborum necessitatibus ex, suscipit
-                  nesciunt voluptatem sequi deserunt explicabo! Laborum.
-                </p>
-                <div class="card_precio">
-                  Desde <span>$1,850,000.00</span>
-                </div>
-                <div class="card_atributos">
-                  <img
-                    class="icon_card_atributos"
-                    src="assets/baños.svg"
-                    alt=""
-                    srcset=""
-                  />
-                  <span class="value_card_atributos">4</span>
-                  <img
-                    class="icon_card_atributos"
-                    src="assets/cuartos.svg"
-                    alt=""
-                    srcset=""
-                  />
-                  <span class="value_card_atributos">4</span>
-                  <img
-                    class="icon_card_atributos"
-                    src="assets/superficie.svg"
-                    alt=""
-                    srcset=""
-                  />
-                  <span class="value_card_atributos">4</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card_propiedades_two">
-              <div
-                class="image"
-                style="background: url('assets/image/propiedad_image.png')"
-              >
-                <span class="tag_preventa"> Preventa </span>
-                <span class="tag_destacada"> Destacada </span>
-              </div>
-              <div class="card_content">
-                <h1>Villa del sol</h1>
-                <div class="card_compartir">
-                  <img src="assets/favoritos.svg" alt="" srcset="" />
-                </div>
-                <span>Mérida, Yucatán.</span>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Omnis sapiente laborum necessitatibus ex, suscipit
-                  nesciunt voluptatem sequi deserunt explicabo! Laborum.
-                </p>
-                <div class="card_precio">
-                  Desde <span>$1,850,000.00</span>
-                </div>
-                <div class="card_atributos">
-                  <img
-                    class="icon_card_atributos"
-                    src="assets/baños.svg"
-                    alt=""
-                    srcset=""
-                  />
-                  <span class="value_card_atributos">4</span>
-                  <img
-                    class="icon_card_atributos"
-                    src="assets/cuartos.svg"
-                    alt=""
-                    srcset=""
-                  />
-                  <span class="value_card_atributos">4</span>
-                  <img
-                    class="icon_card_atributos"
-                    src="assets/superficie.svg"
-                    alt=""
-                    srcset=""
-                  />
-                  <span class="value_card_atributos">4</span>
-                </div>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
 
@@ -719,138 +579,173 @@
               <h1 class="h1_b">Recien Añadidas</h1>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="card_aniadida">
-                <div class="image_card_aniadida">
-                  <img
-                    src="assets/image/propiedad_horizontal.png"
-                    alt=""
-                    srcset=""
-                  />
-                </div>
-                <div class="content_card_aniadida">
-                  <h1 class="h1_b">Villa Marin</h1>
-                  <span class="compartir_card_aniadida">
-                    <img src="assets/favoritos.svg" alt="" srcset="" />
-                  </span>
 
-                  <span class="attributos_c_aniadida">1 Baño</span>
-                  <span class="attributos_c_aniadida">2 Cuartos</span>
-                  <span class="precio_c_aniadida"> $1,500,000</span>
+          <div class="row mt-2">
+
+            <div class="col-md-6">
+
+              <div class="card_aniadida">
+                <img src="assets/image/propiedad_horizontal.png" alt="" srcset="">
+                <div class="share_horizontal">
+                  <div class="favoritos">
+                    <img src="assets/favoritos.svg" alt="" srcset="">
+                  </div>
+                </div>
+                <div class="card_content_aniadida">
+                  <h1 class="h1_b">
+                    $5,000,000.00
+                  </h1>
+                  <div class="card_atributos_aniadida">
+                    <span>1 Cuarto</span>
+                    <span>2 Baños</span>
+                  </div>
+                  <div class="card_title_aniadida" title="Casa en Renta al norte de Mérida, colonia San Marcos.">
+                    Casa en Renta al norte de Mérida, colonia San Marcos.
+                  </div>
+                  <a class="card_button_aniadida" href="#">Ver más</a>
                 </div>
               </div>
+              
             </div>
             <div class="col-md-6">
-              <div class="card_aniadida">
-                <div class="image_card_aniadida">
-                  <img
-                    src="assets/image/propiedad_horizontal.png"
-                    alt=""
-                    srcset=""
-                  />
-                </div>
-                <div class="content_card_aniadida">
-                  <h1 class="h1_b">Villa Marin</h1>
-                  <span class="compartir_card_aniadida">
-                    <img src="assets/favoritos.svg" alt="" srcset="" />
-                  </span>
 
-                  <span class="attributos_c_aniadida">1 Baño</span>
-                  <span class="attributos_c_aniadida">2 Cuartos</span>
-                  <span class="precio_c_aniadida"> $1,500,000</span>
+              <div class="card_aniadida">
+                <img src="assets/image/propiedad_horizontal.png" alt="" srcset="">
+                <div class="share_horizontal">
+                  <div class="favoritos">
+                    <img src="assets/favoritos.svg" alt="" srcset="">
+                  </div>
+                </div>
+                <div class="card_content_aniadida">
+                  <h1 class="h1_b">
+                    $5,000,000.00
+                  </h1>
+                  <div class="card_atributos_aniadida">
+                    <span>1 Cuarto</span>
+                    <span>2 Baños</span>
+                  </div>
+                  <div class="card_title_aniadida" title="Casa en Renta al norte de Mérida, colonia San Marcos.">
+                    Casa en Renta al norte de Mérida, colonia San Marcos.
+                  </div>
+                  <a class="card_button_aniadida" href="#">Ver más</a>
                 </div>
               </div>
+              
             </div>
+
           </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="card_aniadida">
-                <div class="image_card_aniadida">
-                  <img
-                    src="assets/image/propiedad_horizontal.png"
-                    alt=""
-                    srcset=""
-                  />
-                </div>
-                <div class="content_card_aniadida">
-                  <h1 class="h1_b">Villa Marin</h1>
-                  <span class="compartir_card_aniadida">
-                    <img src="assets/favoritos.svg" alt="" srcset="" />
-                  </span>
 
-                  <span class="attributos_c_aniadida">1 Baño</span>
-                  <span class="attributos_c_aniadida">2 Cuartos</span>
-                  <span class="precio_c_aniadida"> $1,500,000</span>
+          <div class="row mt-2">
+
+            <div class="col-md-6">
+
+              <div class="card_aniadida">
+                <img src="assets/image/propiedad_horizontal.png" alt="" srcset="">
+                <div class="share_horizontal">
+                  <div class="favoritos">
+                    <img src="assets/favoritos.svg" alt="" srcset="">
+                  </div>
+                </div>
+                <div class="card_content_aniadida">
+                  <h1 class="h1_b">
+                    $5,000,000.00
+                  </h1>
+                  <div class="card_atributos_aniadida">
+                    <span>1 Cuarto</span>
+                    <span>2 Baños</span>
+                  </div>
+                  <div class="card_title_aniadida" title="Casa en Renta al norte de Mérida, colonia San Marcos.">
+                    Casa en Renta al norte de Mérida, colonia San Marcos.
+                  </div>
+                  <a class="card_button_aniadida" href="#">Ver más</a>
                 </div>
               </div>
+              
             </div>
             <div class="col-md-6">
-              <div class="card_aniadida">
-                <div class="image_card_aniadida">
-                  <img
-                    src="assets/image/propiedad_horizontal.png"
-                    alt=""
-                    srcset=""
-                  />
-                </div>
-                <div class="content_card_aniadida">
-                  <h1 class="h1_b">Villa Marin</h1>
-                  <span class="compartir_card_aniadida">
-                    <img src="assets/favoritos.svg" alt="" srcset="" />
-                  </span>
 
-                  <span class="attributos_c_aniadida">1 Baño</span>
-                  <span class="attributos_c_aniadida">2 Cuartos</span>
-                  <span class="precio_c_aniadida"> $1,500,000</span>
+              <div class="card_aniadida">
+                <img src="assets/image/propiedad_horizontal.png" alt="" srcset="">
+                <div class="share_horizontal">
+                  <div class="favoritos">
+                    <img src="assets/favoritos.svg" alt="" srcset="">
+                  </div>
+                </div>
+                <div class="card_content_aniadida">
+                  <h1 class="h1_b">
+                    $5,000,000.00
+                  </h1>
+                  <div class="card_atributos_aniadida">
+                    <span>1 Cuarto</span>
+                    <span>2 Baños</span>
+                  </div>
+                  <div class="card_title_aniadida" title="Casa en Renta al norte de Mérida, colonia San Marcos.">
+                    Casa en Renta al norte de Mérida, colonia San Marcos.
+                  </div>
+                  <a class="card_button_aniadida" href="#">Ver más</a>
                 </div>
               </div>
+              
             </div>
+
           </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="card_aniadida">
-                <div class="image_card_aniadida">
-                  <img
-                    src="assets/image/propiedad_horizontal.png"
-                    alt=""
-                    srcset=""
-                  />
-                </div>
-                <div class="content_card_aniadida">
-                  <h1 class="h1_b">Villa Marin</h1>
-                  <span class="compartir_card_aniadida">
-                    <img src="assets/favoritos.svg" alt="" srcset="" />
-                  </span>
 
-                  <span class="attributos_c_aniadida">1 Baño</span>
-                  <span class="attributos_c_aniadida">2 Cuartos</span>
-                  <span class="precio_c_aniadida"> $1,500,000</span>
+          <div class="row mt-2">
+
+            <div class="col-md-6">
+
+              <div class="card_aniadida">
+                <img src="assets/image/propiedad_horizontal.png" alt="" srcset="">
+                <div class="share_horizontal">
+                  <div class="favoritos">
+                    <img src="assets/favoritos.svg" alt="" srcset="">
+                  </div>
+                </div>
+                <div class="card_content_aniadida">
+                  <h1 class="h1_b">
+                    $5,000,000.00
+                  </h1>
+                  <div class="card_atributos_aniadida">
+                    <span>1 Cuarto</span>
+                    <span>2 Baños</span>
+                  </div>
+                  <div class="card_title_aniadida" title="Casa en Renta al norte de Mérida, colonia San Marcos.">
+                    Casa en Renta al norte de Mérida, colonia San Marcos.
+                  </div>
+                  <a class="card_button_aniadida" href="#">Ver más</a>
                 </div>
               </div>
+              
             </div>
             <div class="col-md-6">
-              <div class="card_aniadida">
-                <div class="image_card_aniadida">
-                  <img
-                    src="assets/image/propiedad_horizontal.png"
-                    alt=""
-                    srcset=""
-                  />
-                </div>
-                <div class="content_card_aniadida">
-                  <h1 class="h1_b">Villa Marin</h1>
-                  <span class="compartir_card_aniadida">
-                    <img src="assets/favoritos.svg" alt="" srcset="" />
-                  </span>
 
-                  <span class="attributos_c_aniadida">1 Baño</span>
-                  <span class="attributos_c_aniadida">2 Cuartos</span>
-                  <span class="precio_c_aniadida"> $1,500,000</span>
+              <div class="card_aniadida">
+                <img src="assets/image/propiedad_horizontal.png" alt="" srcset="">
+                <div class="share_horizontal">
+                  <div class="favoritos">
+                    <img src="assets/favoritos.svg" alt="" srcset="">
+                  </div>
+                </div>
+                <div class="card_content_aniadida">
+                  <h1 class="h1_b">
+                    $5,000,000.00
+                  </h1>
+                  <div class="card_atributos_aniadida">
+                    <span>1 Cuarto</span>
+                    <span>2 Baños</span>
+                  </div>
+                  <div class="card_title_aniadida" title="Casa en Renta al norte de Mérida, colonia San Marcos.">
+                    Casa en Renta al norte de Mérida, colonia San Marcos.
+                  </div>
+                  <a class="card_button_aniadida" href="#">Ver más</a>
                 </div>
               </div>
+              
             </div>
+
           </div>
+
+
         </div>
       </div>
 
