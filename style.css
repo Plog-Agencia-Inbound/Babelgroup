@@ -8,7 +8,7 @@
 /* Menu de navegacion */
 .buscardor_menu{
   padding: .5rem 1rem;
-  background: #003150;
+  background: #1ea0d4;
   color: #ffffff;
   width: 200px;
   border-radius: 5px 5px 0 0;
@@ -21,8 +21,9 @@
   z-index: 3;
 }
 .buscardor_menu:hover{
-  opacity: 1;
+  opacity: 1 !important;
   transition: .2s;
+  background: #003150 !important;
 } 
 body {
   background-color: #ffffff;
@@ -529,11 +530,6 @@ body {
   .card_content_aniadida{
     padding: 1rem !important;
   }
-  .card_content_aniadida > h1{
-    font-size: 30px !important;
-    font-weight: 600;
-    margin: 0;
-  }
   .card_atributos_aniadida >span{
     font-size: 16px !important;
     font-weight: 500;
@@ -756,9 +752,10 @@ input[type="password"] {
 .content_first_section > div {
   padding: 1rem 2rem;
 }
-.content_first_section > div > h1 {
+.content_first_section > div > h1{
   display: block;
   margin-top: 8rem;
+  font-size: 35px;
 }
 
 .second_section {
@@ -1115,7 +1112,7 @@ Propiedades Card
   
 }
 .card_content_aniadida > h1{
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
   margin: 0;
 }
@@ -1306,4 +1303,41 @@ footer form button[type="submit"] {
 
   display: block;
   margin: auto;
+}
+
+
+/* Propiedades */
+.paginacion{
+  margin: 1rem 0 0 0;
+  display: inline-block;
+  
+  padding: 0.3rem .5rem;
+  border: 1.2px solid #dddddd;
+  color: #003150;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  text-align: center;
+}
+
+.whatsapp_button {
+  display: block;
+  margin:auto;
+  padding: 0.35rem .5rem;
+  background: #46df6b;
+  color: #ffffff;
+  border-radius: 10px;
+  border: none;
+  display: block;
+  margin-top: 1rem;
+  width: 60%;
+  text-align: center;
+  font-size: 16px;
+}
+.whatsapp_button:hover{
+  background: #1dacff;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 1s;
 }

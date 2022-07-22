@@ -24,31 +24,24 @@ function shareFunction(url){
     title: 'Me encanto esta propiedad de Babelgroup.mx',
     text: 'Me encanto esta propiedad de Babelgroup.mx, Haz click aqui para poder verla',
     url: '/favicon.png'
-  })
+  });
 }
 
 
 // Funciones de Menu
-
 var openmenu = document.querySelector(".openMenu");
 var closemenu = document.querySelector(".closeMenu");
 var sidemenu = document.querySelector("#sidemenu");
+var busquedaAvanzada_scroll = document.getElementById("busquedaAvanzada_scroll");
 
-var busquedaAvanzada_scroll = document.getElementById(
-  "busquedaAvanzada_scroll"
-);
 busquedaAvanzada_scroll.addEventListener("click", openMenuAvanzado);
 
-var btn_bAvanzada_dsk = document.getElementById("busquedaAvanzadaDsk");
 var sidemenuHeader = document.getElementById("header_sidemenu");
 var sidemenuContent = document.getElementById("contenido_sidemenu");
-var sidemenuBusquedaAvanzada = document.getElementById(
-  "busquedaAvanzada_sidemenu"
-);
+var sidemenuBusquedaAvanzada = document.getElementById("busquedaAvanzada_sidemenu");
 
 openmenu.addEventListener("click", openMenu);
 closemenu.addEventListener("click", closeMenu);
-btn_bAvanzada_dsk.addEventListener("click", openMenuAvanzado);
 
 function openMenu() {
   if (sidemenuContent.getAttribute("class") == "sidemenu_off") {
@@ -92,22 +85,6 @@ function closeMenu() {
   sidemenu.classList.add("menu-collapsed");
 }
 
-// Funciones de Busqueda (Busqueda Avanzada) Movil
-const btn_bAvanzada = document.getElementById("btn_bAvanzada");
-const bAswitch = document.getElementById("bAvanzadaswitch");
-const bAContent = document.getElementById("bAvanzadaContent");
-
-btn_bAvanzada.addEventListener("click", function () {
-  if (bAswitch.getAttribute("class") == "bAvanzada_on") {
-    bAswitch.classList.remove("bAvanzada_on");
-    bAswitch.classList.add("bAvanzada_off");
-
-    bAContent.classList.remove("bAvanzada_off");
-    bAContent.classList.add("bAvanzada_on");
-  }
-});
-
-//Funciones Switch Formularios
 // Busqueda Avanzada de Escritorio
 var bAcomprar = document.getElementById("bAswitch_comprar");
 var bArentar = document.getElementById("bAswitch_rentar");
@@ -184,5 +161,21 @@ bMrentar.addEventListener("click", function () {
     bMcomprar.classList.remove("active_search_second_section");
     bMcomprar.classList.add("off_search_second_section");
     bMinput.value = "rentar";
+  }
+});
+
+
+// Busqueda avanzada Movil
+const btn_bAvanzada = document.getElementById("btn_bAvanzada");
+const bAswitch = document.getElementById("bAvanzadaswitch");
+const bAContent = document.getElementById("bAvanzadaContent");
+
+btn_bAvanzada.addEventListener("click", function () {
+  if (bAswitch.getAttribute("class") == "bAvanzada_on") {
+    bAswitch.classList.remove("bAvanzada_on");
+    bAswitch.classList.add("bAvanzada_off");
+
+    bAContent.classList.remove("bAvanzada_off");
+    bAContent.classList.add("bAvanzada_on");
   }
 });

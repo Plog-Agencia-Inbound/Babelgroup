@@ -72,6 +72,7 @@
   display: block;
   margin-top: 8rem;
   text-align: center;
+  font-size: 35px;
 }
 
 .info_section {
@@ -81,7 +82,7 @@
   background: #003150;
   border-radius: 15px;
   padding: 2rem;
-  margin-top: -10rem;
+  margin-top:-5rem;
 }
 .card_info h1 {
   font-size: 16px;
