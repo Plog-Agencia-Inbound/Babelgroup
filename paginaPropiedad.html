@@ -24,13 +24,24 @@
     />
     <link rel="stylesheet" href="css/glide.core.min.css" />
     <link rel="stylesheet" href="css/glide.theme.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
+    <!-- Boton Flotante Whatsapp -->
+    <span class="text-flotante"> Escribenos </span>
+    <a href="#" class="flotante_whatsapp" target="_blank">
+      <i class="fa fa-whatsapp flotante_whatsapp_icon"></i>
+    </a>
 
+    <!-- Menu Estatico Izquierdo -->
     <div class="buscardor_menu" id="busquedaAvanzada_scroll">
       Busqueda Avanzada
     </div>
-    <!-- Menu-->
+
+    <!-- Menu -->
     <div id="sidemenu" class="menu-collapsed">
       <div class="side_control">
         <img class="closeMenu" src="assets/closeMenu.svg" alt="" srcset="" />
@@ -56,6 +67,9 @@
         </div>
         <div class="side_item_logout">
           <a href="#">Cerrar Sesión</a>
+        </div>
+        <div class="side_item_login">
+          <a href="#">iniciar Sesión</a>
         </div>
 
         <p class="side_text">
@@ -144,25 +158,20 @@
     </div>
 
     <div class="content" id="main_content">
-      <!-- Inicio -->
-      <div class="header_promocion">
-        <div class="container">
-          <div class=" hp_group">
-            <h1 class="hp_fecha">
-              5 dias para finalizar
-            </h1>
-          </div>
-          <div class=" hp_group">
-            <h1 class="h1_a">¡Bienvenido al Buen fin!</h1>
-          </div>
-          <div class=" hp_group">
-            <span>Ahorra el 20% del enganche de tu propiedad!</span>
-          </div>
+      <div class="promocion_banner_propiedad">
+        <h1 class="h1_a">Buen Fin</h1>
+        <!-- Fecha para movil-->
+        <div class="fecha_final_promocion">
+          3 Dias para finalizar
         </div>
-        
-      </div>
 
-      <div class="section_header_propiedad">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
+          itaque soluta pariatur? Tenetur, laboriosam cum?
+        </p>
+      </div>
+      <!-- Encabezado y navegacion -->
+      <div class="section_header_propiedad mb-4">
         <div class="container">
           <div class="row navigation">
             <div class="col-6">
@@ -180,271 +189,328 @@
         </div>
       </div>
 
-      <div class="images_propiedad v_escritorio">
-        <div class="content_image_one">
-          <img
-            class="one_image"
-            src="assets/image/propiedad_image_2.png"
-            alt=""
-          />
-        </div>
-        <div class="content_image_two">
-          <img
-            class="two_image"
-            src="assets/image/propiedad_image_2.png"
-            alt=""
-          />
-          <div class="three_image">
-            <button>+6 Fotos</button>
+      <!-- Imagenes -->
+      <div class="container">
+        <div class="row">
+          <!-- Hay dos versiones ya que es muy complicado adaptarlas -->
+          <!-- Version escritorio -->
+          <div class="col-md-7 v_escritorio">
+            <img
+              class="image_one"
+              src="assets/image/propiedad_image_2.png"
+              alt=""
+              srcset=""
+            />
+            <div class="tags">
+              <div class="tag_preventa">Preventa</div>
+              <div class="tag_promociones">Promociones</div>
+            </div>
+          </div>
+          <div class="col-md-5 v_escritorio">
+            <img
+              class="image_two"
+              src="assets/image/propiedad_image_2.png"
+              alt=""
+              srcset=""
+            />
+            <div class="image_content">
+              <img
+                class="image_tres"
+                src="assets/image/propiedad_image_2.png"
+                alt=""
+                srcset=""
+              />
+              <div class="content_button_image">
+                <!-- Recomiendo que este boton cuando lo aprietes 
+                  te descargue el pdf de la ficha tecnica, con 
+                  todas las imagenes
+                -->
+                <button class="button_image">+5 Fotos</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Version movil -->
+          <div class="col-md-12 v_movil">
+            <div
+              id="carouselExampleSlidesOnly"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="assets/image/propiedad_image_2.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/image/propiedad_image_2.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/image/propiedad_image_2.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="images_propiedad_movil v_movil">
-        <div
-          id="carouselExampleControls"
-          class="carousel slide"
-          data-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="assets/image/propiedad_image_2.png"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="assets/image/propiedad_image_2.png"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="assets/image/propiedad_image_2.png"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-target="#carouselExampleControls"
-            data-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-target="#carouselExampleControls"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </button>
-        </div>
-      </div>
+      <div class="container">
+        <!-- Contenido -->
+        <div class="main_propiedad">
+          <!-- Titulo -->
+          <h1 class="h1_b">
+            Renta casa con 2 cuartos y un baño en Mérida, Yucatán.
+          </h1>
 
-      <div class="main_propiedad">
-        <div class="container">
-          <div class="v_escritorio">
-            <div class="row">
-              <div class="col-8 encabezado_propiedad">
-                <h1 class="h1_b">Villa Mar</h1>
-              </div>
-              <div class="col-4">
-                <div class="compartir_propiedad">
-                  <img src="assets/favoritos.svg" alt="" srcset="" />
-                </div>
-                <div class="compartir_propiedad">
-                  <img src="assets/compartir.svg" alt="" srcset="" />
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <p class="direction_propiedad">Mérida, Yucatán, México.</p>
-            </div>
-            <div class="row">
-              <div class="etiquetas_propiedad">
-                <div class="tag_preventa">Preventa</div>
-                <div class="tag_desarrollo">Desarrollo</div>
-              </div>
-            </div>
-          </div>
+          <!-- Ubicacion-->
+          <p>Mérida, Yucatán.</p>
 
-          <div class="row v_movil">
-            <div class="col-8">
-              <span class="tag_preventa">Preventa</span>
-            </div>
-            <div class="col-4">
-              <div class="compartir_propiedad">
-                <img src="assets/favoritos.svg" alt="" srcset="" />
-              </div>
-              <div class="compartir_propiedad">
-                <img src="assets/compartir.svg" alt="" srcset="" />
-              </div>
-            </div>
-          </div>
-          <div class="row mt-3 v_movil">
-            <div class="col-7">
-              <h1 class="titulo_propiedad h1_b">Villas del Mar</h1>
-            </div>
-            <div class="col-5">
-              <div class="tag_desarrollo">Desarrollo</div>
-            </div>
-          </div>
-          <div class="row v_movil">
-            <p class="direction_propiedad">Mérida, Yucatán, México.</p>
-          </div>
+          <!-- Atributos -->
+          <div class="card_propiedad_atributos mb-3">
+            <span>
+              <img src="assets/cuartos.svg" alt="" srcset="" />
+              1</span
+            >
 
-          <div class="attributes_propiedad">
-            <h1 class="h1_b v_movil">Caracteristicas</h1>
-            <span class="attributes_propiedad_content">
-              <div class="attributes_propiedad_item">
-                <img src="assets/cuartos.svg" alt="" srcset="" />
-                <span>1</span>
-              </div>
+            <span>
+              <img src="assets/baños.svg" alt="" srcset="" />
+              1
+            </span>
 
-              <div class="attributes_propiedad_item">
-                <img src="assets/baños.svg" alt="" srcset="" />
-                <span>2</span>
-              </div>
-
-              <div class="attributes_propiedad_item">
-                <img src="assets/superficie.svg" alt="" srcset="" />
-                <span>2</span>
-              </div>
+            <span>
+              <img src="assets/superficie.svg" alt="" srcset="" />
+              150 Mts2
             </span>
           </div>
 
+          <!-- Descripcion -->
           <div class="description_propiedad">
-            <h1 class="h1_b v_movil">Descripcion</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti
-              dignissimos sed, doloribus qui ipsam vero voluptatem sequi, eius
-              minus impedit dolorem, iste deserunt ut adipisci non nisi ullam
-              eos nemo!
-            </p>
+            <h1 class="h1_b">Descripcion</h1>
+            <div id="descripcion" class="text_corto">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              cursus nisi nibh, nec suscipit mi dignissim eu. Nullam eu leo ac
+              dolor congue semper eleifend eu justo. Aliquam rutrum ex ultrices,
+              tristique nisi a, finibus augue. Nulla pellentesque mi ac sapien
+              egestas faucibus. Vivamus in purus luctus, fringilla mi nec,
+              gravida orci. Donec non maximus velit. Sed nec aliquam sem, id
+              fringilla neque. Aliquam vel semper neque. Curabitur eget euismod
+              sem, vitae venenatis ex. Nam luctus dignissim nulla, in aliquam
+              felis feugiat eu. Proin sagittis quam sed vulputate blandit. Sed
+              non faucibus diam. Orci varius natoque penatibus et magnis dis
+              parturient montes, nascetur ridiculus mus. In eget lacinia lectus.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+              elementum ante metus, in euismod diam semper sit amet. Cras
+              lobortis nisi elit, et bibendum purus sodales sed. Morbi sagittis
+              eget tellus eu placerat. Nam eget nisl blandit, accumsan dolor
+              vel, finibus massa. Sed in sem finibus turpis aliquam iaculis.
+              Duis quis mi a quam rhoncus rutrum quis vel quam. Donec volutpat
+              nulla velit, in finibus metus semper quis. Mauris sagittis ipsum
+              elit, ac fringilla erat dictum at. Aenean ex leo, lobortis vel
+              sapien id, vulputate faucibus nulla. Morbi auctor lacus ut mauris
+              viverra suscipit. Aliquam tortor ligula, gravida ac elit a,
+              hendrerit tempor nisl. Donec tincidunt cursus mi. Suspendisse vel
+              est lorem. Integer mattis ornare orci quis facilisis. Vestibulum
+              rutrum consectetur elementum. Fusce ornare condimentum dolor.
+              Aenean et diam erat. Morbi accumsan varius ligula feugiat
+              sagittis. Duis sed molestie sem. Proin vulputate ultrices tortor
+              ut auctor. Integer id ante ac nulla feugiat convallis. Maecenas
+              placerat sem a dui vulputate fermentum. Maecenas in eros nec lacus
+              convallis varius quis vitae metus. Cras sed tellus nec justo
+              vulputate gravida. Phasellus venenatis, turpis et congue bibendum,
+              nibh tellus tristique orci, gravida eleifend ligula enim venenatis
+              nisl. Nam diam nunc, mattis ac elementum sed, sodales sit amet
+              neque. Sed suscipit tristique neque, non lacinia mauris fermentum
+              in. Vestibulum at molestie felis. Nullam auctor mattis efficitur.
+              Nunc sagittis, felis bibendum mollis ullamcorper, sem libero
+              ultricies lacus, vitae malesuada metus lorem id purus. Sed elit
+              odio, ullamcorper quis gravida nec, pulvinar nec nisi. Curabitur
+              maximus ligula et elit tristique, vel condimentum ligula vehicula.
+              Vivamus nec condimentum neque. Aliquam blandit vulputate orci sed
+              pellentesque. Vestibulum iaculis sapien sit amet massa molestie,
+              vel ornare lorem gravida. Integer nec nulla sed eros eleifend
+              convallis sit amet ut quam. Sed nec nibh vulputate enim elementum
+              ullamcorper commodo ac leo. Morbi placerat congue lorem quis
+              dictum. Integer dictum at nunc sit amet tempus.
+            </div>
+            <button id="ver_mas">Ver más</button>
           </div>
 
+          <!-- Amenidades -->
           <div class="amenidades_propiedad">
             <h1 class="h1_b">Amenidades</h1>
-            <span class="amenidades_content">
-              <span>Jardin,</span>
-              <span>Supermercado,</span>
-              <span>Escuela,</span>
-              <span>Secundaria,</span>
-              <span>Minisuper,</span>
-              <span>Universidad,</span>
-              <span>Areas Verdes,</span>
-            </span>
+
+            <ul>
+              <li>Estacionamiento</li>
+              <li>Area Social</li>
+              <li>Aire acondicionado</li>
+              <li>Termostato</li>
+              <li>Jardin</li>
+              <li>Parques</li>
+              <li>Supermercado</li>
+              <li>Escuela</li>
+              <li>Universidad</li>
+            </ul>
           </div>
 
-          <div class="modelos_propiedad">
+          <!-- Modelos -->
+          <div class="modelos_desarrollo my-4">
             <h1 class="h1_b">Modelos</h1>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card_propiedad">
+                  <img
+                    src="assets/image/propiedad_image.png"
+                    alt=""
+                    srcset=""
+                  />
 
-            <div class="modelos_propiedades">
-              <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides">
-                  <div class="glide__slide">
-                    <div class="card_modelo">
-                      <h1 class="h1_b">1 Recamara</h1>
-                      <p class="disponibilidad_modelo">12 disponibles</p>
-                      <span class="attributos_modelo">
-                        <span>1 hab.</span>
-                        <span>1 Baños.</span>
-                        <span>250 mts2.</span>
-                      </span>
-                      <span class="precio_modelo">$1,500,000</span>
+                  <div class="card_propiedad_content">
+                    <h1 class="h1_b text_corto">Modelo Torrencial</h1>
+                    <div class="card_propiedad_atributos">
+                      <span> 1 Baño</span>
+
+                      <span> 2 Cuartos </span>
                     </div>
+                    <div class="estado_card_propiedad">12 Disponibles</div>
+                    <a
+                      class="button_card_propiedad"
+                      href="paginaPropiedad.html"
+                    >
+                      Ver propiedad
+                    </a>
                   </div>
-                  <div class="glide__slide">
-                    <div class="card_modelo">
-                      <h1 class="h1_b">1 Recamara</h1>
-                      <p class="disponibilidad_modelo">12 disponibles</p>
-                      <span class="attributos_modelo">
-                        <span>1 hab.</span>
-                        <span>1 Baños.</span>
-                        <span>250 mts2.</span>
-                      </span>
-                      <span class="precio_modelo">$1,500,000</span>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card_propiedad">
+                  <img
+                    src="assets/image/propiedad_image.png"
+                    alt=""
+                    srcset=""
+                  />
+
+                  <div class="card_propiedad_content">
+                    <h1 class="h1_b text_corto">Modelo Estrella</h1>
+                    <div class="card_propiedad_atributos">
+                      <span> 1 Baño</span>
+
+                      <span> 2 Cuartos </span>
                     </div>
+                    <div class="estado_card_propiedad">12 Disponibles</div>
+                    <a
+                      class="button_card_propiedad"
+                      href="paginaPropiedad.html"
+                    >
+                      Ver propiedad
+                    </a>
                   </div>
-                  <div class="glide__slide">
-                    <div class="card_modelo">
-                      <h1 class="h1_b">1 Recamara</h1>
-                      <p class="disponibilidad_modelo">12 disponibles</p>
-                      <span class="attributos_modelo">
-                        <span>1 hab.</span>
-                        <span>1 Baños.</span>
-                        <span>250 mts2.</span>
-                      </span>
-                      <span class="precio_modelo">$1,500,000</span>
-                    </div>
-                  </div>
-                </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Videos Propiedad -->
+          <div class="videos_propiedad">
+            <h1 class="h1_b">Galera de Videos</h1>
+            <div
+              id="carouselExampleSlidesOnly"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/HnqZ0muAyVQ"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="carousel-item">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/w-iIqAb2I7k"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="carousel-item">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/8t_I3Gf3BM4"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="ubicacion_propiedad">
             <h1 class="h1_b">Ubicacion</h1>
-            <p>Calle 12 No. 123 Montes de Amé</p>
-
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.727698966443!2d-89.59902918563196!3d21.00354969401567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f56771e2c4438d1%3A0x7904da4e6226ac9c!2sPlog%20-%20Agencia%20Digital%20de%20Inbound%20Marketing!5e0!3m2!1ses!2smx!4v1656259344436!5m2!1ses!2smx"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+            <p>Mérida, Yucatán</p>
+            <div class="mapa_frame">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238419.6457324471!2d-89.77300667052678!3d20.980328887689918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f56715cab450d17%3A0x5dfc155715abeb09!2zTcOpcmlkYSwgWXVjLg!5e0!3m2!1ses!2smx!4v1658541929795!5m2!1ses!2smx"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
 
-          <div class="videos_propiedad">
-            <h1 class="h1_b">Videos del proyecto</h1>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/eITQe3WWg_w"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
+          <!-- Recorrido Propiedad -->
         </div>
-      </div>
 
-      <div class="form_propiedad_content">
-        <form action="">
-          <h1 class="h1_b">¿Te gustó esta propiedad?</h1>
-          <p>Dejanos ayudarte</p>
-          <input type="email" name="" id="" placeholder="Email" />
-          <input type="text" name="" id="" placeholder="Nombre" />
-          <input type="tel" name="" id="" placeholder="Telefono" />
-          <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="5"
-            placeholder="Escrite tu mensaje"
-          ></textarea>
-          <button type="submit">Contactar</button>
-          <a href="#" class="whatsapp">Contactar por whatsapp</a>
-          <div class="terms">
-            Al enviar este mensaje aceptas los
-            <span class="terms_accent">
-              términos y condiciones de uso y las políticas de privacidada
-            </span>
-          </div>
-        </form>
+        <!-- Formulario -->
+        <div class="form_propiedad_content">
+          <form action="">
+            <h1 class="h1_b">¿Te gustó esta propiedad?</h1>
+            <p>Dejanos ayudarte</p>
+            <input type="email" name="" placeholder="Email" />
+            <input type="text" name="" placeholder="Nombre" />
+            <input type="tel" name="" placeholder="Telefono" />
+            <textarea
+              name=""
+              cols="30"
+              rows="5"
+              placeholder="Escrite tu mensaje"
+              class="mt-2"
+            ></textarea>
+            <button type="submit">Contactar</button>
+            <a href="#" class="whatsapp">Contactar por whatsapp</a>
+            <div class="terms">
+              Al enviar este mensaje aceptas los
+              <span class="terms_accent">
+                términos y condiciones de uso y las políticas de privacidada
+              </span>
+            </div>
+          </form>
+        </div>
       </div>
 
       <!-- Footer -->
@@ -514,27 +580,12 @@
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <!-- Sliders Code -->
     <script src="js/glide/glide_sliders.js"></script>
-    <script>
-      var modelos_propiedades = new Glide(".modelos_propiedades", {
-        type: "carousel",
-        perView: 2,
-        focusAt: "center",
-        breakpoints: {
-          840: {
-            perView: 2,
-          },
-          600: {
-            perView: 2,
-          },
-        },
-      });
-      modelos_propiedades.mount();
-    </script>
 
     <!-- Formato Numerico -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
 
     <!-- Codigo JS -->
+    <script src="propiedad.js"></script>
     <script src="app.js"></script>
 
     <!-- Bootstrap 4.6 Script -->

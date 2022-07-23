@@ -7,7 +7,7 @@
     width: 100%;
     height: 40vh !important;
     background: url("assets/image/Banner_Propiedades.png") !important;
-    
+
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -32,6 +32,7 @@
 
   .filtros_propiedades {
     display: inline-block;
+    margin: 0 !important;
   }
   .filtros_propiedades select {
     padding: 0.25rem 0.5rem;
@@ -87,7 +88,7 @@
   padding: 0;
   margin: 0;
   width: 100%;
-  height: 60vh;
+  height: 50vh;
   background: #ffffff;
 }
 .title_header {
@@ -109,7 +110,7 @@
 
 .filtros_propiedades {
   display: inline-block;
-  margin-right: 1rem;
+  margin: 0 1rem;
 }
 .filtros_propiedades select {
   padding: 0.25rem 0.5rem;
@@ -128,11 +129,11 @@
 }
 .propiedades_list {
   background: #e7fef9;
-  padding: 4rem .5rem;
+  padding: 4rem 0.5rem;
 }
 .propiedades_resultados {
   background: #e7fef9;
-  padding: 4rem .5rem;
+  padding: 4rem 0.5rem;
 }
 
 .propiedades_content h1 {

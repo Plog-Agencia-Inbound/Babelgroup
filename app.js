@@ -4,41 +4,45 @@ window.addEventListener("scroll", (event) => {
   let scrollX = this.scrollX;
   console.log(scrollY);
   console.log(scrollX);
-  if(scrollY >= 600){
-    console.log("cambio de color");7
+  if (scrollY >= 600) {
+    console.log("cambio de color");
+    7;
     document.getElementById("busquedaAvanzada_scroll").style.opacity = ".2";
     document.getElementById("busquedaAvanzada_scroll").style.transition = ".5s";
   }
 
-  if(scrollY < 600){
-    console.log("cambio de color");7
+  if (scrollY < 600) {
+    console.log("cambio de color");
+    7;
     document.getElementById("busquedaAvanzada_scroll").style.opacity = "1";
     document.getElementById("busquedaAvanzada_scroll").style.transition = ".5s";
   }
 });
 
-
 // Boton de compartir
-function shareFunction(url){
+function shareFunction(url) {
   navigator.share({
-    title: 'Me encanto esta propiedad de Babelgroup.mx',
-    text: 'Me encanto esta propiedad de Babelgroup.mx, Haz click aqui para poder verla',
-    url: '/favicon.png'
+    title: "Me encanto esta propiedad de Babelgroup.mx",
+    text: "Me encanto esta propiedad de Babelgroup.mx, Haz click aqui para poder verla",
+    url: "/favicon.png",
   });
 }
-
 
 // Funciones de Menu
 var openmenu = document.querySelector(".openMenu");
 var closemenu = document.querySelector(".closeMenu");
 var sidemenu = document.querySelector("#sidemenu");
-var busquedaAvanzada_scroll = document.getElementById("busquedaAvanzada_scroll");
+var busquedaAvanzada_scroll = document.getElementById(
+  "busquedaAvanzada_scroll"
+);
 
 busquedaAvanzada_scroll.addEventListener("click", openMenuAvanzado);
 
 var sidemenuHeader = document.getElementById("header_sidemenu");
 var sidemenuContent = document.getElementById("contenido_sidemenu");
-var sidemenuBusquedaAvanzada = document.getElementById("busquedaAvanzada_sidemenu");
+var sidemenuBusquedaAvanzada = document.getElementById(
+  "busquedaAvanzada_sidemenu"
+);
 
 openmenu.addEventListener("click", openMenu);
 closemenu.addEventListener("click", closeMenu);
@@ -164,7 +168,6 @@ bMrentar.addEventListener("click", function () {
   }
 });
 
-
 // Busqueda avanzada Movil
 const btn_bAvanzada = document.getElementById("btn_bAvanzada");
 const bAswitch = document.getElementById("bAvanzadaswitch");
@@ -179,3 +182,4 @@ btn_bAvanzada.addEventListener("click", function () {
     bAContent.classList.add("bAvanzada_on");
   }
 });
+

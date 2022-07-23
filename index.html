@@ -22,95 +22,17 @@
     />
     <link rel="stylesheet" href="css/glide.core.min.css" />
     <link rel="stylesheet" href="css/glide.theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   </head>
   <body>
-
-    <!-- Inicio de sesion version Movil -->
-    <div class="firstPage">
-      <div class="session_section">
-        <img
-          class="img_session_section"
-          src="assets/logo_2.svg"
-          alt=""
-          srcset=""
-        />
-        <p class="text_session_section">
-          Inicia sesión para mejorar tu experiancia de busqueda.
-        </p>
-        <a class="btn_a_session_section" href="#iSession"> Iniciar sesión </a>
-        <a class="link_a_session_section" href="#">Iniciar Sesion después</a>
-      </div>
-      <div class="session_login">
-        <h2>Iniciar Sesión</h2>
-        <form id="iSession" action="#" method="post">
-          <div class="input_wrapper">
-            <input type="text" name="username" placeholder="Usuario " />
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="input_icon"
-            >
-              <path
-                d="M17.2678 8.56073L13.0024 11.995C12.1952 12.6279 11.0636 12.6279 10.2564 11.995L5.95435 8.56073"
-                stroke="#A7A7A7"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M6.88787 3H16.3158C17.6752 3.01525 18.969 3.58993 19.896 4.5902C20.823 5.59048 21.3022 6.92903 21.222 8.29412V14.822C21.3022 16.1871 20.823 17.5256 19.896 18.5259C18.969 19.5262 17.6752 20.1009 16.3158 20.1161H6.88787C3.96796 20.1161 2 17.7407 2 14.822V8.29412C2 5.37545 3.96796 3 6.88787 3Z"
-                stroke="#A7A7A7"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
-          <div class="input_wrapper">
-            <input type="password" name="password" placeholder="Contraseña" />
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="input_icon"
-            >
-              <path
-                d="M16.4236 9.44751V7.30051C16.4236 4.78751 14.3856 2.74946 11.8726 2.74946C9.35961 2.73851 7.31361 4.76651 7.30261 7.28051V7.30051V9.44751"
-                stroke="#A7A7A7"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M15.6834 21.2492H8.04237C5.94837 21.2492 4.25037 19.5522 4.25037 17.4572V13.1682C4.25037 11.0732 5.94837 9.37624 8.04237 9.37624H15.6834C17.7774 9.37624 19.4754 11.0732 19.4754 13.1682V17.4572C19.4754 19.5522 17.7774 21.2492 15.6834 21.2492Z"
-                stroke="#A7A7A7"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M11.863 14.2023V16.4233"
-                stroke="#A7A7A7"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
-          <button type="submit">Iniciar Sesión</button>
-          <span>¿Aun no tienes una cuenta? <a href="#">¡Registrate!</a></span>
-        </form>
-      </div>
-    </div>
+    
+    <!-- Boton Flotante Whatsapp -->
+    <span class="text-flotante">
+      Escribenos
+    </span>
+    <a href="#" class="flotante_whatsapp" target="_blank">
+      <i class="fa fa-whatsapp flotante_whatsapp_icon"></i>
+    </a>
 
     <!-- Menu Estatico Izquierdo -->
     <div class="buscardor_menu" id="busquedaAvanzada_scroll">
@@ -143,6 +65,9 @@
         </div>
         <div class="side_item_logout">
           <a href="#">Cerrar Sesión</a>
+        </div>
+        <div class="side_item_login">
+          <a href="#">iniciar Sesión</a>
         </div>
 
         <p class="side_text">
@@ -473,7 +398,7 @@
                   <div class="title_card_propiedad" title="Casa en Mérida, Yucatán, con 2 Recamaras, 2 Baños y Piscina, Zona Norte de la ciudad.">
                     Casa en Mérida, Yucatán, con 2 Recamaras, 2 Baños y Piscina, Zona Norte de la ciudad.
                   </div>
-                  <a class="button_card_propiedad" href="#">
+                  <a class="button_card_propiedad" href="paginaPropiedad.html">
                     Ver propiedad
                   </a>
                 </div>
@@ -525,7 +450,7 @@
                   <div class="title_card_propiedad" title="Casa en Mérida, Yucatán, con 2 Recamaras, 2 Baños y Piscina, Zona Norte de la ciudad.">
                     Casa en Mérida, Yucatán, con 2 Recamaras, 2 Baños y Piscina, Zona Norte de la ciudad.
                   </div>
-                  <a class="button_card_propiedad" href="#">
+                  <a class="button_card_propiedad" href="paginaPropiedad.html">
                     Ver propiedad
                   </a>
                 </div>
@@ -577,7 +502,7 @@
                   <div class="title_card_propiedad" title="Casa en Mérida, Yucatán, con 2 Recamaras, 2 Baños y Piscina, Zona Norte de la ciudad.">
                     Casa en Mérida, Yucatán, con 2 Recamaras, 2 Baños y Piscina, Zona Norte de la ciudad.
                   </div>
-                  <a class="button_card_propiedad" href="#">
+                  <a class="button_card_propiedad" href="paginaPropiedad.html">
                     Ver propiedad
                   </a>
                 </div>
@@ -633,7 +558,7 @@
                   <div class="card_title_aniadida" title="Casa en Renta al norte de Mérida, colonia San Marcos.">
                     Casa en Renta al norte de Mérida, colonia San Marcos.
                   </div>
-                  <a class="card_button_aniadida" href="#">Ver más</a>
+                  <a class="card_button_aniadida" href="paginaPropiedad.html">Ver más</a>
                 </div>
               </div>
               
@@ -658,62 +583,7 @@
                   <div class="card_title_aniadida" title="Casa en Renta al norte de Mérida, colonia San Marcos.">
                     Casa en Renta al norte de Mérida, colonia San Marcos.
                   </div>
-                  <a class="card_button_aniadida" href="#">Ver más</a>
-                </div>
-              </div>
-              
-            </div>
-
-          </div>
-
-          <div class="row mt-2">
-
-            <div class="col-md-6">
-
-              <div class="card_aniadida">
-                <img src="assets/image/propiedad_horizontal.png" alt="" srcset="">
-                <div class="share_horizontal">
-                  <div class="favoritos">
-                    <img src="assets/favoritos.svg" alt="" srcset="">
-                  </div>
-                </div>
-                <div class="card_content_aniadida">
-                  <h1 class="h1_b">
-                    $5,000,000.00
-                  </h1>
-                  <div class="card_atributos_aniadida">
-                    <span>1 Cuarto</span>
-                    <span>2 Baños</span>
-                  </div>
-                  <div class="card_title_aniadida" title="Casa en Renta al norte de Mérida, colonia San Marcos.">
-                    Casa en Renta al norte de Mérida, colonia San Marcos.
-                  </div>
-                  <a class="card_button_aniadida" href="#">Ver más</a>
-                </div>
-              </div>
-              
-            </div>
-            <div class="col-md-6">
-
-              <div class="card_aniadida">
-                <img src="assets/image/propiedad_horizontal.png" alt="" srcset="">
-                <div class="share_horizontal">
-                  <div class="favoritos">
-                    <img src="assets/favoritos.svg" alt="" srcset="">
-                  </div>
-                </div>
-                <div class="card_content_aniadida">
-                  <h1 class="h1_b">
-                    $5,000,000.00
-                  </h1>
-                  <div class="card_atributos_aniadida">
-                    <span>1 Cuarto</span>
-                    <span>2 Baños</span>
-                  </div>
-                  <div class="card_title_aniadida" title="Casa en Renta al norte de Mérida, colonia San Marcos.">
-                    Casa en Renta al norte de Mérida, colonia San Marcos.
-                  </div>
-                  <a class="card_button_aniadida" href="#">Ver más</a>
+                  <a class="card_button_aniadida" href="paginaPropiedad.html">Ver más</a>
                 </div>
               </div>
               
@@ -743,7 +613,7 @@
                   <div class="card_title_aniadida" title="Casa en Renta al norte de Mérida, colonia San Marcos.">
                     Casa en Renta al norte de Mérida, colonia San Marcos.
                   </div>
-                  <a class="card_button_aniadida" href="#">Ver más</a>
+                  <a class="card_button_aniadida" href="paginaPropiedad.html">Ver más</a>
                 </div>
               </div>
               
@@ -768,7 +638,62 @@
                   <div class="card_title_aniadida" title="Casa en Renta al norte de Mérida, colonia San Marcos.">
                     Casa en Renta al norte de Mérida, colonia San Marcos.
                   </div>
-                  <a class="card_button_aniadida" href="#">Ver más</a>
+                  <a class="card_button_aniadida" href="paginaPropiedad.html">Ver más</a>
+                </div>
+              </div>
+              
+            </div>
+
+          </div>
+
+          <div class="row mt-2">
+
+            <div class="col-md-6">
+
+              <div class="card_aniadida">
+                <img src="assets/image/propiedad_horizontal.png" alt="" srcset="">
+                <div class="share_horizontal">
+                  <div class="favoritos">
+                    <img src="assets/favoritos.svg" alt="" srcset="">
+                  </div>
+                </div>
+                <div class="card_content_aniadida">
+                  <h1 class="h1_b">
+                    $5,000,000.00
+                  </h1>
+                  <div class="card_atributos_aniadida">
+                    <span>1 Cuarto</span>
+                    <span>2 Baños</span>
+                  </div>
+                  <div class="card_title_aniadida" title="Casa en Renta al norte de Mérida, colonia San Marcos.">
+                    Casa en Renta al norte de Mérida, colonia San Marcos.
+                  </div>
+                  <a class="card_button_aniadida" href="paginaPropiedad.html">Ver más</a>
+                </div>
+              </div>
+              
+            </div>
+            <div class="col-md-6">
+
+              <div class="card_aniadida">
+                <img src="assets/image/propiedad_horizontal.png" alt="" srcset="">
+                <div class="share_horizontal">
+                  <div class="favoritos">
+                    <img src="assets/favoritos.svg" alt="" srcset="">
+                  </div>
+                </div>
+                <div class="card_content_aniadida">
+                  <h1 class="h1_b">
+                    $5,000,000.00
+                  </h1>
+                  <div class="card_atributos_aniadida">
+                    <span>1 Cuarto</span>
+                    <span>2 Baños</span>
+                  </div>
+                  <div class="card_title_aniadida" title="Casa en Renta al norte de Mérida, colonia San Marcos.">
+                    Casa en Renta al norte de Mérida, colonia San Marcos.
+                  </div>
+                  <a class="card_button_aniadida" href="paginaPropiedad.html">Ver más</a>
                 </div>
               </div>
               
@@ -787,19 +712,25 @@
           <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
               <div class="glide__slide">
-                <div class="categorias_propiedades colorbg_a">
-                  <h1 class="h1_a">Casas</h1>
-                </div>
+                <a class="tipo_propiedades_categorias" href="catalogoPropiedades.html">
+                  <div class="categorias_propiedades colorbg_a">
+                    <h1 class="h1_a">Casas</h1>
+                  </div>
+                </a>
               </div>
               <div class="glide__slide">
-                <div class="categorias_propiedades colorbg_b">
-                  <h1 class="h1_a">Departamentos</h1>
-                </div>
+                <a class="tipo_propiedades_categorias" href="catalogoPropiedades.html">
+                  <div class="categorias_propiedades colorbg_b">
+                    <h1 class="h1_a">Departamentos</h1>
+                  </div>
+                </a>
               </div>
               <div class="glide__slide">
-                <div class="categorias_propiedades colorbg_c">
-                  <h1 class="h1_a">Desarrollos</h1>
-                </div>
+                <a class="tipo_propiedades_categorias" href="catalogoPropiedades.html">
+                  <div class="categorias_propiedades colorbg_c">
+                    <h1 class="h1_a">Desarrollos</h1>
+                  </div>
+                </a>
               </div>
             </ul>
           </div>

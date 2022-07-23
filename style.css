@@ -4,6 +4,44 @@
   --padding: 2rem 1rem;
   --paddingCollapsed: 0;
 }
+.text-flotante{
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  background: #f5f5f5;
+  color: #121212;
+  padding: .4rem .6rem;
+  border-radius: 15px;
+  position:fixed;
+	bottom:40px;
+	right:110px;
+  z-index:1;
+  cursor: pointer;
+  box-shadow: 2.1595px 2.3829px 5.1806px rgba(0, 0, 0, 0.048);
+}
+.flotante_whatsapp{
+  position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#1ea0d4;
+	color:#FFF;
+	border-radius:45px 45px 8px 45px;
+	text-align:center;
+  font-size:30px;
+  z-index:1;
+  box-shadow: 2.1595px 2.3829px 5.1806px rgba(0, 0, 0, 0.048);
+}
+.flotante_whatsapp:hover{
+  transition: 1s;
+  transform: scale(.95);
+  color: #fff;
+  background: #1dacff;
+}
+.flotante_whatsapp_icon{
+	margin-top:16px;
+}
 
 /* Menu de navegacion */
 .buscardor_menu{
@@ -128,6 +166,28 @@ body {
   color: #1ea0d4;
   transition: 0.3s ease-in-out;
 }
+.side_item_login {
+  padding: 0.6rem 2rem;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}.side_item_login:hover {
+  background: #ffffff96;
+  transition: 0.3s ease-in-out;
+}
+.side_item_login a{
+  font-size: 22px;
+  color: #979797;
+  text-decoration: none;
+  font-weight: 500;
+  display: block;
+  margin-right: auto;
+
+}
+.side_item_login a:hover {
+  color: #1ea0d4;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+}
 .side_item_logout {
   padding: 0.6rem 2rem;
   border-radius: 5px;
@@ -136,6 +196,11 @@ body {
 .side_item_logout:hover {
   background: #ffffff96;
   transition: 0.3s ease-in-out;
+}
+.side_item_logout a:hover {
+  color: #f22727;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
 }
 #contenido_sidemenu .side_item_logout a {
   font-size: 22px;
@@ -553,8 +618,46 @@ body {
     border-radius: 15px;
   }
 
+  .img_session_section {
+    display: block;
+    margin: 4rem auto;
+    width: 20% !important ;
+  }
+  .text_session_section {
+    display: block;
+    margin: 4rem auto;
+    color: #ffffff;
+    text-align: center;
+    padding: 0 3rem;
+    font-size: 16px;
+  }
+  .btn_a_session_section {
+    width: 200px !important;
+    display: block;
+    margin: 4rem auto;
+    text-align: center;
+    color: #ffffff;
+    background: #1ea0d4;
+    width: 80%;
+    padding: 0.8rem 0;
+    border-radius: 25px;
+    font-size: 14px;
+  }
+  .session_login{
+    width: 400px;
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .session_register{
+    width: 400px;
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
 
-
+  }
 }
 /* Fin del responsive */
 
@@ -565,10 +668,7 @@ body {
 
 /* Inicio de Sesion */
 .firstPage {
-  /*
   display: block;
-  */
-  display: none;
   box-sizing: border-box;
 }
 
@@ -599,8 +699,9 @@ body {
   padding: 0 3rem;
 }
 .btn_a_session_section {
+  width: 200px !important;
   display: block;
-  margin: 4rem auto;
+  margin: 2rem auto 0 auto;
   text-align: center;
   color: #ffffff;
   background: #1ea0d4;
@@ -629,23 +730,23 @@ body {
   font-weight: 500;
   transition: 1s;
 }
-.session_login {
+.session_login, .session_register {
   background: #ffffff;
   padding: 3rem 2rem 5rem 2rem;
 }
-.session_login h2 {
+.session_login h2, .session_register h2 {
   color: #343434;
   font-size: 24px;
   font-weight: 600;
 }
-.session_login form {
+.session_login form, .session_register form {
   margin: 1.5rem 0;
 }
 .input_wrapper {
   position: relative;
   width: 100%;
 }
-.session_login form input[type="text"],
+.session_login form input[type="text"], .session_register form input[type="text"],
 input[type="password"] {
   box-sizing: border-box;
   display: block;
@@ -667,7 +768,7 @@ input[type="password"] {
   top: 50%;
   transform: translateY(-50%);
 }
-.session_login form button[type="submit"],
+.session_login form button[type="submit"],.session_register form button[type="submit"],
 .btn_submit_general {
   display: block;
   margin: 1rem auto;
@@ -679,27 +780,31 @@ input[type="password"] {
   font-size: 14px;
   border: none;
 }
-.session_login form button[type="submit"]:hover {
+.session_login form button[type="submit"]:hover,.session_register form button[type="submit"]:hover {
   background: #004d82;
   color: #ffffff;
   font-weight: 500;
   transition: 1s;
 }
-.session_login form span {
+.session_login form span,.session_register form span {
   color: #000000;
   font-size: 14px;
 }
-.session_login form span > a {
+.session_login form span > span, .session_register form span > span {
   color: #004d82;
   font-size: 14px;
   text-decoration: none;
   font-weight: 500;
   transition: 1s;
+  cursor: pointer;
 }
-.session_login form span > a:hover {
+.session_login form span > span:hover, .session_register form span > span:hover {
   color: #1ea0d4;
   font-size: 14px;
   text-decoration: none;
+}
+#register_babel{
+  display: none;
 }
 
 /* Contenido*/
@@ -1340,4 +1445,7 @@ footer form button[type="submit"] {
   color: #ffffff;
   text-decoration: none;
   transition: 1s;
+}
+.tipo_propiedades_categorias:hover{
+  text-decoration: none;
 }
