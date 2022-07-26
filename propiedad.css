@@ -399,3 +399,20 @@ button[type="submit"]:active {
   border-radius: 10px;
   margin: 1rem 0.5rem;
 }
+.botones_propiedad{
+  display: block;
+  padding: .5rem 0;
+  margin-top: .5rem;
+}
+.botones_propiedad > button{
+  padding: .4rem 1rem;
+  color: #ffffff;
+  border-radius: 8px;
+  font-size: 14px;
+  border: none;
+  background: #003150;
+}
+.botones_propiedad > button > img{
+  width: 30px;
+  height: 30px;
+}
