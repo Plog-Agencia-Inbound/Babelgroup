@@ -400,19 +400,31 @@ button[type="submit"]:active {
   margin: 1rem 0.5rem;
 }
 .botones_propiedad{
-  display: block;
-  padding: .5rem 0;
-  margin-top: .5rem;
+  margin-top: 1rem;
+  display:flex;
+  flex-wrap: wrap;
 }
 .botones_propiedad > button{
   padding: .4rem 1rem;
   color: #ffffff;
   border-radius: 8px;
   font-size: 14px;
+  font-weight: 500;
   border: none;
-  background: #003150;
+  background: #1ea0d4;
 }
-.botones_propiedad > button > img{
-  width: 30px;
-  height: 30px;
+.precio_propiedad_page{
+  font-size: 25px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #003150;
+  display: block;
+  width: 150px;
+  text-align: center;
+  border-radius: 10px;
+  padding: .5rem 1rem;
+}
+.pdf_button img{
+  width: 20px;
+  height: auto;
 }

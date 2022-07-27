@@ -136,6 +136,7 @@
 
 .card_testimonios {
   width: 300px;
+  
   display: block;
   margin: auto;
   padding: 2rem;
@@ -144,9 +145,43 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 .text_testimonios {
-  text-align: center;
-  font-size: 14px;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-align: justify;
+  font-size: 12px;
 }
+
+.listado_reconocimientos{
+  padding: 1rem;
+}
+.listado_reconocimientos > h1{
+  font-size: 16px !important;
+  color: #fff;
+  background: #1ea0d4;
+  padding: .3rem 1rem;
+  width: 150px;
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.listado_reconocimientos > p{
+  font-size: 14px;
+  width: 80%;
+  padding: .3rem 1rem;
+  background: #eeeeee;
+  border-radius: 10px;
+  border: 2px solid #97979767;
+  color: #6d6c6c;
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+}
+
 .empresa_testimonios {
   font-size: 18px;
   color: #73c1b1;
@@ -158,7 +193,7 @@
   margin: auto;
 }
 .card_testimonios h1 {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .construccion h1 {
@@ -297,15 +332,18 @@
 }
 .card_equipo img{
   width: 150px;
+  height: 150px;
+  border-radius: 150px;
   margin-bottom: 1rem;
   margin-top: -4rem;
+  object-fit: cover;
 }
 .card_equipo h1 {
-  font-size: 22px;
+  font-size: 18px;
   text-align: center;
 }
 .card_equipo p {
-  font-size: 18px;
+  font-size: 14px;
   color: #979797;
   text-align: center;
   font-weight: 500;

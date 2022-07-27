@@ -1460,7 +1460,25 @@ footer form button[type="submit"] {
 
 .ivideo_secction{
   padding: 4rem 2rem;
-  background: #73c1b1;
+  background: #003150;
+}
+.button_nosotros_video{
+  display: block;
+  margin: auto;
+  text-decoration: none;
+  text-align: center;
+  background: #3D9AEF;
+  width: 180px;
+  padding: .5rem 1rem;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 14px;
+}
+.button_nosotros_video:hover{
+  text-decoration: none;
+  transition: .21s;
+  background: #1dacff;
+  color: #ffffff;
 }
 .ivideo_secction img{
   display: block;
@@ -1476,7 +1494,7 @@ footer form button[type="submit"] {
 }
 .ivideo_secction p{
   font-size: 14px;
-  color: #000000;
+  color: #ffffff;
   display: block;
   margin: auto;
   margin-top: 1rem;

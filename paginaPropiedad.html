@@ -132,11 +132,17 @@
           </select>
 
           <label for="">Tipo de credito</label>
-          <span class="amenidades_select" for="Infonavit"><input type="checkbox" name="Infonavit" > Infonavit</span>
-          <br>
-          <span class="amenidades_select" for="Pemex"><input type="checkbox" name="Pemex"> Pemex</span>
-          <br>
-          <span class="amenidades_select" for="Bancario"><input type="checkbox" name="Bancario" > Bancario </span>
+          <span class="amenidades_select" for="Infonavit"
+            ><input type="checkbox" name="Infonavit" /> Infonavit</span
+          >
+          <br />
+          <span class="amenidades_select" for="Pemex"
+            ><input type="checkbox" name="Pemex" /> Pemex</span
+          >
+          <br />
+          <span class="amenidades_select" for="Bancario"
+            ><input type="checkbox" name="Bancario" /> Bancario
+          </span>
 
           <label for="">Amueblado</label>
           <select class="select_fw" name="">
@@ -259,19 +265,14 @@
         <!-- Contenido -->
         <div class="main_propiedad">
           <!-- Titulo -->
+          <h1 class="precio_propiedad_page">$1,400,000</h1>
+          <!-- Titulo -->
           <h1 class="h1_b">
             Renta casa con 2 cuartos y un baño en Mérida, Yucatán.
           </h1>
 
           <!-- Ubicacion-->
           <p>Mérida, Yucatán.</p>
-
-          <!-- Shared Buttons-->
-          <div class="botones_propiedad">
-            <button>Compartir</button>
-            <button>Imprimir</button>
-          </div>
-          <br><br>
 
           <!-- Atributos -->
           <div class="card_propiedad_atributos mb-3">
@@ -294,7 +295,7 @@
           <!-- Descripcion -->
           <div class="description_propiedad">
             <h1 class="h1_b">Descripcion</h1>
-            <div id="descripcion" class="text_corto">
+            <div id="descripcion">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
               cursus nisi nibh, nec suscipit mi dignissim eu. Nullam eu leo ac
               dolor congue semper eleifend eu justo. Aliquam rutrum ex ultrices,
@@ -340,9 +341,19 @@
               ullamcorper commodo ac leo. Morbi placerat congue lorem quis
               dictum. Integer dictum at nunc sit amet tempus.
             </div>
-            <button id="ver_mas">Ver más</button>
           </div>
-
+          <!-- Shared Buttons-->
+          <div class="botones_propiedad">
+            <div
+              class="compartir"
+              onclick="shareFunction('https://Babelgroup.pllx.live')"
+            >
+              <img src="assets/compartir.svg" alt="" srcset="" />
+            </div>
+            <div class="compartir pdf_button">
+              <img src="assets/image/pdf.png" alt="">
+            </div>
+          </div>
           <!-- Amenidades -->
           <div class="amenidades_propiedad">
             <h1 class="h1_b">Amenidades</h1>
