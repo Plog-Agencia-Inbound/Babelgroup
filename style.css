@@ -1423,15 +1423,38 @@ footer form button[type="submit"] {
 .paginacion{
   margin: 1rem 0 0 0;
   display: inline-block;
-  
   padding: 0.3rem .5rem;
-  border: 1.2px solid #dddddd;
-  color: #003150;
-  font-size: 16px;
-  font-weight: 500;
   border-radius: 5px;
   -webkit-appearance: none;
   text-align: center;
+}
+.paginacion > .items_paginacion{
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  width: 30px;
+  height: 30px;
+  color: #dddddd;
+  background: #ffffff;
+  border: 3px solid #f0f0f0;
+  border-radius: 5px;
+  margin: .5rem;
+  cursor: pointer;
+  box-shadow: 2.1595px 2.3829px 5.1806px rgba(0, 0, 0, 0.048);
+}
+.paginacion > .items_paginacion_active{
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  width: 30px;
+  height: 30px;
+  color: #1dacff;
+  background: #ffffff;
+  border: 3px solid #1dacff;
+  border-radius: 5px;
+  margin: .5rem;
+  cursor: pointer;
+  box-shadow: 2.1595px 2.3829px 5.1806px rgba(0, 0, 0, 0.048);
 }
 
 .whatsapp_button {
@@ -1504,4 +1527,24 @@ footer form button[type="submit"] {
 .video_home{
   width: 100%;
   border-radius: 15px !important;
+}
+
+.favoritos_menu{
+  background-color: #1ea0d4;
+  display: block;
+  position: fixed;
+  padding: .8rem .5rem;
+  border-radius: 0 5px 5px 0;
+  top: 75%;
+  cursor: pointer;
+  z-index: 2;
+}
+.favoritos_menu:hover{
+  opacity: 1 !important;
+  transition: .2s;
+  background: #003150 !important;
+}
+.favoritos_menu > i{
+  color: #fff;
+  padding: .3rem .25rem;
 }

@@ -152,6 +152,12 @@
   text-align: justify;
   font-size: 12px;
 }
+.text_testimonios > img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 150px;
+}
 
 .listado_reconocimientos{
   padding: 1rem;

@@ -342,7 +342,8 @@ button[type="submit"]:active {
 .videos_propiedad > h1{
   font-size: 20px !important;
 }
-.carousel-item > iframe{
+.videos_propiedad > iframe{
+  margin-top: 1rem;
   width: 100% !important;
   height: 300px !important;
   border-radius: 15px;

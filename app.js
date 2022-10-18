@@ -9,6 +9,8 @@ window.addEventListener("scroll", (event) => {
     7;
     document.getElementById("busquedaAvanzada_scroll").style.opacity = ".2";
     document.getElementById("busquedaAvanzada_scroll").style.transition = ".5s";
+    document.getElementById("favoritos_menu").style.opacity = ".2";
+    document.getElementById("favoritos_menu").style.transition = ".5s";
   }
 
   if (scrollY < 600) {
@@ -16,6 +18,9 @@ window.addEventListener("scroll", (event) => {
     7;
     document.getElementById("busquedaAvanzada_scroll").style.opacity = "1";
     document.getElementById("busquedaAvanzada_scroll").style.transition = ".5s";
+    
+    document.getElementById("favoritos_menu").style.opacity = "1";
+    document.getElementById("favoritos_menu").style.transition = ".5s";
   }
 });
 
