@@ -188,3 +188,8 @@ btn_bAvanzada.addEventListener("click", function () {
   }
 });
 
+var range_input = document.getElementById("range_menu");
+var rango_output = document.getElementById("range-max");
+range_input.oninput = function(){
+  rango_output.innerHTML = this.value;
+}

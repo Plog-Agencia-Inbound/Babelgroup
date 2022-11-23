@@ -222,10 +222,41 @@
                 <div class="dsk_form_s_group">
                   <label for="precio">
                     Precio
-                    <select name="precio">
-                      <option value="#">$1,500,000 - $2,500,000</option>
-                      <option value="#">$1,500,000 - $2,500,000</option>
-                    </select>
+                    
+                    <!--
+                      <select name="precio">
+                        <option value="#">$1,500,000 - $2,500,000</option>
+                        <option value="#">$1,500,000 - $2,500,000</option>
+                      </select>
+                    -->
+                    <style>
+                      #range_menu{
+                        width: 100%;
+                        display: block;
+                        margin: 0.5rem;
+                        -webkit-appearance: none;
+                        height: 3px;
+                        border-radius: 5px;
+                        background: #000;
+                        outline: none;
+                        opacity: 1;
+                        -webkit-transition: 0.2s;
+                        transition: opacity 0.2s;
+                      }
+                      #range_menu::-webkit-slider-thumb {
+                        -webkit-appearance: none;
+                        appearance: none;
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 50%;
+                        border: 3px solid #000;
+                        background: #fff;
+                        cursor: pointer;
+                      }
+                    </style>
+                    
+                    <input id="range_menu" type="range" min="" max="" name="" id="">
+                    <div id="range-max" style="margin:0 .5rem; font-size:10px:"></div>
                   </label>
                 </div>
 
